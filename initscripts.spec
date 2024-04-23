@@ -18,7 +18,7 @@ Requires:         gawk                       \
 
 Name:             initscripts
 Summary:          Basic support for legacy System V init scripts
-Version:          10.22
+Version:          10.23
 Release:          1%{?dist}
 
 License:          GPL-2.0-only
@@ -55,7 +55,6 @@ BuildRequires:    make
 BuildRequires:    systemd
 
 Obsoletes:        %{name}            < 10.16-1
-Obsoletes:        network-scripts    < 10.21-1
 
 # === PATCHES =================================================================
 
@@ -113,6 +112,57 @@ Provides:         /sbin/service
 
 %description -n initscripts-service
 This package provides service command.
+
+# ---------------
+
+%package -n network-scripts
+Summary:          Legacy scripts for manipulating of network devices
+Requires:         %{name}%{?_isa} = %{version}-%{release}
+
+%shared_requirements
+
+Requires:         bc
+Requires:         dbus
+Requires:         dbus-tools
+Requires:         gawk
+Requires:         grep
+Requires:         hostname
+Requires:         iproute
+Requires:         ipcalc
+Requires:         kmod
+Requires:         procps-ng
+Requires:         sed
+Requires:         systemd
+
+Requires(post):   chkconfig
+Requires(preun):  chkconfig
+
+Requires(post):   %{_sbindir}/update-alternatives
+Requires(postun): %{_sbindir}/update-alternatives
+
+Obsoletes:        %{name}            < 9.82-2
+
+# This is legacy and deprecated, so nobody should depend on this!
+# If ifcfg-style configuration is still desired, NetworkManager can do this.
+# Thus, mark this as deprecated to ensure people know to not depend on it.
+# Cf. https://docs.fedoraproject.org/en-US/packaging-guidelines/deprecating-packages/
+Provides:         deprecated()
+
+%description -n network-scripts
+This package contains the legacy scripts for activating & deactivating of most
+network interfaces. It also provides a legacy version of 'network' service.
+
+The 'network' service is enabled by default after installation of this package,
+and if the network-scripts are installed alongside NetworkManager, then the
+ifup/ifdown commands from network-scripts take precedence over the ones provided
+by NetworkManager.
+
+If user has both network-scripts & NetworkManager installed, and wishes to
+use ifup/ifdown from NetworkManager primarily, then they has to run command:
+ $ update-alternatives --config ifup
+
+Please note that running the command above will also disable the 'network'
+service.
 
 # ---------------
 
@@ -175,10 +225,29 @@ Please use systemd-volatile-root functionality instead, if possible.
 # ---------------
 
 %install
-%make_install NO_NETWORK_SCRIPTS=true
+%make_install
 
 # This installs the NLS language files:
 %find_lang %{name}
+
+%ifnarch s390 s390x
+  rm -f %{buildroot}%{_sysconfdir}/sysconfig/network-scripts/ifup-ctc
+%endif
+
+# Additional ways to access documentation:
+install -m 0755 -d %{buildroot}%{_docdir}/network-scripts
+
+ln -s  %{_docdir}/%{name}/sysconfig.txt %{buildroot}%{_docdir}/network-scripts/
+ln -sr %{_mandir}/man8/ifup.8           %{buildroot}%{_mandir}/man8/ifdown.8
+
+# We are now using alternatives approach to better co-exist with NetworkManager:
+touch %{buildroot}%{_sbindir}/ifup
+touch %{buildroot}%{_sbindir}/ifdown
+
+%if "%{_sbindir}" == "%{_bindir}"
+# Some files get installed wrong, but if $(sbindir) is overriden, the build fails :(
+mv -v %{buildroot}/usr/sbin/* %{buildroot}%{_bindir}/
+%endif
 
 # =============================================================================
 
@@ -190,6 +259,24 @@ Please use systemd-volatile-root functionality instead, if possible.
 
 %postun
 %systemd_postun import-state.service loadmodules.service
+
+# ---------------
+
+%post -n network-scripts
+chkconfig --add network > /dev/null 2>&1 || :
+
+[ -L %{_sbindir}/ifup ]   || rm -f %{_sbindir}/ifup
+[ -L %{_sbindir}/ifdown ] || rm -f %{_sbindir}/ifdown
+
+%{_sbindir}/update-alternatives --install %{_sbindir}/ifup   ifup   %{_sysconfdir}/sysconfig/network-scripts/ifup 90 \
+                                --slave   %{_sbindir}/ifdown ifdown %{_sysconfdir}/sysconfig/network-scripts/ifdown \
+                                --initscript network
+
+%preun -n network-scripts
+if [ $1 -eq 0 ]; then
+  chkconfig --del network > /dev/null 2>&1 || :
+  %{_sbindir}/update-alternatives --remove ifup %{_sysconfdir}/sysconfig/network-scripts/ifup
+fi
 
 # ---------------
 
@@ -240,7 +327,7 @@ Please use systemd-volatile-root functionality instead, if possible.
 
 # ---------------
 
-%{_bindir}/*
+%{_bindir}/usleep
 %{_sbindir}/consoletype
 %{_sbindir}/genhostid
 
@@ -273,6 +360,26 @@ Please use systemd-volatile-root functionality instead, if possible.
 
 # ---------------
 
+%files -n network-scripts
+%doc doc/examples/
+%dir %{_sysconfdir}/sysconfig/network-scripts
+
+%{_sysconfdir}/rc.d/init.d/network
+%{_sysconfdir}/sysconfig/network-scripts/*
+
+%config(noreplace)    %{_sysconfdir}/sysconfig/network-scripts/ifcfg-lo
+
+%ghost                %{_sbindir}/ifup
+%ghost                %{_sbindir}/ifdown
+%attr(4755,root,root) %{_sbindir}/usernetctl
+
+%{_mandir}/man8/ifup.*
+%{_mandir}/man8/ifdown.*
+%{_mandir}/man8/usernetctl.*
+%{_docdir}/network-scripts/*
+
+# ---------------
+
 %files -n netconsole-service
 %config(noreplace) %{_sysconfdir}/sysconfig/netconsole
 
@@ -296,6 +403,9 @@ Please use systemd-volatile-root functionality instead, if possible.
 # =============================================================================
 
 %changelog
+* Tue Apr 16 2024 Jan Macku <jamacku@redhat.com> - 10.23-1
+- fix: return support for network-scripts for Fedora 40
+
 * Wed Mar 06 2024 Jan Macku <jamacku@redhat.com> - 10.22-1
 - Translated using Weblate (Georgian)
 - rename_device: free path after it is used
