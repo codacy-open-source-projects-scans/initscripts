@@ -1,5 +1,5 @@
 #!/bin/bash
-# 
+#
 # netconsole 	This loads the netconsole module with the configured parameters.
 #
 # chkconfig: - 50 50
@@ -20,10 +20,8 @@
 
 PATH=/sbin:/usr/sbin:$PATH
 RETVAL=0
-SERVER_ADDRESS_RESOLUTION=
 
-# Check that networking is up.
-. /etc/sysconfig/network
+[ -f /etc/sysconfig/network ] && . /etc/sysconfig/network
 
 # Source function library.
 . /etc/rc.d/init.d/functions
@@ -35,8 +33,6 @@ DEV=
 SYSLOGADDR=
 SYSLOGPORT=514
 SYSLOGMACADDR=
-
-kernel=$(uname -r | cut -d. -f1-2)
 
 usage ()
 {
@@ -50,7 +46,7 @@ print_address_info ()
 	local route via target
 
 	route=$(LANG=C ip -o route get to $host/32)
-	
+
 	[ -z "$DEV" ] && DEV=$(echo $route | sed "s|.* dev \([^ ]*\).*|\1|")
 	echo "DEV=$DEV"
 	echo "LOCALADDR=$(echo $route | sed "s|.* src \([^ ]*\).*|\1|")"
@@ -63,9 +59,9 @@ print_address_info ()
 	if [ -z "$SYSLOGMACADDR" ]; then
 		arp=$(LANG=C /sbin/arping -f -c 1 -I $DEV $target 2>/dev/null | awk '/ reply from .*[.*]/ { print gensub(".* reply from .* \\[(.*)\\].*","\\1","G"); exit }')
 		[ -n "$arp" ] && echo "SYSLOGMACADDR=$arp"
-	fi	
-}	
-	
+	fi
+}
+
 start ()
 {
 	[ -f /etc/sysconfig/netconsole ] || exit 6
@@ -101,7 +97,7 @@ start ()
 		exit 6
 	fi
 	eval $(print_address_info $SYSLOGADDR)
-	
+
 	if [ -z "$SYSLOGMACADDR" ]; then
 		echo $"netconsole: can't resolve MAC address of $SYSLOGADDR" 1>&2
 		exit 1
@@ -116,7 +112,7 @@ start ()
 			$SYSLOGOPTS
 		[ "$?" != "0" ] && RETVAL=1
 	fi
-	touch /var/lock/subsys/netconsole
+	touch /run/lock/subsys/netconsole
 }
 
 stop ()
@@ -126,7 +122,7 @@ stop ()
 	    [ "$?" != "0" ] && RETVAL=1
 	fi
 
-	rm -f /var/lock/subsys/netconsole
+	rm -f /run/lock/subsys/netconsole
 }
 
 status ()
@@ -140,7 +136,6 @@ status ()
 	fi
 }
 
-
 restart ()
 {
 	stop
@@ -149,9 +144,8 @@ restart ()
 
 condrestart ()
 {
-	[ -e /var/lock/subsys/netconsole ] && restart
+	[ -e /run/lock/subsys/netconsole ] && restart
 }
-
 
 case "$1" in
     stop) stop ;;
