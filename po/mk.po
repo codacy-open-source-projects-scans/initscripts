@@ -1,0 +1,813 @@
+# Translators:
+# Arangel Angov <arangel@linux.net.mk>, 2007
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Tomislav Markovski <herrera@users.sourceforge.net>, 2004
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-03-13 03:04+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: <XX@li.org>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../network-scripts/ifdown:15 ../network-scripts/ifdown:22
+msgid "usage: ifdown <configuration>"
+msgstr "употреба: ifdown <device name>"
+
+#: ../network-scripts/ifdown:33 ../network-scripts/ifup:49
+msgid "Users cannot control this device."
+msgstr "Корисниците не можат да го контролираат овој уред."
+
+#: ../network-scripts/ifdown:40
+msgid ""
+"You are using 'ifdown' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifdown:41 ../network-scripts/ifup:57
+#: ../etc/rc.d/init.d/network:53
+msgid "'network-scripts' will be removed from distribution in near future."
+msgstr ""
+
+#: ../network-scripts/ifdown:42 ../network-scripts/ifup:58
+msgid ""
+"It is advised to switch to 'NetworkManager' instead - it provides 'ifup/"
+"ifdown' scripts as well."
+msgstr ""
+
+#: ../network-scripts/ifdown-eth:46 ../network-scripts/ifdown-eth:52
+msgid ""
+"Device ${DEVICE} has MAC address ${FOUNDMACADDR}, instead of configured "
+"address ${HWADDR}. Ignoring."
+msgstr ""
+"Уредот ${DEVICE} има MAC адреса ${FOUNDMACADDR}, наместо конфигурираната "
+"адреса ${HWADDR}. Игнорирам."
+
+#: ../network-scripts/ifdown-routes:6
+#, fuzzy
+msgid "usage: ifdown-routes <net-device> [<nickname>]"
+msgstr "употреба: ifup-routes <net-device> [<nickname>]"
+
+#: ../network-scripts/ifdown-sit:40 ../network-scripts/ifup-sit:58
+msgid ""
+"Device '$DEVICE' isn't supported here, use IPV6_AUTOTUNNEL setting and "
+"restart (IPv6) networking"
+msgstr ""
+"Уредот '$DEVICE' не е поддржан, користете IPV6_AUTOTUNNEL поставувања и "
+"повторно подигнете ја мрежата (IPv6)"
+
+#: ../network-scripts/ifdown-tunnel:36 ../network-scripts/ifup-tunnel:68
+msgid "Device '$DEVICE' isn't supported as a valid GRE device name."
+msgstr "Уредот '$DEVICE' не е подржан како валидно име на GRE уред."
+
+#: ../network-scripts/ifup:30 ../network-scripts/ifup:38
+msgid "Usage: ifup <configuration>"
+msgstr "Употреба: ifup <име на уред>"
+
+#: ../network-scripts/ifup:37
+msgid "$0: configuration for ${1} not found."
+msgstr "$0: конфигурацијата за ${1} не е пронајдена."
+
+#: ../network-scripts/ifup:56
+msgid ""
+"You are using 'ifup' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifup:87 ../network-scripts/ifup:102
+msgid "PHYSDEV should be set for device ${DEVICE}"
+msgstr "PHYSDEV треба да е поставен за уредот ${DEVICE}"
+
+#: ../network-scripts/ifup:110
+msgid "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+msgstr "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+
+#: ../network-scripts/ifup:117 ../network-scripts/ifup-eth:134
+msgid ""
+"$alias device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "$alias уредот ${DEVICE} не е присутен, ја одложувам иницијализацијата."
+
+#: ../network-scripts/ifup:137
+msgid "ERROR: could not add vlan ${VID} as ${DEVICE} on dev ${PHYSDEV}"
+msgstr ""
+"ГРЕШКА: не можам да додадам vlan ${VID} како ${DEVICE} на dev ${PHYSDEV}"
+
+#: ../network-scripts/ifup-aliases:67
+msgid "usage: ifup-aliases <net-device> [<parent-config>]\n"
+msgstr "употреба: ifup-aliases <мрежен-уред> [<parent-config>]\n"
+
+#: ../network-scripts/ifup-aliases:119
+msgid "Missing config file $PARENTCONFIG."
+msgstr "Недостасува датотеката $PARENTCONFIG."
+
+#: ../network-scripts/ifup-aliases:169
+msgid "error in $FILE: invalid alias number"
+msgstr "грешка во $FILE: невалиден број на алијас"
+
+#: ../network-scripts/ifup-aliases:179
+msgid "error in $FILE: already seen ipaddr $IPADDR in $ipseen"
+msgstr "грешка во $FILE: веќе видена ipaddr $IPADDR во $ipseen"
+
+#: ../network-scripts/ifup-aliases:184
+msgid "error in $FILE: already seen device $parent_device:$DEVNUM in $devseen"
+msgstr "грешка во $FILE: веќе виден уред $parent_device:$DEVNUM во $devseen"
+
+#: ../network-scripts/ifup-aliases:193
+msgid "error in $FILE: didn't specify device or ipaddr"
+msgstr "грешка во $FILE: нема уред или адреса"
+
+#: ../network-scripts/ifup-aliases:198
+#, fuzzy
+msgid "error iN $FILE: didn't specify netmask or prefix"
+msgstr "грешка во $FILE: нема уред или адреса"
+
+#: ../network-scripts/ifup-aliases:238 ../network-scripts/ifup-aliases:249
+msgid "error in ifcfg-${parent_device}: files"
+msgstr "грешка во ifcfg-${parent_device}: датотека"
+
+#: ../network-scripts/ifup-aliases:269
+msgid ""
+"Determining if IP address ${IPADDR} is already in use for device "
+"${parent_device}…"
+msgstr ""
+
+#: ../network-scripts/ifup-aliases:273
+msgid "Error, some other host ($ARPINGMAC) already uses address ${IPADDR}."
+msgstr ""
+
+#: ../network-scripts/ifup-aliases:335
+msgid "error in $FILE: IPADDR_START and IPADDR_END don't agree"
+msgstr "грешка во $FILE: IPADDR_START и IPADDR_END не се согласуваат"
+
+#: ../network-scripts/ifup-aliases:340
+msgid "error in $FILE: IPADDR_START greater than IPADDR_END"
+msgstr "грепка во $FILE: IPADDR_START е поголемо од IPADDR_END"
+
+#: ../network-scripts/ifup-ctc:36
+msgid "ERROR: ${DEVICE} did not come up!"
+msgstr ""
+
+#: ../network-scripts/ifup-eth:43
+msgid "Device ${DEVICE} has different MAC address than expected, ignoring."
+msgstr "Уредот ${DEVICE} има различна MAC адреса од очекуваната, игнорирам."
+
+#: ../network-scripts/ifup-eth:51
+msgid "cannot create veth without peer"
+msgstr ""
+
+#: ../network-scripts/ifup-eth:127
+#, fuzzy
+#| msgid ""
+#| "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgid "Device name does not seem to be present."
+msgstr "Уредот ${DEVICE} не е присутен, ја одложувам иницијализацијата."
+
+#: ../network-scripts/ifup-eth:136
+msgid "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "Уредот ${DEVICE} не е присутен, ја одложувам иницијализацијата."
+
+#: ../network-scripts/ifup-eth:232
+msgid "Determining IP information for ${DEVICE}..."
+msgstr "Determining IP information for ${DEVICE}..."
+
+#: ../network-scripts/ifup-eth:234
+msgid " failed; no link present.  Check cable?"
+msgstr " е неуспешно; нема врска.  Ги проверивте каблите?"
+
+#: ../network-scripts/ifup-eth:241 ../network-scripts/ifup-eth:389
+msgid " done."
+msgstr " завршено."
+
+#: ../network-scripts/ifup-eth:244 ../network-scripts/ifup-eth:391
+msgid " failed."
+msgstr " е неуспешно."
+
+#: ../network-scripts/ifup-eth:268
+msgid "Failed to bring up ${DEVICE}."
+msgstr "Не можам да подигнам ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:299
+msgid ""
+"Error, some other host ($ARPINGMAC) already uses address ${ipaddr[$idx]}."
+msgstr ""
+
+#: ../network-scripts/ifup-eth:306
+#, fuzzy
+msgid "Error adding address ${ipaddr[$idx]} for ${DEVICE}."
+msgstr "Грешка при додавање на адресата ${IPADDR} за ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:333
+#, fuzzy
+msgid "Error adding default gateway ${GATEWAY} for ${DEVICE}."
+msgstr "Грешка при додавање на адресата ${IPADDR} за ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:338
+msgid "Error adding default gateway for ${REALDEVICE}."
+msgstr ""
+
+#: ../network-scripts/ifup-eth:376
+#, fuzzy
+msgid "Determining IPv6 information for ${DEVICE}..."
+msgstr "Determining IP information for ${DEVICE}..."
+
+#: ../network-scripts/ifup-ippp:33
+msgid "ipppd does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:40
+msgid "isdnctrl does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:46
+msgid "cannot list ISDN devices"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:55 ../network-scripts/ifup-ippp:60
+msgid "$*"
+msgstr "$*"
+
+#: ../network-scripts/ifup-ippp:343
+msgid "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:349
+msgid "ipppd $options $netmask"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:374
+msgid ""
+"Warning: ipppd (kernel 2.4.x and below) doesn't support IPv6 using "
+"encapsulation 'syncppp'"
+msgstr ""
+"Предупредување: ipppd (кернел 2.4.x и постар) не поддржува IPv6 користејќи "
+"изолирање со 'syncppp'"
+
+#: ../network-scripts/ifup-ippp:376
+msgid "Warning: link doesn't support IPv6 using encapsulation 'rawip'"
+msgstr "Предупредување: врската не поддржува IPv6 користејќи изолиран 'rawip'"
+
+#: ../network-scripts/ifup-ipv6:99
+msgid ""
+"Global IPv6 forwarding is enabled in configuration, but not currently "
+"enabled in kernel"
+msgstr ""
+"Глобално пренасочување со IPv6 е веќе конфигурирано, но во кернелот е "
+"оневозможено"
+
+#: ../network-scripts/ifup-ipv6:100 ../network-scripts/ifup-ipv6:119
+msgid "Please restart network with '/sbin/service network restart'"
+msgstr ""
+"Ве молам повторно вчитајте ја мрежата со '/sbin/service network restart'"
+
+#: ../network-scripts/ifup-ipv6:118
+msgid ""
+"Global IPv6 forwarding is disabled in configuration, but not currently "
+"disabled in kernel"
+msgstr ""
+"Глобалните поставувања за IPv6 пренасочување се оневозможени, но не и во "
+"кернелот"
+
+#: ../network-scripts/ifup-ipv6:157
+msgid ""
+"Cannot enable IPv6 privacy method '$IPV6_PRIVACY', not supported by kernel"
+msgstr ""
+"Не можам да вклучам метод за приватност на IPv6 '$IPV6_PRIVACY', не е "
+"поддржано од кернелот"
+
+#: ../network-scripts/ifup-ipv6:182
+msgid "Device 'tun6to4' (from '$DEVICE') is already up, shutdown first"
+msgstr "Уредот 'tun6to4' (од '$DEVICE') е веќе подигнат, прво исклучете го"
+
+#: ../network-scripts/ifup-ipv6:209
+msgid "Given IPv4 address '$ipv4addr' is not globally usable"
+msgstr "Дадената IPv4 адреса '$ipv4addr' не е глобално употреблива"
+
+#: ../network-scripts/ifup-ipv6:222
+msgid ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+msgstr ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+
+#: ../network-scripts/ifup-ipv6:237
+msgid ""
+"Warning: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+msgstr ""
+"Предупредување: конфигурираниот MTU '$IPV6TO4_MTU' за 6to4 ја преминува "
+"границата од максимални '$tunnelmtu', игнорирам"
+
+#: ../network-scripts/ifup-ipv6:251
+msgid "Warning: interface 'tun6to4' does not support 'IPV6_DEFAULTGW', ignored"
+msgstr ""
+"Предупредување: интерфејсот 'tun6to4' не поддржува 'IPV6_DEFAULTGW', "
+"игнорирам"
+
+#: ../network-scripts/ifup-ipv6:287
+msgid ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+msgstr ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+
+#: ../network-scripts/ifup-ipv6:300
+msgid "Error occurred while calculating the IPv6to4 prefix"
+msgstr "Имаше грешка при одредување на префиксот на IPv6to4"
+
+#: ../network-scripts/ifup-ipv6:303
+msgid "radvd control enabled, but config is not complete"
+msgstr "radvd контролата е овозможена, но конфигурацијата е некомплетна"
+
+#: ../network-scripts/ifup-ipv6:310
+msgid "6to4 configuration is not valid"
+msgstr "6to4 конфигурацијата е невалидна"
+
+#: ../network-scripts/ifup-post:114
+msgid "/etc/resolv.conf was not updated: failed to create temporary file"
+msgstr ""
+
+#: ../network-scripts/ifup-routes:8
+msgid "usage: ifup-routes <net-device> [<nickname>]"
+msgstr "употреба: ifup-routes <net-device> [<nickname>]"
+
+#: ../network-scripts/ifup-routes:26 ../network-scripts/ifup-routes:47
+msgid "Failed to add route ${line}, using ip route replace instead."
+msgstr ""
+
+#: ../network-scripts/ifup-sit:63
+msgid "Missing remote IPv4 address of tunnel, configuration is not valid"
+msgstr ""
+"Недостасува далечинската адреса за Ipv4 на тунелот, конфигурацијата е "
+"невалидна"
+
+#: ../network-scripts/ifup-sit:71
+msgid "Device '$DEVICE' is already up, please shutdown first"
+msgstr "Уредот '$DEVICE' е веќе подигнат, ве молам прво исклучете го"
+
+#: ../network-scripts/ifup-tunnel:61
+msgid "Invalid tunnel type $TYPE"
+msgstr "Невалиден тип на тунел $TYPE"
+
+#: ../network-scripts/init.ipv6-global:161
+msgid "Usage: $0 {start|stop|reload|restart|showsysctl}"
+msgstr "Употреба: $0 {start|stop|reload|restart|showsysctl}"
+
+#: ../network-scripts/network-functions:405
+msgid ""
+"Both 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' and 'DHCP_FQDN=${DHCP_FQDN}' are "
+"configured... Using DHCP_FQDN."
+msgstr ""
+
+#: ../network-scripts/network-functions:581
+msgid "Failed to set value '$value' [mode] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:587
+msgid "Failed to set value '$value' [miimon] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:607
+msgid ""
+"Failed to set '$arp_ip' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:615
+msgid ""
+"Failed to set '$value' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:620
+msgid "Failed to set '$value' value [$key] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:696
+msgid "DEBUG     "
+msgstr ""
+
+#: ../network-scripts/network-functions:699
+msgid "ERROR     "
+msgstr ""
+
+#: ../network-scripts/network-functions:702
+msgid "WARN      "
+msgstr ""
+
+#: ../network-scripts/network-functions:705
+msgid "INFO      "
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:58
+msgid "Missing parameter 'IPv6-network' (arg 1)"
+msgstr "Недостасува параметарот 'IPv6-network' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:63
+msgid "Missing parameter 'IPv6-gateway' (arg 2)"
+msgstr "Недостасува параметарот 'IPv6-gateway' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:88
+msgid ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+msgstr ""
+"'Нема рута до домаќинот' додавам рута '$networkipv6' преку преминот "
+"'$gatewayipv6' низ уредот '$device'"
+
+#: ../network-scripts/network-functions-ipv6:91
+msgid "Unknown error"
+msgstr "Непозната грешка"
+
+#: ../network-scripts/network-functions-ipv6:116
+msgid "Tunnel device 'sit0' enabling didn't work"
+msgstr "Tunnel device 'sit0' enabling didn't work"
+
+#: ../network-scripts/network-functions-ipv6:142
+#: ../network-scripts/network-functions-ipv6:205
+#: ../network-scripts/network-functions-ipv6:234
+#: ../network-scripts/network-functions-ipv6:314
+#: ../network-scripts/network-functions-ipv6:429
+#: ../network-scripts/network-functions-ipv6:491
+#: ../network-scripts/network-functions-ipv6:525
+#: ../network-scripts/network-functions-ipv6:567
+#: ../network-scripts/network-functions-ipv6:645
+#: ../network-scripts/network-functions-ipv6:703
+#: ../network-scripts/network-functions-ipv6:756
+#: ../network-scripts/network-functions-ipv6:795
+#: ../network-scripts/network-functions-ipv6:923
+#: ../network-scripts/network-functions-ipv6:1056
+msgid "Missing parameter 'device' (arg 1)"
+msgstr "Недостасува параметарот 'device' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:147
+msgid "Missing parameter 'IPv6-address' (arg 2)"
+msgstr "Недостасува параметарот 'IPv6-address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:161
+msgid "Device '$device' doesn't exist"
+msgstr "Уредот '$device' не постои"
+
+#: ../network-scripts/network-functions-ipv6:167
+msgid "Device '$device' enabling didn't work"
+msgstr "Овозможувањето на '$device' е неуспешно"
+
+#: ../network-scripts/network-functions-ipv6:188
+msgid "Cannot add IPv6 address '$address' on dev '$device'"
+msgstr "Не можам да додадам IPv6 адреса '$address' на уредот '$device'"
+
+#: ../network-scripts/network-functions-ipv6:345
+msgid "Missing parameter 'IPv4 address' (arg 1)"
+msgstr "Недостасува параметарот 'IPv4 address' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:385
+msgid "Missing parameter 'address' (arg 1)"
+msgstr "Недостасува параметарот 'address' (арг 1)"
+
+#: ../network-scripts/network-functions-ipv6:396
+msgid "Given address '$addr' is not a global IPv4 one (arg 1)"
+msgstr "Дадената адреса '$addr' не е глобална IPv4 адреса (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:400
+msgid "Given address '$addr' is not a valid IPv4 one (arg 1)"
+msgstr "Дадената адреса '$addr' не е валидна IPv4 адреса (арг 1)"
+
+#: ../network-scripts/network-functions-ipv6:434
+msgid "Missing parameter 'global IPv4 address' (arg 2)"
+msgstr "Недостасува параметарот 'global IPv4 address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:440
+#: ../network-scripts/network-functions-ipv6:497
+#: ../network-scripts/network-functions-ipv6:536
+msgid "Given device '$device' is not supported (arg 1)"
+msgstr "Дадениот уред '$device' не е поддржан (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:530
+msgid "Missing parameter 'local IPv4 address' (arg 2)"
+msgstr "Недостасува параметарот 'local IPv4 address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:572
+msgid "Missing parameter 'IPv4-tunnel address' (arg 2)"
+msgstr "Недостасува параметарот 'IPv4-tunnel address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:592
+msgid ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+msgstr ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+
+#: ../network-scripts/network-functions-ipv6:605
+msgid "Tunnel device '$device' creation didn't work"
+msgstr "Tunnel device '$device' creation didn't work"
+
+#: ../network-scripts/network-functions-ipv6:612
+msgid "Tunnel device '$device' bringing up didn't work"
+msgstr "Тунел уредот '$device' подигнувањето беше неуспешно"
+
+#: ../network-scripts/network-functions-ipv6:708
+msgid "Missing parameter 'selection' (arg 2)"
+msgstr "Недостасува параметарот 'selection' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:712
+msgid "Unsupported selection '$selection' specified (arg 2)"
+msgstr "Unsupported selection '$selection' specified (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:800
+msgid "Missing parameter 'IPv6 MTU' (arg 2)"
+msgstr "Недостасува параметарот 'IPv6 MTU' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:806
+msgid "Given IPv6 MTU '$ipv6_mtu' is out of range"
+msgstr "Дадениот IPv6 MTU '$ipv6_mtu' е надвор од опсегот"
+
+#: ../network-scripts/network-functions-ipv6:843
+msgid "Given IPv6 default gateway '$address' is not in proper format"
+msgstr "За стандардниот IPv6 премин '$address' не е во валиден формат"
+
+#: ../network-scripts/network-functions-ipv6:849
+msgid ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+msgstr ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+
+#: ../network-scripts/network-functions-ipv6:857
+msgid ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+msgstr ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+
+#: ../network-scripts/network-functions-ipv6:897
+msgid "Given IPv6 default device '$device' requires an explicit nexthop"
+msgstr "Дадениот IPv6 основен уред '$device' бара експлицитен nexthop"
+
+#: ../network-scripts/network-functions-ipv6:900
+msgid "Given IPv6 default device '$device' doesn't exist or isn't up"
+msgstr "Дадениот IPv6 основен уред '$device' не постои или не е подигнат"
+
+#: ../network-scripts/network-functions-ipv6:906
+msgid "No parameters given to setup a default route"
+msgstr "Нема параметри за поставување на стандардна рута"
+
+#: ../network-scripts/network-functions-ipv6:961
+msgid "No reason given for sending trigger to radvd"
+msgstr "Нема причина за испраќање сигнал до radvd"
+
+#: ../network-scripts/network-functions-ipv6:966
+msgid "Unsupported reason '$reason' for sending trigger to radvd"
+msgstr "Неподдржана причина '$reason' за праќање сигнал до radvd"
+
+#: ../network-scripts/network-functions-ipv6:995
+msgid "Unsupported mechanism '$mechanism' for sending trigger to radvd"
+msgstr "Неподдржан механизам '$mechanism' за праќање сигнал до radvd"
+
+#: ../network-scripts/network-functions-ipv6:1007
+msgid "Given pidfile '$pidfile' doesn't exist, cannot send trigger to radvd"
+msgstr ""
+"Зададениот pidfile '$pidfile' не постои, не можам да пратам сигнал до radvd"
+
+#: ../network-scripts/network-functions-ipv6:1016
+msgid "Pidfile '$pidfile' is empty, cannot send trigger to radvd"
+msgstr "Pidfile '$pidfile' е празен, не можам да пратам сигнал до radvd"
+
+#: ../network-scripts/network-functions-ipv6:1033
+msgid "radvd not (properly) installed, triggering failed"
+msgstr "radvd не е (прописно) инсталирам, сигнализирањето е неуспешно"
+
+#: ../network-scripts/network-functions-ipv6:1068
+msgid "Duplicate Address Detection: Duplicate addresses detected"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1069
+msgid "Duplicate Address Detection: Please, fix your network configuration"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1073
+msgid ""
+"Waiting for interface ${device} IPv6 address(es) to leave the 'tentative' "
+"state"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1081
+msgid "Some IPv6 address(es) of ${device} remain still in 'tentative' state"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1082
+msgid "Run 'ip -6 addr show dev ${device} tentative' for more info"
+msgstr ""
+
+#: ../usr/sbin/service:50 ../usr/sbin/service:66
+msgid "Support for initscripts isn't installed"
+msgstr ""
+
+#: ../usr/sbin/service:108
+msgid ""
+"Redirecting to /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:"
+"+ }${OPTIONS}"
+msgstr ""
+
+#: ../usr/sbin/service:111
+msgid ""
+"The service command supports only basic LSB actions (start, stop, restart, "
+"try-restart, reload, reload-or-restart, try-reload-or-restart, force-reload, "
+"status, condrestart). For other actions, please try to use systemctl."
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:33
+#, fuzzy
+msgid "Starting $prog (via systemctl): "
+msgstr "Подигнувам даемон за $prog: "
+
+#: ../etc/rc.d/init.d/functions:36
+#, fuzzy
+msgid "Stopping $prog (via systemctl): "
+msgstr "Стопирам даемон за $prog: "
+
+#: ../etc/rc.d/init.d/functions:39
+#, fuzzy
+msgid "Reloading $prog configuration (via systemctl): "
+msgstr "Повторно ја вчитувам $prog конфигурацијата: "
+
+#: ../etc/rc.d/init.d/functions:42
+#, fuzzy
+msgid "Restarting $prog (via systemctl): "
+msgstr "Повторно вчитувам $prog:"
+
+#: ../etc/rc.d/init.d/functions:52
+msgid "Reloading systemd: "
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:236 ../etc/rc.d/init.d/functions:274
+msgid "$0: Usage: daemon [+/-nicelevel] {program}"
+msgstr "$0: Употреба: даемон [+/-nicelevel] {програма}"
+
+#: ../etc/rc.d/init.d/functions:304
+msgid "$base startup"
+msgstr "$base startup"
+
+#: ../etc/rc.d/init.d/functions:314 ../etc/rc.d/init.d/functions:324
+#: ../etc/rc.d/init.d/functions:333
+#, fuzzy
+#| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+msgid ""
+"Usage: killproc [-p {pidfile} [-b {binary}]] [-d {delay}] {program} [-signal]"
+msgstr "Употреба: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#: ../etc/rc.d/init.d/functions:323 ../etc/rc.d/init.d/functions:450
+msgid "-b option can be used only with -p"
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:353 ../etc/rc.d/init.d/functions:363
+#: ../etc/rc.d/init.d/functions:378
+msgid "$base shutdown"
+msgstr "исклучувам $base"
+
+#: ../etc/rc.d/init.d/functions:369
+msgid "$base $killlevel"
+msgstr "$base $killlevel"
+
+#: ../etc/rc.d/init.d/functions:396
+msgid "Usage: pidfileofproc {program}"
+msgstr "Употреба: pidfileproc {program}"
+
+#: ../etc/rc.d/init.d/functions:411
+#, fuzzy
+#| msgid "Usage: pidofproc [-p pidfile] {program}"
+msgid "Usage: pidofproc [-p {pidfile}] {program}"
+msgstr "Употреба: pidofproc [-p pidfile] {program}"
+
+#: ../etc/rc.d/init.d/functions:437 ../etc/rc.d/init.d/functions:451
+#, fuzzy
+#| msgid "Usage: status [-p pidfile] {program}"
+msgid "Usage: status [-p {pidfile}] [-l {lockfile}] [-b {binary}] {program}"
+msgstr "Употреба: status [-p pidfile] {program}"
+
+#: ../etc/rc.d/init.d/functions:478 ../etc/rc.d/init.d/functions:484
+msgid "${base} (pid $pid) is running..."
+msgstr "${base} (pid $pid) е веќе активен..."
+
+#: ../etc/rc.d/init.d/functions:488
+msgid "${base} dead but pid file exists"
+msgstr "${base} мртов, но pid датотеката постои"
+
+#: ../etc/rc.d/init.d/functions:492
+msgid "${base} status unknown due to insufficient privileges."
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:501
+msgid "${base} dead but subsys locked"
+msgstr "${base} е мртов, но subsys е заклучен"
+
+#: ../etc/rc.d/init.d/functions:504
+msgid "${base} is stopped"
+msgstr "${base} е запрено"
+
+#: ../etc/rc.d/init.d/functions:512
+msgid "  OK  "
+msgstr "  Во ред  "
+
+#: ../etc/rc.d/init.d/functions:523
+msgid "FAILED"
+msgstr "Неуспешно"
+
+#: ../etc/rc.d/init.d/functions:534
+msgid "PASSED"
+msgstr "ПОМИНА"
+
+#: ../etc/rc.d/init.d/functions:545
+msgid "WARNING"
+msgstr "ПРЕДУПРЕДУВАЊЕ"
+
+#: ../etc/rc.d/init.d/functions:595
+msgid "$STRING"
+msgstr "$STRING"
+
+#: ../etc/rc.d/init.d/network:52
+msgid ""
+"You are using 'network' service provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:54
+msgid ""
+"It is advised to switch to 'NetworkManager' instead for network management."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:77
+msgid "Bringing up loopback interface: "
+msgstr "Подигнувам интерфејс за повратна врска: "
+
+#: ../etc/rc.d/init.d/network:81
+msgid "No 802.1Q VLAN support available in kernel."
+msgstr "Нема 802.1Q VLAN поддршка во кернелот."
+
+#: ../etc/rc.d/init.d/network:132 ../etc/rc.d/init.d/network:139
+msgid "Bringing up interface $i: "
+msgstr "Подигнувам интерфејс $i: "
+
+#: ../etc/rc.d/init.d/network:151
+#, fuzzy
+msgid "Legacy static-route support not available: /sbin/route not found"
+msgstr "Поддршката за премостување е недостапна: brctl не е пронајден"
+
+#: ../etc/rc.d/init.d/network:178
+msgid ""
+"Target is not reachable, but timeout was already reached. Continuing anyway."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:189
+msgid "rootfs or /usr is on network filesystem, leaving network up"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:199
+msgid "system is shutting down, leaving interfaces up as requested"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:249
+msgid "Shutting down interface $i: "
+msgstr "Исклучувам интерфејс $i: "
+
+#: ../etc/rc.d/init.d/network:255
+msgid "Shutting down loopback interface: "
+msgstr "Исклучувам интерфејс за повратна врска: "
+
+#: ../etc/rc.d/init.d/network:267
+msgid "Configured devices:"
+msgstr "Конфигурирани уреди:"
+
+#: ../etc/rc.d/init.d/network:270
+msgid "Currently active devices:"
+msgstr "Моментално активни уреди:"
+
+#: ../etc/rc.d/init.d/network:280
+#, fuzzy
+#| msgid "Usage: $0 {start|stop|status|restart|reload|force-reload}"
+msgid "Usage: $0 {start|stop|status|restart|force-reload}"
+msgstr ""
+"Употреба: $0 {start|stop|status|restart|reload|force-reload|condrestart}"
+
+#, fuzzy
+#~| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+#~ msgid "Usage: killproc -p pidfile -b binary program"
+#~ msgstr "Употреба: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#~ msgid "Usage: status [-p pidfile] {program}"
+#~ msgstr "Употреба: status [-p pidfile] {program}"
+
+#~ msgid "Usage: $0 {start|stop|status|restart|condrestart}"
+#~ msgstr "Употреба: $0 {start|stop|status|restart|condrestart}"
+
+#~ msgid "Bridge support not available: brctl not found"
+#~ msgstr "Поддршката за премостување е недостапна: brctl не е пронајден"
+
+#~ msgid "Usage: sys-unconfig"
+#~ msgstr "Употреба: sys-unconfig"

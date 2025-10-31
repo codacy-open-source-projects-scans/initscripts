@@ -1,0 +1,864 @@
+# Translators:
+# Adam Pribyl <pribyl@lowlevel.cz>, 2007, 2008, 2009, 2010
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Jan Varta <jan.varta@atlas.cz>, 2012
+# Michal Schmidt <mschmidt@redhat.com>, 2010
+# Milan Kerslager <milan.kerslager@pslib.cz>, 2011
+# Miloslav Trmač <mitr@volny.cz>, 2003
+# Zdenek <chmelarz@gmail.com>, 2016. #zanata
+# Zdenek <chmelarz@gmail.com>, 2017. #zanata
+# Daniel Rusek <mail@asciiwolf.com>, 2020.
+# Jan Macku <jamacku@redhat.com>, 2021, 2022.
+# Matěj Valášek <valmatej@seznam.cz>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-12-31 14:36+0000\n"
+"Last-Translator: Matěj Valášek <valmatej@seznam.cz>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/"
+"fedora-sysv/initscripts/cs/>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.3.1\n"
+
+#: ../network-scripts/ifdown:15 ../network-scripts/ifdown:22
+msgid "usage: ifdown <configuration>"
+msgstr "použití: ifdown <jméno zařízení>"
+
+#: ../network-scripts/ifdown:33 ../network-scripts/ifup:49
+msgid "Users cannot control this device."
+msgstr "Uživatelé nemohou toto zařízení obsluhovat."
+
+#: ../network-scripts/ifdown:40
+msgid ""
+"You are using 'ifdown' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+"Používáte 'ifdown' skript z 'network-scripts' balíčku, který je nyní "
+"zastaralý."
+
+#: ../network-scripts/ifdown:41 ../network-scripts/ifup:57
+#: ../etc/rc.d/init.d/network:53
+msgid "'network-scripts' will be removed from distribution in near future."
+msgstr "Balíček 'network-scripts' bude v budoucnu odstraněn."
+
+#: ../network-scripts/ifdown:42 ../network-scripts/ifup:58
+msgid ""
+"It is advised to switch to 'NetworkManager' instead - it provides 'ifup/"
+"ifdown' scripts as well."
+msgstr ""
+"Je doporučeno místo něj používat 'NetworkManager' - který také nabízí 'ifup/"
+"ifdown' skripty."
+
+#: ../network-scripts/ifdown-eth:46 ../network-scripts/ifdown-eth:52
+msgid ""
+"Device ${DEVICE} has MAC address ${FOUNDMACADDR}, instead of configured "
+"address ${HWADDR}. Ignoring."
+msgstr ""
+"Zařízení ${DEVICE} má MAC adresu ${FOUNDMACADDR}, místo konfigurované "
+"${HWADDR}. Ignorováno."
+
+#: ../network-scripts/ifdown-routes:6
+msgid "usage: ifdown-routes <net-device> [<nickname>]"
+msgstr "použití: ifdown-routes <síťové-zařízení> [<přezdívka>]"
+
+#: ../network-scripts/ifdown-sit:40 ../network-scripts/ifup-sit:58
+msgid ""
+"Device '$DEVICE' isn't supported here, use IPV6_AUTOTUNNEL setting and "
+"restart (IPv6) networking"
+msgstr ""
+"Zařízení '$DEVICE' není podporováno, použijte nastavení IPV6_AUTOTUNNEL a "
+"restartujte (IPv6) síťování"
+
+#: ../network-scripts/ifdown-tunnel:36 ../network-scripts/ifup-tunnel:68
+msgid "Device '$DEVICE' isn't supported as a valid GRE device name."
+msgstr "Název '$DEVICE' není podporován jako platný pro GRE zařízení."
+
+#: ../network-scripts/ifup:30 ../network-scripts/ifup:38
+msgid "Usage: ifup <configuration>"
+msgstr "Použití: ifup <jméno_zařízení>"
+
+#: ../network-scripts/ifup:37
+msgid "$0: configuration for ${1} not found."
+msgstr "$0: nastavení pro ${1} nebylo nalezeno."
+
+#: ../network-scripts/ifup:56
+msgid ""
+"You are using 'ifup' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+"Používáte 'ifup' skript z 'network-scripts' balíčku, který je nyní zastaralý."
+
+#: ../network-scripts/ifup:87 ../network-scripts/ifup:102
+msgid "PHYSDEV should be set for device ${DEVICE}"
+msgstr "Pro zařízení ${DEVICE} by mělo být nastaveno PHYSDEV"
+
+#: ../network-scripts/ifup:110
+msgid "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+msgstr "V jádře není k dispozici podpora 802.1Q VLAN pro zařízení ${DEVICE}"
+
+#: ../network-scripts/ifup:117 ../network-scripts/ifup-eth:134
+msgid ""
+"$alias device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "Zařízení $alias ${DEVICE} zřejmě není přítomno, inicializace odložena."
+
+#: ../network-scripts/ifup:137
+msgid "ERROR: could not add vlan ${VID} as ${DEVICE} on dev ${PHYSDEV}"
+msgstr "CHYBA: nelze přidat vlan ${VID} jako ${DEVICE} na zařízení ${PHYSDEV}"
+
+#: ../network-scripts/ifup-aliases:67
+msgid "usage: ifup-aliases <net-device> [<parent-config>]\n"
+msgstr "použití: ifup-aliases <síťové_zařízení> [<nastavení-rodiče>]\n"
+
+#: ../network-scripts/ifup-aliases:119
+msgid "Missing config file $PARENTCONFIG."
+msgstr "Chybí soubor s nastavením $PARENTCONFIG."
+
+#: ../network-scripts/ifup-aliases:169
+msgid "error in $FILE: invalid alias number"
+msgstr "chyba v $FILE: neplatné číslo aliasu"
+
+#: ../network-scripts/ifup-aliases:179
+msgid "error in $FILE: already seen ipaddr $IPADDR in $ipseen"
+msgstr "chyba v $FILE: IP adresa $IPADDR již použita v $ipseen"
+
+#: ../network-scripts/ifup-aliases:184
+msgid "error in $FILE: already seen device $parent_device:$DEVNUM in $devseen"
+msgstr "chyba v $FILE: zařízení $parent_device:$DEVNUM již použito v $devseen"
+
+#: ../network-scripts/ifup-aliases:193
+msgid "error in $FILE: didn't specify device or ipaddr"
+msgstr "chyba v $FILE: nezadáno zařízení nebo IP adresa"
+
+#: ../network-scripts/ifup-aliases:198
+msgid "error iN $FILE: didn't specify netmask or prefix"
+msgstr "chyba v $FILE: nezadána maska nebo prefix"
+
+#: ../network-scripts/ifup-aliases:238 ../network-scripts/ifup-aliases:249
+msgid "error in ifcfg-${parent_device}: files"
+msgstr "chyba v souboru: ifcfg-${parent_device}"
+
+#: ../network-scripts/ifup-aliases:269
+#, fuzzy
+#| msgid ""
+#| "Determining if ip address ${IPADDR} is already in use for device "
+#| "${parent_device}..."
+msgid ""
+"Determining if IP address ${IPADDR} is already in use for device "
+"${parent_device}…"
+msgstr ""
+"Určování, zda se IP adresa ${IPADDR} již používá pro zařízení "
+"${parent_device}..."
+
+#: ../network-scripts/ifup-aliases:273
+msgid "Error, some other host ($ARPINGMAC) already uses address ${IPADDR}."
+msgstr "Chyba: adresu ${IPADDR} již používá jiný počítač ($ARPINGMAC)."
+
+#: ../network-scripts/ifup-aliases:335
+msgid "error in $FILE: IPADDR_START and IPADDR_END don't agree"
+msgstr "chyba v $FILE: IPADDR_START a IPADDR_END nesouhlasí"
+
+#: ../network-scripts/ifup-aliases:340
+msgid "error in $FILE: IPADDR_START greater than IPADDR_END"
+msgstr "chyba v $FILE: IPADDR_START je větší než IPADDR_END"
+
+#: ../network-scripts/ifup-ctc:36
+msgid "ERROR: ${DEVICE} did not come up!"
+msgstr "CHYBA: ${DEVICE} se neobjevil!"
+
+#: ../network-scripts/ifup-eth:43
+msgid "Device ${DEVICE} has different MAC address than expected, ignoring."
+msgstr "Zařízení ${DEVICE} má nepředpokládanou MAC adresu. Ignoruji."
+
+#: ../network-scripts/ifup-eth:51
+msgid "cannot create veth without peer"
+msgstr "nelze vytvořit veth bez peer"
+
+#: ../network-scripts/ifup-eth:127
+msgid "Device name does not seem to be present."
+msgstr "Jméno zařízení zřejmě není přítomno."
+
+#: ../network-scripts/ifup-eth:136
+msgid "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr ""
+"Zařízení ${DEVICE} zřejmě není přítomno, jeho inicializace byla odložena."
+
+#: ../network-scripts/ifup-eth:232
+msgid "Determining IP information for ${DEVICE}..."
+msgstr "Zjišťování IP informací pro ${DEVICE}..."
+
+#: ../network-scripts/ifup-eth:234
+msgid " failed; no link present.  Check cable?"
+msgstr " selhalo; chybí spojení. Je kabel v pořádku?"
+
+#: ../network-scripts/ifup-eth:241 ../network-scripts/ifup-eth:389
+msgid " done."
+msgstr " hotovo."
+
+#: ../network-scripts/ifup-eth:244 ../network-scripts/ifup-eth:391
+msgid " failed."
+msgstr " selhalo."
+
+#: ../network-scripts/ifup-eth:268
+msgid "Failed to bring up ${DEVICE}."
+msgstr "Aktivace zařízení ${DEVICE} selhala."
+
+#: ../network-scripts/ifup-eth:299
+msgid ""
+"Error, some other host ($ARPINGMAC) already uses address ${ipaddr[$idx]}."
+msgstr "Chyba: adresu ${ipaddr[$idx]} již používá jiný počítač ($ARPINGMAC)."
+
+#: ../network-scripts/ifup-eth:306
+msgid "Error adding address ${ipaddr[$idx]} for ${DEVICE}."
+msgstr "Chyba při přidávání adresy ${ipaddr[$idx]} pro zařízení ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:333
+msgid "Error adding default gateway ${GATEWAY} for ${DEVICE}."
+msgstr "Chyba při přidávání výchozí brány ${GATEWAY} pro zařízení ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:338
+msgid "Error adding default gateway for ${REALDEVICE}."
+msgstr "Chyba při přidávání výchozí brány pro ${REALDEVICE}."
+
+#: ../network-scripts/ifup-eth:376
+msgid "Determining IPv6 information for ${DEVICE}..."
+msgstr "Zjišťování IPv6 informací pro ${DEVICE}..."
+
+#: ../network-scripts/ifup-ippp:33
+msgid "ipppd does not exist or is not executable"
+msgstr "ipppd neexistuje nebo není spustitelný"
+
+#: ../network-scripts/ifup-ippp:40
+msgid "isdnctrl does not exist or is not executable"
+msgstr "isdnctrl neexistuje nebo není spustitelný"
+
+#: ../network-scripts/ifup-ippp:46
+msgid "cannot list ISDN devices"
+msgstr "nelze vypsat zařízení ISDN"
+
+#: ../network-scripts/ifup-ippp:55 ../network-scripts/ifup-ippp:60
+msgid "$*"
+msgstr "$*"
+
+#: ../network-scripts/ifup-ippp:343
+msgid "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+msgstr "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+
+#: ../network-scripts/ifup-ippp:349
+msgid "ipppd $options $netmask"
+msgstr "ipppd $options $netmask"
+
+#: ../network-scripts/ifup-ippp:374
+msgid ""
+"Warning: ipppd (kernel 2.4.x and below) doesn't support IPv6 using "
+"encapsulation 'syncppp'"
+msgstr ""
+"Varování: ipppd (jádro 2.4.x a nižší) nepodporuje IPv6 se zapouzdřením "
+"'syncppp'"
+
+#: ../network-scripts/ifup-ippp:376
+msgid "Warning: link doesn't support IPv6 using encapsulation 'rawip'"
+msgstr "Varování: linka nepodporuje IPv6 zapouzdření 'rawip'"
+
+#: ../network-scripts/ifup-ipv6:99
+msgid ""
+"Global IPv6 forwarding is enabled in configuration, but not currently "
+"enabled in kernel"
+msgstr ""
+"V nastavení je povolen globální IPv6 forwarding, ten ale není povolen v jádře"
+
+#: ../network-scripts/ifup-ipv6:100 ../network-scripts/ifup-ipv6:119
+msgid "Please restart network with '/sbin/service network restart'"
+msgstr "Restartujte prosím síť příkazem '/sbin/service network restart'"
+
+#: ../network-scripts/ifup-ipv6:118
+msgid ""
+"Global IPv6 forwarding is disabled in configuration, but not currently "
+"disabled in kernel"
+msgstr ""
+"Globální IPv6 forwarding je zakázán v nastavení, ale není zakázán v jádře"
+
+#: ../network-scripts/ifup-ipv6:157
+msgid ""
+"Cannot enable IPv6 privacy method '$IPV6_PRIVACY', not supported by kernel"
+msgstr ""
+"Nelze povolit IPv6 privacy metodu '$IPV6_PRIVACY', protože není podporována "
+"jádrem"
+
+#: ../network-scripts/ifup-ipv6:182
+msgid "Device 'tun6to4' (from '$DEVICE') is already up, shutdown first"
+msgstr "Zařízení 'tun6to4' (na '$DEVICE') je aktivní, nejprve ho deaktivujte"
+
+#: ../network-scripts/ifup-ipv6:209
+msgid "Given IPv4 address '$ipv4addr' is not globally usable"
+msgstr "Zadaná IPv4 adresa '$ipv4addr' není globálně použitelná"
+
+#: ../network-scripts/ifup-ipv6:222
+msgid ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+msgstr ""
+"Nastavení IPv6to4 potřebuje IPv4 adresu buď na příslušném zařízení nebo "
+"zadanou jinak"
+
+#: ../network-scripts/ifup-ipv6:237
+msgid ""
+"Warning: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+msgstr ""
+"Varování: nastavená MTU '$IPV6TO4_MTU' pro 6to4 překračuje maximum "
+"'$tunnelmtu', ignorováno"
+
+#: ../network-scripts/ifup-ipv6:251
+msgid "Warning: interface 'tun6to4' does not support 'IPV6_DEFAULTGW', ignored"
+msgstr "Varování: rozhraní 'tun6to4' nepodporuje 'IPV6_DEFAULTGW', ignorováno"
+
+#: ../network-scripts/ifup-ipv6:287
+msgid ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+msgstr "Používání 6to4 a RADVD IPv6 forwardingu by mělo být povoleno, ale není"
+
+#: ../network-scripts/ifup-ipv6:300
+msgid "Error occurred while calculating the IPv6to4 prefix"
+msgstr "Při výpočtu IPv6to4 prefixu nastala chyba"
+
+#: ../network-scripts/ifup-ipv6:303
+msgid "radvd control enabled, but config is not complete"
+msgstr "radvd povoleno, ale konfigurace není kompletní"
+
+#: ../network-scripts/ifup-ipv6:310
+msgid "6to4 configuration is not valid"
+msgstr "nastavení 6to4 není platné"
+
+#: ../network-scripts/ifup-post:114
+msgid "/etc/resolv.conf was not updated: failed to create temporary file"
+msgstr ""
+"/etc/resolv.conf nebyl aktualizován: chyba při vytváření dočasného souboru"
+
+#: ../network-scripts/ifup-routes:8
+msgid "usage: ifup-routes <net-device> [<nickname>]"
+msgstr "použití: ifup-routes <síťové-zařízení> [<přezdívka>]"
+
+#: ../network-scripts/ifup-routes:26 ../network-scripts/ifup-routes:47
+msgid "Failed to add route ${line}, using ip route replace instead."
+msgstr ""
+"Nepodařilo se přidat routu ${line}, místo toho použijte ip route replace."
+
+#: ../network-scripts/ifup-sit:63
+msgid "Missing remote IPv4 address of tunnel, configuration is not valid"
+msgstr "Chybí vzdálená IPv4 adresa tunelu, nastavení není platné"
+
+#: ../network-scripts/ifup-sit:71
+msgid "Device '$DEVICE' is already up, please shutdown first"
+msgstr "Zařízení '$DEVICE' je již aktivováno, nejprve jej deaktivujte"
+
+#: ../network-scripts/ifup-tunnel:61
+msgid "Invalid tunnel type $TYPE"
+msgstr "Neplatný typ tunelu $TYPE"
+
+#: ../network-scripts/init.ipv6-global:161
+msgid "Usage: $0 {start|stop|reload|restart|showsysctl}"
+msgstr "Použití: $0 {start|stop|reload|restart|showsysctl}"
+
+#: ../network-scripts/network-functions:405
+msgid ""
+"Both 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' and 'DHCP_FQDN=${DHCP_FQDN}' are "
+"configured... Using DHCP_FQDN."
+msgstr ""
+"'DHCP_HOSTNAME=${DHCP_HOSTNAME}' a 'DHCP_FQDN=${DHCP_FQDN}' jsou "
+"nakonfigurovány... Používají DHCP_FQDN."
+
+#: ../network-scripts/network-functions:581
+msgid "Failed to set value '$value' [mode] to ${DEVICE} bonding device"
+msgstr ""
+"Chyba při nastavování hodnoty '$value' [mode] na ${DEVICE} bonding zařízení"
+
+#: ../network-scripts/network-functions:587
+msgid "Failed to set value '$value' [miimon] to ${DEVICE} bonding device"
+msgstr ""
+"Chyba při nastavování hodnoty '$value' [miimon] na ${DEVICE} bonding zařízení"
+
+#: ../network-scripts/network-functions:607
+msgid ""
+"Failed to set '$arp_ip' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+"Chyba při nastavování '$arp_ip' hodnoty [arp_ip_target] na ${DEVICE} bonding "
+"zařízení"
+
+#: ../network-scripts/network-functions:615
+msgid ""
+"Failed to set '$value' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+"Chyba při nastavování '$value' hodnoty [arp_ip_target] na ${DEVICE} bonding "
+"zařízení"
+
+#: ../network-scripts/network-functions:620
+msgid "Failed to set '$value' value [$key] to ${DEVICE} bonding device"
+msgstr ""
+"Chyba při nastavování '$value' hodnoty [$key] na ${DEVICE} bonding zařízení"
+
+#: ../network-scripts/network-functions:696
+msgid "DEBUG     "
+msgstr "LADĚNÍ     "
+
+#: ../network-scripts/network-functions:699
+msgid "ERROR     "
+msgstr "CHYBA     "
+
+#: ../network-scripts/network-functions:702
+msgid "WARN      "
+msgstr "VAROVÁNÍ      "
+
+#: ../network-scripts/network-functions:705
+msgid "INFO      "
+msgstr "INFO      "
+
+#: ../network-scripts/network-functions-ipv6:58
+msgid "Missing parameter 'IPv6-network' (arg 1)"
+msgstr "Chybí parametr 'síť IPv6' (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:63
+msgid "Missing parameter 'IPv6-gateway' (arg 2)"
+msgstr "Chybí parametr 'brána-IPv6 (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:88
+msgid ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+msgstr ""
+"'K počítači neexistuje cesta' při přidávání směrování '$networkipv6' na "
+"bránu '$gatewayipv6' pomocí zařízení '$device'"
+
+#: ../network-scripts/network-functions-ipv6:91
+msgid "Unknown error"
+msgstr "Neznámá chyba"
+
+#: ../network-scripts/network-functions-ipv6:116
+msgid "Tunnel device 'sit0' enabling didn't work"
+msgstr "Povolení zařízení tunelu 'sit0' nefungovalo"
+
+#: ../network-scripts/network-functions-ipv6:142
+#: ../network-scripts/network-functions-ipv6:205
+#: ../network-scripts/network-functions-ipv6:234
+#: ../network-scripts/network-functions-ipv6:314
+#: ../network-scripts/network-functions-ipv6:429
+#: ../network-scripts/network-functions-ipv6:491
+#: ../network-scripts/network-functions-ipv6:525
+#: ../network-scripts/network-functions-ipv6:567
+#: ../network-scripts/network-functions-ipv6:645
+#: ../network-scripts/network-functions-ipv6:703
+#: ../network-scripts/network-functions-ipv6:756
+#: ../network-scripts/network-functions-ipv6:795
+#: ../network-scripts/network-functions-ipv6:923
+#: ../network-scripts/network-functions-ipv6:1056
+msgid "Missing parameter 'device' (arg 1)"
+msgstr "Chybí parametr 'zařízení' (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:147
+msgid "Missing parameter 'IPv6-address' (arg 2)"
+msgstr "Chybí parametr 'adresa IPv6' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:161
+msgid "Device '$device' doesn't exist"
+msgstr "Zařízení '$device' neexistuje"
+
+#: ../network-scripts/network-functions-ipv6:167
+msgid "Device '$device' enabling didn't work"
+msgstr "Povolení zařízení '$device' nefungovalo"
+
+#: ../network-scripts/network-functions-ipv6:188
+msgid "Cannot add IPv6 address '$address' on dev '$device'"
+msgstr "Nelze přidat IPv6 adresu '$address' k zařízení '$device'"
+
+#: ../network-scripts/network-functions-ipv6:345
+msgid "Missing parameter 'IPv4 address' (arg 1)"
+msgstr "Chybí parametr 'adresa IPv4' (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:385
+msgid "Missing parameter 'address' (arg 1)"
+msgstr "Chybí parametr 'adresa' (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:396
+msgid "Given address '$addr' is not a global IPv4 one (arg 1)"
+msgstr "Zadaná adresa '$addr' není globální adresa IPv4 (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:400
+msgid "Given address '$addr' is not a valid IPv4 one (arg 1)"
+msgstr "Zadaná adresa '$addr' není platná adresa IPv4 (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:434
+msgid "Missing parameter 'global IPv4 address' (arg 2)"
+msgstr "Chybí parametr 'globální adresa IPv4' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:440
+#: ../network-scripts/network-functions-ipv6:497
+#: ../network-scripts/network-functions-ipv6:536
+msgid "Given device '$device' is not supported (arg 1)"
+msgstr "Zadané zařízení '$device' není podporováno (param 1)"
+
+#: ../network-scripts/network-functions-ipv6:530
+msgid "Missing parameter 'local IPv4 address' (arg 2)"
+msgstr "Chybí parametr 'místní adresa IPv4' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:572
+msgid "Missing parameter 'IPv4-tunnel address' (arg 2)"
+msgstr "Chybí parametr 'adresa tunelu IPv4' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:592
+msgid ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+msgstr ""
+"Zadaná vzdálená adresa '$addressipv4tunnel' na zařízení tunelu '$device' je "
+"již nastavena na zařízení '$devnew'"
+
+#: ../network-scripts/network-functions-ipv6:605
+msgid "Tunnel device '$device' creation didn't work"
+msgstr "Vytvoření zařízení tunelu '$device' nebylo úspěšné"
+
+#: ../network-scripts/network-functions-ipv6:612
+msgid "Tunnel device '$device' bringing up didn't work"
+msgstr "Aktivace zařízení tunelu '$device' nefungovala"
+
+#: ../network-scripts/network-functions-ipv6:708
+msgid "Missing parameter 'selection' (arg 2)"
+msgstr "Chybí parametr 'výběr' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:712
+msgid "Unsupported selection '$selection' specified (arg 2)"
+msgstr "Zadán nepodporovaný výběr '$selection' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:800
+msgid "Missing parameter 'IPv6 MTU' (arg 2)"
+msgstr "Chybí parametr 'MTU IPv6' (param 2)"
+
+#: ../network-scripts/network-functions-ipv6:806
+msgid "Given IPv6 MTU '$ipv6_mtu' is out of range"
+msgstr "Zadaná IPv6 MTU '$ipv6_mtu' je mimo rozsah"
+
+#: ../network-scripts/network-functions-ipv6:843
+msgid "Given IPv6 default gateway '$address' is not in proper format"
+msgstr "Zadaná implicitní brána '$address' není ve správném formátu"
+
+#: ../network-scripts/network-functions-ipv6:849
+msgid ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+msgstr ""
+"Zadaná implicitní brána IPv6 '$address' má definovaný rozsah "
+"'$device_scope', zadané zařízení implicitní brány '$device' nebude použito"
+
+#: ../network-scripts/network-functions-ipv6:857
+msgid ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+msgstr ""
+"Zadaná implicitní brána IPv6 '$address' je místní pro síť, ale není určen "
+"rozsah ani zařízení brány"
+
+#: ../network-scripts/network-functions-ipv6:897
+msgid "Given IPv6 default device '$device' requires an explicit nexthop"
+msgstr ""
+"Zadané implicitní IPv6 zařízení '$device' vyžaduje explicitní zadání adresy "
+"dalšího skoku"
+
+#: ../network-scripts/network-functions-ipv6:900
+msgid "Given IPv6 default device '$device' doesn't exist or isn't up"
+msgstr "Zadané implicitní zařízení IPv6 '$device' neexistuje nebo není aktivní"
+
+#: ../network-scripts/network-functions-ipv6:906
+msgid "No parameters given to setup a default route"
+msgstr "Pro nastavení implicitního směrování nebyly zadány parametry"
+
+#: ../network-scripts/network-functions-ipv6:961
+msgid "No reason given for sending trigger to radvd"
+msgstr "Nezadán důvod pro odeslání signálu radvd"
+
+#: ../network-scripts/network-functions-ipv6:966
+msgid "Unsupported reason '$reason' for sending trigger to radvd"
+msgstr "Nepodporovaný důvod '$reason' pro poslání signálu radvd"
+
+#: ../network-scripts/network-functions-ipv6:995
+msgid "Unsupported mechanism '$mechanism' for sending trigger to radvd"
+msgstr "Nepodporovaný mechanismus '$mechanism' pro posílání signálu radvd"
+
+#: ../network-scripts/network-functions-ipv6:1007
+msgid "Given pidfile '$pidfile' doesn't exist, cannot send trigger to radvd"
+msgstr "Zadaný soubor PID '$pidfile' neexistuje, nelze poslat signál radvd"
+
+#: ../network-scripts/network-functions-ipv6:1016
+msgid "Pidfile '$pidfile' is empty, cannot send trigger to radvd"
+msgstr "Soubor PID '$pidfile' je prázdný, nemohu poslat signál radvd"
+
+#: ../network-scripts/network-functions-ipv6:1033
+msgid "radvd not (properly) installed, triggering failed"
+msgstr "radvd není (správně) nainstalován, poslání signálu selhalo"
+
+#: ../network-scripts/network-functions-ipv6:1068
+msgid "Duplicate Address Detection: Duplicate addresses detected"
+msgstr "Detekce duplicitních adres: zjištěny duplicitní adresy"
+
+#: ../network-scripts/network-functions-ipv6:1069
+msgid "Duplicate Address Detection: Please, fix your network configuration"
+msgstr "Detekce duplicitních adres: Opravte prosím svou konfiguraci sítě"
+
+#: ../network-scripts/network-functions-ipv6:1073
+msgid ""
+"Waiting for interface ${device} IPv6 address(es) to leave the 'tentative' "
+"state"
+msgstr ""
+"Čekání na rozhraní ${device} IPv6 adresy pro opuštění 'provizorního' stavu"
+
+#: ../network-scripts/network-functions-ipv6:1081
+msgid "Some IPv6 address(es) of ${device} remain still in 'tentative' state"
+msgstr ""
+"Některé IPv6 adresy rozhraní ${device} zůstávají stále v 'provizorním' stavu"
+
+#: ../network-scripts/network-functions-ipv6:1082
+#, fuzzy
+#| msgid ""
+#| "Run 'ip -6 addr show dev ${device} scope global tentative' to see more"
+msgid "Run 'ip -6 addr show dev ${device} tentative' for more info"
+msgstr ""
+"Pro další informace spustit 'ip -6 addr show dev ${device} scope global "
+"tentative'"
+
+#: ../usr/sbin/service:50 ../usr/sbin/service:66
+msgid "Support for initscripts isn't installed"
+msgstr "Podpora pro initscripty není nainstalována"
+
+#: ../usr/sbin/service:108
+#, fuzzy
+#| msgid ""
+#| "Redirecting to /bin/systemctl ${ACTION}${OPTIONS:+ }${OPTIONS} "
+#| "${SERVICE_MANGLED}"
+msgid ""
+"Redirecting to /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:"
+"+ }${OPTIONS}"
+msgstr ""
+"Přesměrování do /bin/systemctl ${ACTION}${OPTIONS:+ }${OPTIONS} "
+"${SERVICE_MANGLED}"
+
+#: ../usr/sbin/service:111
+#, fuzzy
+#| msgid ""
+#| "The service command supports only basic LSB actions (start, stop, "
+#| "restart, try-restart, reload, force-reload, status). For other actions, "
+#| "please try to use systemctl."
+msgid ""
+"The service command supports only basic LSB actions (start, stop, restart, "
+"try-restart, reload, reload-or-restart, try-reload-or-restart, force-reload, "
+"status, condrestart). For other actions, please try to use systemctl."
+msgstr ""
+"Příkazová služba podporuje pouze základní LSB akce (start, stop, restart, "
+"try-restart, reload, force-reload, status). U ostatních akcí zkuste použít "
+"systemctl."
+
+#: ../etc/rc.d/init.d/functions:33
+msgid "Starting $prog (via systemctl): "
+msgstr "Spouští se $prog (prostřednictvím systemctl): "
+
+#: ../etc/rc.d/init.d/functions:36
+msgid "Stopping $prog (via systemctl): "
+msgstr "Ukončování démona $prog (prostřednictvím systemctl): "
+
+#: ../etc/rc.d/init.d/functions:39
+msgid "Reloading $prog configuration (via systemctl): "
+msgstr "Obnovní konfigurace $prog (prostřednictvím systemctl): "
+
+#: ../etc/rc.d/init.d/functions:42
+msgid "Restarting $prog (via systemctl): "
+msgstr "Restartování $prog (prostřednictvím systemctl): "
+
+#: ../etc/rc.d/init.d/functions:52
+msgid "Reloading systemd: "
+msgstr "Obnovení systemd: "
+
+#: ../etc/rc.d/init.d/functions:236 ../etc/rc.d/init.d/functions:274
+msgid "$0: Usage: daemon [+/-nicelevel] {program}"
+msgstr "$0: Použití: daemon [+/-nicelevel] {program}"
+
+#: ../etc/rc.d/init.d/functions:304
+msgid "$base startup"
+msgstr "$base startuje"
+
+#: ../etc/rc.d/init.d/functions:314 ../etc/rc.d/init.d/functions:324
+#: ../etc/rc.d/init.d/functions:333
+#, fuzzy
+#| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+msgid ""
+"Usage: killproc [-p {pidfile} [-b {binary}]] [-d {delay}] {program} [-signal]"
+msgstr "Použití: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#: ../etc/rc.d/init.d/functions:323 ../etc/rc.d/init.d/functions:450
+msgid "-b option can be used only with -p"
+msgstr "volba -b může být použita pouze s -p"
+
+#: ../etc/rc.d/init.d/functions:353 ../etc/rc.d/init.d/functions:363
+#: ../etc/rc.d/init.d/functions:378
+msgid "$base shutdown"
+msgstr "ukončování $base"
+
+#: ../etc/rc.d/init.d/functions:369
+msgid "$base $killlevel"
+msgstr "$base $killlevel"
+
+#: ../etc/rc.d/init.d/functions:396
+msgid "Usage: pidfileofproc {program}"
+msgstr "Použití: pidfileofproc {program}"
+
+#: ../etc/rc.d/init.d/functions:411
+#, fuzzy
+#| msgid "Usage: pidofproc [-p pidfile] {program}"
+msgid "Usage: pidofproc [-p {pidfile}] {program}"
+msgstr "Použití: pidofproc [-p pid_soubor] {program}"
+
+#: ../etc/rc.d/init.d/functions:437 ../etc/rc.d/init.d/functions:451
+#, fuzzy
+#| msgid "Usage: status -p pidfile -b binary program"
+msgid "Usage: status [-p {pidfile}] [-l {lockfile}] [-b {binary}] {program}"
+msgstr "Použití: status -p pid_soubor -b binární program"
+
+#: ../etc/rc.d/init.d/functions:478 ../etc/rc.d/init.d/functions:484
+msgid "${base} (pid $pid) is running..."
+msgstr "${base} (pid $pid) běží..."
+
+#: ../etc/rc.d/init.d/functions:488
+msgid "${base} dead but pid file exists"
+msgstr "${base} neběží, ale PID soubor existuje"
+
+#: ../etc/rc.d/init.d/functions:492
+msgid "${base} status unknown due to insufficient privileges."
+msgstr "stav ${base} není znám kvůli nedostatečným oprávněním."
+
+#: ../etc/rc.d/init.d/functions:501
+msgid "${base} dead but subsys locked"
+msgstr "${base} neběží, ale subsystém je zamčen"
+
+#: ../etc/rc.d/init.d/functions:504
+msgid "${base} is stopped"
+msgstr "${base} je zastaven"
+
+#: ../etc/rc.d/init.d/functions:512
+msgid "  OK  "
+msgstr "  OK  "
+
+#: ../etc/rc.d/init.d/functions:523
+msgid "FAILED"
+msgstr "SELHALO"
+
+#: ../etc/rc.d/init.d/functions:534
+msgid "PASSED"
+msgstr "PROBĚHLO"
+
+#: ../etc/rc.d/init.d/functions:545
+msgid "WARNING"
+msgstr "VAROVÁNÍ"
+
+#: ../etc/rc.d/init.d/functions:595
+msgid "$STRING"
+msgstr "$STRING"
+
+#: ../etc/rc.d/init.d/network:52
+msgid ""
+"You are using 'network' service provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+"Používáte 'network' službu z 'network-scripts' balíčku, který je nyní "
+"zastaralý."
+
+#: ../etc/rc.d/init.d/network:54
+msgid ""
+"It is advised to switch to 'NetworkManager' instead for network management."
+msgstr "Je doporučeno místo něj používat 'NetworkManager', pro správu sítě."
+
+#: ../etc/rc.d/init.d/network:77
+msgid "Bringing up loopback interface: "
+msgstr "Aktivování rozhraní loopback: "
+
+#: ../etc/rc.d/init.d/network:81
+msgid "No 802.1Q VLAN support available in kernel."
+msgstr "V jádře není k dispozici podpora 802.1Q VLAN."
+
+#: ../etc/rc.d/init.d/network:132 ../etc/rc.d/init.d/network:139
+msgid "Bringing up interface $i: "
+msgstr "Aktivuji rozhraní $i: "
+
+#: ../etc/rc.d/init.d/network:151
+msgid "Legacy static-route support not available: /sbin/route not found"
+msgstr "Podpora statického trasování není k dispozici: /sbin/route nenalezen"
+
+#: ../etc/rc.d/init.d/network:178
+msgid ""
+"Target is not reachable, but timeout was already reached. Continuing anyway."
+msgstr "Cíl není dosažitelný, bylo dosaženo časového limitu. Přesto pokračuji."
+
+#: ../etc/rc.d/init.d/network:189
+msgid "rootfs or /usr is on network filesystem, leaving network up"
+msgstr "rootfs nebo /usr je síťový souborový systém, nechávám síť zapnutou"
+
+#: ../etc/rc.d/init.d/network:199
+msgid "system is shutting down, leaving interfaces up as requested"
+msgstr ""
+"systém se vypíná, síťová rozhraní jsou ponechána zapnutá, jak bylo požadováno"
+
+#: ../etc/rc.d/init.d/network:249
+msgid "Shutting down interface $i: "
+msgstr "Deaktivování rozhraní $i: "
+
+#: ../etc/rc.d/init.d/network:255
+msgid "Shutting down loopback interface: "
+msgstr "Deaktivace rozhraní loopback: "
+
+#: ../etc/rc.d/init.d/network:267
+msgid "Configured devices:"
+msgstr "Nastavená zařízení:"
+
+#: ../etc/rc.d/init.d/network:270
+msgid "Currently active devices:"
+msgstr "Právě aktivní zařízení:"
+
+#: ../etc/rc.d/init.d/network:280
+msgid "Usage: $0 {start|stop|status|restart|force-reload}"
+msgstr "Použití: $0 {start|stop|status|restart|force-reload}"
+
+#~ msgid "Usage: killproc -p pidfile -b binary program"
+#~ msgstr "Použití: killproc -p pid_soubor -b binární program"
+
+#~ msgid "Usage: status [-p pidfile] {program}"
+#~ msgstr "Použití: status [-p pid_soubor] {program}"
+
+#~ msgid "Server address not specified in /etc/sysconfig/netconsole"
+#~ msgstr "Adresa serveru není uvedena v /etc/sysconfig/netconsole"
+
+#~ msgid "Usage: $0 {start|stop|status|restart|condrestart}"
+#~ msgstr "Použití: $0 {start|stop|status|restart|condrestart}"
+
+#~ msgid "netconsole module loaded"
+#~ msgstr "modul netconsole zaveden"
+
+#~ msgid "Bridge support not available: brctl not found"
+#~ msgstr "Podpora bridge není k dispozici: brctl nenalezen"
+
+#~ msgid "Initializing netconsole"
+#~ msgstr "Inicializování netconsole: "
+
+#~ msgid "netconsole module not loaded"
+#~ msgstr "modul netconsole není zaveden"
+
+#~ msgid "Usage: sys-unconfig"
+#~ msgstr "Použití: sys-unconfig"
+
+#~ msgid "Disabling netconsole"
+#~ msgstr "Netconsole je zakázána"
+
+#~ msgid "netconsole: can't resolve MAC address of $SYSLOGADDR"
+#~ msgstr "netconsole: nelze přeložit MAC adresu $SYSLOGADDR"
+
+#~ msgid "Unable to resolve IP address specified in /etc/sysconfig/netconsole"
+#~ msgstr "Nelze vyřešit IP adresy uvedené v /etc/sysconfig/netconsole"

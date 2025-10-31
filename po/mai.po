@@ -1,0 +1,821 @@
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Sangeeta Kumari <sangeeta09@gmail.com>, 2009
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2015-03-13 03:03+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Maithili (http://www.transifex.com/projects/p/fedora/language/"
+"mai/)\n"
+"Language: mai\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../network-scripts/ifdown:15 ../network-scripts/ifdown:22
+msgid "usage: ifdown <configuration>"
+msgstr "प्रयोग: ifdown <युक्ति नाम>"
+
+#: ../network-scripts/ifdown:33 ../network-scripts/ifup:49
+msgid "Users cannot control this device."
+msgstr "प्रयोक्ता एहि युक्ति केँ नियंत्रित नहि कए सकैत."
+
+#: ../network-scripts/ifdown:40
+msgid ""
+"You are using 'ifdown' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifdown:41 ../network-scripts/ifup:57
+#: ../etc/rc.d/init.d/network:53
+msgid "'network-scripts' will be removed from distribution in near future."
+msgstr ""
+
+#: ../network-scripts/ifdown:42 ../network-scripts/ifup:58
+msgid ""
+"It is advised to switch to 'NetworkManager' instead - it provides 'ifup/"
+"ifdown' scripts as well."
+msgstr ""
+
+#: ../network-scripts/ifdown-eth:46 ../network-scripts/ifdown-eth:52
+msgid ""
+"Device ${DEVICE} has MAC address ${FOUNDMACADDR}, instead of configured "
+"address ${HWADDR}. Ignoring."
+msgstr ""
+"युक्ति ${DEVICE} क' पास MAC पता अछि ${FOUNDMACADDR}, विन्यस्त पता क' बदले "
+"${HWADDR}. नजरअंदाज कए रहल अछि."
+
+#: ../network-scripts/ifdown-routes:6
+#, fuzzy
+msgid "usage: ifdown-routes <net-device> [<nickname>]"
+msgstr "प्रयोग: ifup-routes <जाल-युक्ति> [<उपनाम>]"
+
+#: ../network-scripts/ifdown-sit:40 ../network-scripts/ifup-sit:58
+msgid ""
+"Device '$DEVICE' isn't supported here, use IPV6_AUTOTUNNEL setting and "
+"restart (IPv6) networking"
+msgstr ""
+"ईां युक्ति '$DEVICE' सहायक नहि अछि.  IPV6_AUTOTUNNEL जमावट क' प्रयोग करू आओर "
+"(IPv6) संजाल केँ पुनःप्रारंभ  करू "
+
+#: ../network-scripts/ifdown-tunnel:36 ../network-scripts/ifup-tunnel:68
+msgid "Device '$DEVICE' isn't supported as a valid GRE device name."
+msgstr "युक्ति '$DEVICE' समर्थित नहि अछि एकटा वैध GRE युक्ति नाम क' रूपेँं."
+
+#: ../network-scripts/ifup:30 ../network-scripts/ifup:38
+msgid "Usage: ifup <configuration>"
+msgstr "प्रयोग: ifup <युक्ति नाम>"
+
+#: ../network-scripts/ifup:37
+msgid "$0: configuration for ${1} not found."
+msgstr "$0: विन्यास क' लेल ${1} नहि भेटल."
+
+#: ../network-scripts/ifup:56
+msgid ""
+"You are using 'ifup' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifup:87 ../network-scripts/ifup:102
+msgid "PHYSDEV should be set for device ${DEVICE}"
+msgstr "युक्ति ${DEVICE}  क'लेल  PHYSDEV सेट कएल जएनाइ चाही."
+
+#: ../network-scripts/ifup:110
+msgid "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+msgstr "युक्ति ${DEVICE} क' लेल कर्नल मे कोनो 802.1Q VLAN समर्थन उपलब्ध नहि अछि"
+
+#: ../network-scripts/ifup:117 ../network-scripts/ifup-eth:134
+msgid ""
+"$alias device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "$alias युक्ति ${DEVICE} उपस्थित दिखाई नहि देत, संस्थापन देर कए रहल अछि."
+
+#: ../network-scripts/ifup:137
+msgid "ERROR: could not add vlan ${VID} as ${DEVICE} on dev ${PHYSDEV}"
+msgstr "दोष: ${DEVICE} जहिना, ${PHYSDEV} युक्ति पर vlan ${VID} केँ जोड़ नहि सकल "
+
+#: ../network-scripts/ifup-aliases:67
+msgid "usage: ifup-aliases <net-device> [<parent-config>]\n"
+msgstr "प्रयोग: ifup-aliases <net-device> [<parent-config>]\n"
+
+#: ../network-scripts/ifup-aliases:119
+msgid "Missing config file $PARENTCONFIG."
+msgstr "$PARENTCONFIG विन्यास फाइल गुम गई अछि."
+
+#: ../network-scripts/ifup-aliases:169
+msgid "error in $FILE: invalid alias number"
+msgstr "$FILE मे गलती: अवैध उपनाम त्रुटि"
+
+#: ../network-scripts/ifup-aliases:179
+msgid "error in $FILE: already seen ipaddr $IPADDR in $ipseen"
+msgstr "$FILE मे त्रुटि:  ipaddr $IPADDR केँ पहिने सँ $ipseen मे देख गेल अछि"
+
+#: ../network-scripts/ifup-aliases:184
+msgid "error in $FILE: already seen device $parent_device:$DEVNUM in $devseen"
+msgstr "$FILE मे त्रुटि: $parent_device:$DEVNUM केँ पहिने सँ $devseen मे देख गेल अछि"
+
+#: ../network-scripts/ifup-aliases:193
+msgid "error in $FILE: didn't specify device or ipaddr"
+msgstr "$FILE मे दोष: युक्ति अथवा ipaddr निर्दिष्ट नहि कएल"
+
+#: ../network-scripts/ifup-aliases:198
+#, fuzzy
+msgid "error iN $FILE: didn't specify netmask or prefix"
+msgstr "$FILE मे दोष: युक्ति अथवा ipaddr निर्दिष्ट नहि कएल"
+
+#: ../network-scripts/ifup-aliases:238 ../network-scripts/ifup-aliases:249
+msgid "error in ifcfg-${parent_device}: files"
+msgstr "ifcfg-${parent_device}में त्रुटि:फाइल "
+
+#: ../network-scripts/ifup-aliases:269
+msgid ""
+"Determining if IP address ${IPADDR} is already in use for device "
+"${parent_device}…"
+msgstr ""
+
+#: ../network-scripts/ifup-aliases:273
+msgid "Error, some other host ($ARPINGMAC) already uses address ${IPADDR}."
+msgstr ""
+
+#: ../network-scripts/ifup-aliases:335
+msgid "error in $FILE: IPADDR_START and IPADDR_END don't agree"
+msgstr "दोष अछि $FILE में: IPADDR_START आओर IPADDR_END सहमत नहि"
+
+#: ../network-scripts/ifup-aliases:340
+msgid "error in $FILE: IPADDR_START greater than IPADDR_END"
+msgstr "$FILE मे त्रुटि: IPADDR_START सँ IPADDR_END पैघ अछि"
+
+#: ../network-scripts/ifup-ctc:36
+msgid "ERROR: ${DEVICE} did not come up!"
+msgstr ""
+
+#: ../network-scripts/ifup-eth:43
+msgid "Device ${DEVICE} has different MAC address than expected, ignoring."
+msgstr "${DEVICE} युक्ति क' MAC पता अपेक्षित सँ अलग अछि. त्यागल जाए रहल अछि."
+
+#: ../network-scripts/ifup-eth:51
+msgid "cannot create veth without peer"
+msgstr ""
+
+#: ../network-scripts/ifup-eth:127
+#, fuzzy
+#| msgid ""
+#| "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgid "Device name does not seem to be present."
+msgstr "युक्ति ${DEVICE}  मोजुद  नहि दिखैत अछि, आरंभीकरण मे देर कए रहल अछि."
+
+#: ../network-scripts/ifup-eth:136
+msgid "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "युक्ति ${DEVICE}  मोजुद  नहि दिखैत अछि, आरंभीकरण मे देर कए रहल अछि."
+
+#: ../network-scripts/ifup-eth:232
+msgid "Determining IP information for ${DEVICE}..."
+msgstr "${DEVICE} क' लेल IP जानकारी निश्चित कए रहल अछि..."
+
+#: ../network-scripts/ifup-eth:234
+msgid " failed; no link present.  Check cable?"
+msgstr "असफल; कोनो कड़ी उपस्थित नहि. केबल जाँचू?"
+
+#: ../network-scripts/ifup-eth:241 ../network-scripts/ifup-eth:389
+msgid " done."
+msgstr "कएल."
+
+#: ../network-scripts/ifup-eth:244 ../network-scripts/ifup-eth:391
+msgid " failed."
+msgstr "असफल."
+
+#: ../network-scripts/ifup-eth:268
+msgid "Failed to bring up ${DEVICE}."
+msgstr "${DEVICE} केँ चालू करब मे असफल."
+
+#: ../network-scripts/ifup-eth:299
+msgid ""
+"Error, some other host ($ARPINGMAC) already uses address ${ipaddr[$idx]}."
+msgstr ""
+
+#: ../network-scripts/ifup-eth:306
+#, fuzzy
+msgid "Error adding address ${ipaddr[$idx]} for ${DEVICE}."
+msgstr "${DEVICE} क' लेल ${IPADDR} पता जोड़बामे दोष."
+
+#: ../network-scripts/ifup-eth:333
+#, fuzzy
+msgid "Error adding default gateway ${GATEWAY} for ${DEVICE}."
+msgstr "${DEVICE} क' लेल ${IPADDR} पता जोड़बामे दोष."
+
+#: ../network-scripts/ifup-eth:338
+msgid "Error adding default gateway for ${REALDEVICE}."
+msgstr ""
+
+#: ../network-scripts/ifup-eth:376
+#, fuzzy
+msgid "Determining IPv6 information for ${DEVICE}..."
+msgstr "${DEVICE} क' लेल IP जानकारी निश्चित कए रहल अछि..."
+
+#: ../network-scripts/ifup-ippp:33
+msgid "ipppd does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:40
+msgid "isdnctrl does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:46
+msgid "cannot list ISDN devices"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:55 ../network-scripts/ifup-ippp:60
+msgid "$*"
+msgstr "$*"
+
+#: ../network-scripts/ifup-ippp:343
+msgid "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:349
+msgid "ipppd $options $netmask"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:374
+msgid ""
+"Warning: ipppd (kernel 2.4.x and below) doesn't support IPv6 using "
+"encapsulation 'syncppp'"
+msgstr ""
+"चेतावनी: 'syncppp' संरक्षित क' उपयोग करब सँ IPv6 क' समर्थन, ipppd (कर्नल 2.4.x आओर "
+"नीचे) नहि करैत अछि"
+
+#: ../network-scripts/ifup-ippp:376
+msgid "Warning: link doesn't support IPv6 using encapsulation 'rawip'"
+msgstr "चेतावनीः सरंक्षित 'rawip' क' उपयोग करब सँ कड़ी IPv6 क' समर्थन नहि करैत अछि"
+
+#: ../network-scripts/ifup-ipv6:99
+msgid ""
+"Global IPv6 forwarding is enabled in configuration, but not currently "
+"enabled in kernel"
+msgstr ""
+"वैश्विक IPv6 अग्रसारण विन्यास मे सक्रिय अछि, मुदा कर्नेल मे वर्तमान मे सक्रिय नहि अछि"
+
+#: ../network-scripts/ifup-ipv6:100 ../network-scripts/ifup-ipv6:119
+msgid "Please restart network with '/sbin/service network restart'"
+msgstr "कृपया सँजाल केँ '/sbin/service network restart' सँ पुनः आरंभ  करू "
+
+#: ../network-scripts/ifup-ipv6:118
+msgid ""
+"Global IPv6 forwarding is disabled in configuration, but not currently "
+"disabled in kernel"
+msgstr ""
+"वैश्विक IPv6 अग्रसारण क' विन्यास निष्क्रिय अछि. मुदा कर्नल मे वर्तमान मे निष्क्रिय नहि अछि"
+
+#: ../network-scripts/ifup-ipv6:157
+msgid ""
+"Cannot enable IPv6 privacy method '$IPV6_PRIVACY', not supported by kernel"
+msgstr ""
+"IPv6 गुप्त विधि '$IPV6_PRIVACY' सक्रिय नहि कए रहल अछि. कर्नेल  क'लेल  समर्थित नहि"
+
+#: ../network-scripts/ifup-ipv6:182
+msgid "Device 'tun6to4' (from '$DEVICE') is already up, shutdown first"
+msgstr "युक्ति  'tun6to4' ('$DEVICE' से) पहिने सँ अछि. पहिने बन्न  करू "
+
+#: ../network-scripts/ifup-ipv6:209
+msgid "Given IPv4 address '$ipv4addr' is not globally usable"
+msgstr "देल गेल IPv4 पता '$ipv4addr' वैश्विक रुप मे उपयोगी नहि अछि"
+
+#: ../network-scripts/ifup-ipv6:222
+msgid ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+msgstr ""
+"IPv6to4 विन्यास केँ संबंधित अंतरफलक पर, एकटा IPv4 पता अवश्य चाही अथवा नहि तँ निर्दिष्ट "
+"कएल भेल"
+
+#: ../network-scripts/ifup-ipv6:237
+msgid ""
+"Warning: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+msgstr ""
+"चेतावनी: 6to4  क'लेल  MTU '$IPV6TO4_MTU' विन्यस्त '$tunnelmtu' क'  बेसी सँ बेसी "
+"सीमा केँ पार जाएत अछि, अनदेखा कएल गेल."
+
+#: ../network-scripts/ifup-ipv6:251
+msgid "Warning: interface 'tun6to4' does not support 'IPV6_DEFAULTGW', ignored"
+msgstr "चेतावनीः अंतरफलक 'tun6to4', 'IPV6_DEFAULTGW' केँ सहायता नहि करत, त्यागू"
+
+#: ../network-scripts/ifup-ipv6:287
+msgid ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+msgstr ""
+"6to4 आओर RADVD IPv6 अग्रसारण क' प्रयोग केँ सामान्यतः समर्थ अछि. मुदा आब नहि अछि"
+
+#: ../network-scripts/ifup-ipv6:300
+msgid "Error occurred while calculating the IPv6to4 prefix"
+msgstr "IPv6to4 उपसर्ग क' परिकलन करैत बेला दोष उत्पन्न भेल"
+
+#: ../network-scripts/ifup-ipv6:303
+msgid "radvd control enabled, but config is not complete"
+msgstr "radvd नियंत्रण समर्थ अछि. मुदा विन्यास पूर्ण नहि अछि"
+
+#: ../network-scripts/ifup-ipv6:310
+msgid "6to4 configuration is not valid"
+msgstr "6to4 विन्यासन उचित नहि अछि"
+
+#: ../network-scripts/ifup-post:114
+msgid "/etc/resolv.conf was not updated: failed to create temporary file"
+msgstr ""
+
+#: ../network-scripts/ifup-routes:8
+msgid "usage: ifup-routes <net-device> [<nickname>]"
+msgstr "प्रयोग: ifup-routes <जाल-युक्ति> [<उपनाम>]"
+
+#: ../network-scripts/ifup-routes:26 ../network-scripts/ifup-routes:47
+msgid "Failed to add route ${line}, using ip route replace instead."
+msgstr ""
+
+#: ../network-scripts/ifup-sit:63
+msgid "Missing remote IPv4 address of tunnel, configuration is not valid"
+msgstr "टनल क' सुदूर  IPv4 पता गुम गेल, विन्यास मान्य नहि अछि"
+
+#: ../network-scripts/ifup-sit:71
+msgid "Device '$DEVICE' is already up, please shutdown first"
+msgstr "युक्ति '$DEVICE' पहिने सँ उप्पर अछि. कृपया पहिने बन्न  करू "
+
+#: ../network-scripts/ifup-tunnel:61
+msgid "Invalid tunnel type $TYPE"
+msgstr "अवैध टनेल प्रकार $TYPE"
+
+#: ../network-scripts/init.ipv6-global:161
+msgid "Usage: $0 {start|stop|reload|restart|showsysctl}"
+msgstr "प्रयोग: $0 {start|stop|reload|restart|showsysctl}"
+
+#: ../network-scripts/network-functions:405
+msgid ""
+"Both 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' and 'DHCP_FQDN=${DHCP_FQDN}' are "
+"configured... Using DHCP_FQDN."
+msgstr ""
+
+#: ../network-scripts/network-functions:581
+msgid "Failed to set value '$value' [mode] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:587
+msgid "Failed to set value '$value' [miimon] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:607
+msgid ""
+"Failed to set '$arp_ip' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:615
+msgid ""
+"Failed to set '$value' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:620
+msgid "Failed to set '$value' value [$key] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:696
+msgid "DEBUG     "
+msgstr ""
+
+#: ../network-scripts/network-functions:699
+msgid "ERROR     "
+msgstr ""
+
+#: ../network-scripts/network-functions:702
+msgid "WARN      "
+msgstr ""
+
+#: ../network-scripts/network-functions:705
+msgid "INFO      "
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:58
+msgid "Missing parameter 'IPv6-network' (arg 1)"
+msgstr "अनुपस्थित पैरामीटर 'IPv6-network' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:63
+msgid "Missing parameter 'IPv6-gateway' (arg 2)"
+msgstr "अनुपस्थित पैरामीटर 'IPv6-gateway' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:88
+msgid ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+msgstr ""
+"'$device' युक्ति क' मार्फत '$gatewayipv6' गेटवे क' द्वारा '$networkipv6' मेजखनान मे "
+"जोड़ने क' कोनो रास्ता नहि"
+
+#: ../network-scripts/network-functions-ipv6:91
+msgid "Unknown error"
+msgstr "अज्ञात त्रुटि"
+
+#: ../network-scripts/network-functions-ipv6:116
+msgid "Tunnel device 'sit0' enabling didn't work"
+msgstr "'sit0' टनल युक्ति क' सक्रिय कएनाइ काम नहि कएल"
+
+#: ../network-scripts/network-functions-ipv6:142
+#: ../network-scripts/network-functions-ipv6:205
+#: ../network-scripts/network-functions-ipv6:234
+#: ../network-scripts/network-functions-ipv6:314
+#: ../network-scripts/network-functions-ipv6:429
+#: ../network-scripts/network-functions-ipv6:491
+#: ../network-scripts/network-functions-ipv6:525
+#: ../network-scripts/network-functions-ipv6:567
+#: ../network-scripts/network-functions-ipv6:645
+#: ../network-scripts/network-functions-ipv6:703
+#: ../network-scripts/network-functions-ipv6:756
+#: ../network-scripts/network-functions-ipv6:795
+#: ../network-scripts/network-functions-ipv6:923
+#: ../network-scripts/network-functions-ipv6:1056
+msgid "Missing parameter 'device' (arg 1)"
+msgstr "अनुपस्थित पैरामीटर 'युक्ति' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:147
+msgid "Missing parameter 'IPv6-address' (arg 2)"
+msgstr "अनुपस्थित पैरामीटर 'IPv6-gateway' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:161
+msgid "Device '$device' doesn't exist"
+msgstr "'$device' युक्ति  मोजुद  नहि अछि"
+
+#: ../network-scripts/network-functions-ipv6:167
+msgid "Device '$device' enabling didn't work"
+msgstr "युक्ति '$device' क' सक्रिय कएनाइ काम नहि कएल"
+
+#: ../network-scripts/network-functions-ipv6:188
+msgid "Cannot add IPv6 address '$address' on dev '$device'"
+msgstr "dev '$device' पर IPv6 address '$address' जोड़ नहि सकैत"
+
+#: ../network-scripts/network-functions-ipv6:345
+msgid "Missing parameter 'IPv4 address' (arg 1)"
+msgstr "अनुपस्थित पैरामीटर 'IPv4 पता (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:385
+msgid "Missing parameter 'address' (arg 1)"
+msgstr "अनुपस्थित पैरामीटर पता (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:396
+msgid "Given address '$addr' is not a global IPv4 one (arg 1)"
+msgstr "देल गेल '$addr' पता एकटा वैश्विक IPv4 नहि अछि (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:400
+msgid "Given address '$addr' is not a valid IPv4 one (arg 1)"
+msgstr "देल गेल पता '$addr' एकटा वैध IPv4 नहि अछि (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:434
+msgid "Missing parameter 'global IPv4 address' (arg 2)"
+msgstr "'वैश्विक IPv4 पता' (arg 2) अनुपस्थित पैरामीटर "
+
+#: ../network-scripts/network-functions-ipv6:440
+#: ../network-scripts/network-functions-ipv6:497
+#: ../network-scripts/network-functions-ipv6:536
+msgid "Given device '$device' is not supported (arg 1)"
+msgstr "दी गई युक्ति '$device' समर्थित नहि अछि (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:530
+msgid "Missing parameter 'local IPv4 address' (arg 2)"
+msgstr "अनुपस्थित पैरामीटर 'local IPv4 पता (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:572
+msgid "Missing parameter 'IPv4-tunnel address' (arg 2)"
+msgstr "अनुपस्थित पैरामीटर 'IPv4-tunnel address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:592
+msgid ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+msgstr ""
+"टनल युक्ति '$device' पर देल गेल दूरस्थ पता '$addressipv4tunnel' पहिने सँ '$devnew' "
+"युक्ति पर विन्यस्त अछि."
+
+#: ../network-scripts/network-functions-ipv6:605
+msgid "Tunnel device '$device' creation didn't work"
+msgstr "टनल युक्ति '$device' निर्माण काम नहि कएल"
+
+#: ../network-scripts/network-functions-ipv6:612
+msgid "Tunnel device '$device' bringing up didn't work"
+msgstr "टनल युक्ति '$device' क' पोषण काम नहि कएल"
+
+#: ../network-scripts/network-functions-ipv6:708
+msgid "Missing parameter 'selection' (arg 2)"
+msgstr "अनुपस्थित पैरामीटर 'चयन' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:712
+msgid "Unsupported selection '$selection' specified (arg 2)"
+msgstr "असमर्थित '$selection' चयन निर्दिष्ट कएल गेल (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:800
+msgid "Missing parameter 'IPv6 MTU' (arg 2)"
+msgstr "अनुपस्थित पैरामीटर 'IPv6-MTU' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:806
+msgid "Given IPv6 MTU '$ipv6_mtu' is out of range"
+msgstr "देल गेल IPv6 MTU '$ipv6_mtu' परिसर क' बाहर अछि"
+
+#: ../network-scripts/network-functions-ipv6:843
+msgid "Given IPv6 default gateway '$address' is not in proper format"
+msgstr "देल गेल IPv6 पूर्वनिर्धारित गेटवे '$address' उचित प्रारूपेँ नहि अछि"
+
+#: ../network-scripts/network-functions-ipv6:849
+msgid ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+msgstr ""
+"देल गेल IPv6 पूर्वनिर्धारित गेटवे '$address' क' '$device_scope' स्कोप परिभाषित अछि. "
+"देल गेल पूर्वनिर्धारित गेटवे युक्ति '$device' प्रयोग नहि कएल जएताह."
+
+#: ../network-scripts/network-functions-ipv6:857
+msgid ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+msgstr ""
+"देल गेल IPv6 पूर्वनिर्धारित गेटवे '$address' लिंक लोकल अछि.  मुदा  कोनो स्कोप आओर गेटवे "
+"युक्ति निर्दिष्ट नहि अछि"
+
+#: ../network-scripts/network-functions-ipv6:897
+msgid "Given IPv6 default device '$device' requires an explicit nexthop"
+msgstr "दी गई IPv6 पूर्वनिर्धारित युक्ति '$device' केँ एकटा स्पष्ट नेक्सटहाप चाही"
+
+#: ../network-scripts/network-functions-ipv6:900
+msgid "Given IPv6 default device '$device' doesn't exist or isn't up"
+msgstr ""
+"देल गेल IPv6 पूर्वनिर्धारित युक्ति '$device'  मोजुद  नहि अछि अथवा शुरू नहि कएल गेल अछि"
+
+#: ../network-scripts/network-functions-ipv6:906
+msgid "No parameters given to setup a default route"
+msgstr "पूर्वनिर्धारित परिपथ सेटअप क' लेल कोनो पैरामीटर नहि देल गेल अछि"
+
+#: ../network-scripts/network-functions-ipv6:961
+msgid "No reason given for sending trigger to radvd"
+msgstr "radvd मे ट्रिगर भेजने क' लेल कोनो कारण नहि देल गेल अछि"
+
+#: ../network-scripts/network-functions-ipv6:966
+msgid "Unsupported reason '$reason' for sending trigger to radvd"
+msgstr "radvd मे ट्रिगर भेजने क' लेल '$reason' असमर्थित कारण"
+
+#: ../network-scripts/network-functions-ipv6:995
+msgid "Unsupported mechanism '$mechanism' for sending trigger to radvd"
+msgstr "radvd मे ट्रिगर भेजने क' लेल '$mechanism' असमर्थित यांत्रिकी"
+
+#: ../network-scripts/network-functions-ipv6:1007
+msgid "Given pidfile '$pidfile' doesn't exist, cannot send trigger to radvd"
+msgstr "दी गई पिडफाइल '$pidfile'  मोजुद  नहि अछि. radvd केँ ट्रिगर नहि भेज सकैत अछि"
+
+#: ../network-scripts/network-functions-ipv6:1016
+msgid "Pidfile '$pidfile' is empty, cannot send trigger to radvd"
+msgstr "पिडफाइल '$pidfile' रिक्त अछि. radvd केँ ट्रिगर नहि भेज सकैत अछि"
+
+#: ../network-scripts/network-functions-ipv6:1033
+msgid "radvd not (properly) installed, triggering failed"
+msgstr "radvd (नीक जहिना ) संस्थापित नहि अछि. ट्रिगरिंग विफल"
+
+#: ../network-scripts/network-functions-ipv6:1068
+msgid "Duplicate Address Detection: Duplicate addresses detected"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1069
+msgid "Duplicate Address Detection: Please, fix your network configuration"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1073
+msgid ""
+"Waiting for interface ${device} IPv6 address(es) to leave the 'tentative' "
+"state"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1081
+msgid "Some IPv6 address(es) of ${device} remain still in 'tentative' state"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1082
+msgid "Run 'ip -6 addr show dev ${device} tentative' for more info"
+msgstr ""
+
+#: ../usr/sbin/service:50 ../usr/sbin/service:66
+msgid "Support for initscripts isn't installed"
+msgstr ""
+
+#: ../usr/sbin/service:108
+msgid ""
+"Redirecting to /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:"
+"+ }${OPTIONS}"
+msgstr ""
+
+#: ../usr/sbin/service:111
+msgid ""
+"The service command supports only basic LSB actions (start, stop, restart, "
+"try-restart, reload, reload-or-restart, try-reload-or-restart, force-reload, "
+"status, condrestart). For other actions, please try to use systemctl."
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:33
+#, fuzzy
+msgid "Starting $prog (via systemctl): "
+msgstr "$progbase आरंभ कए रहल अछि:"
+
+#: ../etc/rc.d/init.d/functions:36
+#, fuzzy
+msgid "Stopping $prog (via systemctl): "
+msgstr "$prog डेमन रोक रहल अछि. "
+
+#: ../etc/rc.d/init.d/functions:39
+#, fuzzy
+msgid "Reloading $prog configuration (via systemctl): "
+msgstr "$prog विन्यास फेर लोड कए रहल अछि. "
+
+#: ../etc/rc.d/init.d/functions:42
+#, fuzzy
+msgid "Restarting $prog (via systemctl): "
+msgstr "$prog केँ फेर आरंभ कए रहल अछि. "
+
+#: ../etc/rc.d/init.d/functions:52
+msgid "Reloading systemd: "
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:236 ../etc/rc.d/init.d/functions:274
+msgid "$0: Usage: daemon [+/-nicelevel] {program}"
+msgstr "$0: प्रयोग: daemon [+/-nicelevel] {कार्यक्रम}"
+
+#: ../etc/rc.d/init.d/functions:304
+msgid "$base startup"
+msgstr "$base प्रारंभन"
+
+#: ../etc/rc.d/init.d/functions:314 ../etc/rc.d/init.d/functions:324
+#: ../etc/rc.d/init.d/functions:333
+#, fuzzy
+#| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+msgid ""
+"Usage: killproc [-p {pidfile} [-b {binary}]] [-d {delay}] {program} [-signal]"
+msgstr "प्रयोग: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#: ../etc/rc.d/init.d/functions:323 ../etc/rc.d/init.d/functions:450
+msgid "-b option can be used only with -p"
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:353 ../etc/rc.d/init.d/functions:363
+#: ../etc/rc.d/init.d/functions:378
+msgid "$base shutdown"
+msgstr "$base shutdown"
+
+#: ../etc/rc.d/init.d/functions:369
+msgid "$base $killlevel"
+msgstr "$आधार $मृतस्तर"
+
+#: ../etc/rc.d/init.d/functions:396
+msgid "Usage: pidfileofproc {program}"
+msgstr "प्रयोग: pidfileofproc {कार्यक्रम}"
+
+#: ../etc/rc.d/init.d/functions:411
+#, fuzzy
+#| msgid "Usage: pidofproc [-p pidfile] {program}"
+msgid "Usage: pidofproc [-p {pidfile}] {program}"
+msgstr "प्रयोग: pidofproc [-p pidfile] {program}"
+
+#: ../etc/rc.d/init.d/functions:437 ../etc/rc.d/init.d/functions:451
+#, fuzzy
+#| msgid "Usage: status [-p pidfile] {program}"
+msgid "Usage: status [-p {pidfile}] [-l {lockfile}] [-b {binary}] {program}"
+msgstr "प्रयोग: status [-p pidfile] {program}"
+
+#: ../etc/rc.d/init.d/functions:478 ../etc/rc.d/init.d/functions:484
+msgid "${base} (pid $pid) is running..."
+msgstr "${base} (pid $pid) चलि रहल अछि..."
+
+#: ../etc/rc.d/init.d/functions:488
+msgid "${base} dead but pid file exists"
+msgstr "${base} मृत मुदा pid फाइल जीवंत अछि"
+
+#: ../etc/rc.d/init.d/functions:492
+msgid "${base} status unknown due to insufficient privileges."
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:501
+msgid "${base} dead but subsys locked"
+msgstr "${base} मृत मुदा subsys तालित अछि"
+
+#: ../etc/rc.d/init.d/functions:504
+msgid "${base} is stopped"
+msgstr "${base} केँ रोकल गेल अछि"
+
+#: ../etc/rc.d/init.d/functions:512
+msgid "  OK  "
+msgstr "  ठीक  "
+
+#: ../etc/rc.d/init.d/functions:523
+msgid "FAILED"
+msgstr "असफल"
+
+#: ../etc/rc.d/init.d/functions:534
+msgid "PASSED"
+msgstr "सफल"
+
+#: ../etc/rc.d/init.d/functions:545
+msgid "WARNING"
+msgstr "चेतावनी"
+
+#: ../etc/rc.d/init.d/functions:595
+msgid "$STRING"
+msgstr "$STRING"
+
+#: ../etc/rc.d/init.d/network:52
+msgid ""
+"You are using 'network' service provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:54
+msgid ""
+"It is advised to switch to 'NetworkManager' instead for network management."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:77
+msgid "Bringing up loopback interface: "
+msgstr "लूपबेक अंतरफलक चालू कए रहल अछि:"
+
+#: ../etc/rc.d/init.d/network:81
+msgid "No 802.1Q VLAN support available in kernel."
+msgstr "कर्नल मे कोनो 802.1Q VLAN समर्थन उपलब्ध नहि अछि."
+
+#: ../etc/rc.d/init.d/network:132 ../etc/rc.d/init.d/network:139
+msgid "Bringing up interface $i: "
+msgstr "$i अंतरफलक केँ चालू कए रहल अछि:"
+
+#: ../etc/rc.d/init.d/network:151
+#, fuzzy
+msgid "Legacy static-route support not available: /sbin/route not found"
+msgstr "ब्रिज समर्थन उपलब्ध नहि अछि. brctl नहि पाएल गेल."
+
+#: ../etc/rc.d/init.d/network:178
+msgid ""
+"Target is not reachable, but timeout was already reached. Continuing anyway."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:189
+msgid "rootfs or /usr is on network filesystem, leaving network up"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:199
+msgid "system is shutting down, leaving interfaces up as requested"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:249
+msgid "Shutting down interface $i: "
+msgstr "$i अंतरफलक बन्न भए रहल अछि:"
+
+#: ../etc/rc.d/init.d/network:255
+msgid "Shutting down loopback interface: "
+msgstr "लूपबेक अंतरफलक केँ बन्न कए रहल अछि:"
+
+#: ../etc/rc.d/init.d/network:267
+msgid "Configured devices:"
+msgstr "विन्यस्त युक्तिः"
+
+#: ../etc/rc.d/init.d/network:270
+msgid "Currently active devices:"
+msgstr "वर्तमान सक्रिय युक्तिः"
+
+#: ../etc/rc.d/init.d/network:280
+#, fuzzy
+#| msgid "Usage: $0 {start|stop|status|restart|reload|force-reload}"
+msgid "Usage: $0 {start|stop|status|restart|force-reload}"
+msgstr "प्रयोग: $0 {start|stop|status|restart|reload|force-reload}"
+
+#, fuzzy
+#~| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+#~ msgid "Usage: killproc -p pidfile -b binary program"
+#~ msgstr "प्रयोग: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#~ msgid "Usage: status [-p pidfile] {program}"
+#~ msgstr "प्रयोग: status [-p pidfile] {program}"
+
+#~ msgid "Server address not specified in /etc/sysconfig/netconsole"
+#~ msgstr "/etc/sysconfig/netconsole मे सर्वर पता निर्दिष्ट नहि"
+
+#~ msgid "Usage: $0 {start|stop|status|restart|condrestart}"
+#~ msgstr "प्रयोग: $0 {start|stop|status|restart|condrestart}"
+
+#~ msgid "netconsole module loaded"
+#~ msgstr "netconsole माड्यूल लोडेड"
+
+#~ msgid "Bridge support not available: brctl not found"
+#~ msgstr "ब्रिज समर्थन उपलब्ध नहि अछि. brctl नहि पाएल गेल."
+
+#~ msgid "Initializing netconsole"
+#~ msgstr "नेटकंसोल आरंभीकृत कए रहल अछि"
+
+#~ msgid "netconsole module not loaded"
+#~ msgstr "netconsole माड्यूल लोड नहि अछि"
+
+#~ msgid "Usage: sys-unconfig"
+#~ msgstr "प्रयोग: sys-unconfig"
+
+#~ msgid "Disabling netconsole"
+#~ msgstr "netconsole निष्क्रिय कए रहल अछि"
+
+#~ msgid "netconsole: can't resolve MAC address of $SYSLOGADDR"
+#~ msgstr "netconsole: $SYSLOGADDR क' MAC पता केँ हल नहि कए सकैत अछि"

@@ -1,0 +1,824 @@
+# Translators:
+# Ani Peter <apeter@redhat.com>, 2006, 2007
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Naveej Ahamed <naveej.ahamed@wipro.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2016-04-01 08:09+0000\n"
+"Last-Translator: Naveej Ahamed <naveej.ahamed@wipro.com>\n"
+"Language-Team: Malayalam <discuss@lists.smc.org.in>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../network-scripts/ifdown:15 ../network-scripts/ifdown:22
+msgid "usage: ifdown <configuration>"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: ifdown <device name>"
+
+#: ../network-scripts/ifdown:33 ../network-scripts/ifup:49
+msgid "Users cannot control this device."
+msgstr "ഉപയോഗിക്കുന്നവര്‍ക്ക് ഈ ഡിവൈസ് നിയന്ത്രിക്കുവാന്‍ സാധ്യമല്ല."
+
+#: ../network-scripts/ifdown:40
+msgid ""
+"You are using 'ifdown' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifdown:41 ../network-scripts/ifup:57
+#: ../etc/rc.d/init.d/network:53
+msgid "'network-scripts' will be removed from distribution in near future."
+msgstr ""
+
+#: ../network-scripts/ifdown:42 ../network-scripts/ifup:58
+msgid ""
+"It is advised to switch to 'NetworkManager' instead - it provides 'ifup/"
+"ifdown' scripts as well."
+msgstr ""
+
+#: ../network-scripts/ifdown-eth:46 ../network-scripts/ifdown-eth:52
+msgid ""
+"Device ${DEVICE} has MAC address ${FOUNDMACADDR}, instead of configured "
+"address ${HWADDR}. Ignoring."
+msgstr ""
+" ക്രമികരിച്ചിരിക്കുന്ന വിലാസമായ {HWADDR}-ന് പകരം ഡിവൈസ് ${DEVICE}-നുള്ളത് MAC അഡ്ഡ്രസ്സ് "
+"${FOUNDMACADDR} ആണ്. അതിനാല്‍ ഉപേക്ഷിക്കുന്നു."
+
+#: ../network-scripts/ifdown-routes:6
+msgid "usage: ifdown-routes <net-device> [<nickname>]"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: ifdown-routes <net-device> [<nickname>]"
+
+#: ../network-scripts/ifdown-sit:40 ../network-scripts/ifup-sit:58
+msgid ""
+"Device '$DEVICE' isn't supported here, use IPV6_AUTOTUNNEL setting and "
+"restart (IPv6) networking"
+msgstr ""
+"ഡിവൈസ് '$DEVICE'-ന് ഇവിടെ പിന്തുണ ലഭ്യമല്ല, (IPv6) നെറ്റ് വര്‍ക്കിങ് വീണ്ടും ആരംഭിച്ച് "
+"IPV6_AUTOTUNNEL സെറ്റിങ് ഉപയോഗിക്കുക"
+
+#: ../network-scripts/ifdown-tunnel:36 ../network-scripts/ifup-tunnel:68
+msgid "Device '$DEVICE' isn't supported as a valid GRE device name."
+msgstr "ശരിയായ ഒരു GRE ഡിവൈസ് നാമമായി '$DEVICE' എന്ന ഡിവൈസിന് പിന്തുണ ലഭ്യമല്ല."
+
+#: ../network-scripts/ifup:30 ../network-scripts/ifup:38
+msgid "Usage: ifup <configuration>"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: ifup <device name>"
+
+#: ../network-scripts/ifup:37
+msgid "$0: configuration for ${1} not found."
+msgstr "$0: ${1}-നുളള കോണ്‍ഫിഗറേഷന്‍ ലഭ്യമായില്ല."
+
+#: ../network-scripts/ifup:56
+msgid ""
+"You are using 'ifup' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifup:87 ../network-scripts/ifup:102
+msgid "PHYSDEV should be set for device ${DEVICE}"
+msgstr "${DEVICE} ഡിവൈസിന് PHYSDEV സജ്ജമാക്കിയിരിക്കണം"
+
+#: ../network-scripts/ifup:110
+msgid "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+msgstr "${DEVICE} ഡിവൈസിനുളള 802.1Q VLAN  പിന്തുണ കേര്‍ണലില്‍ ലഭ്യമല്ല"
+
+#: ../network-scripts/ifup:117 ../network-scripts/ifup-eth:134
+msgid ""
+"$alias device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "$alias device ${DEVICE} ലഭ്യമല്ല, ഇനിഷ്യലൈസേഷന്‍ താമസിപ്പിക്കുന്നു"
+
+#: ../network-scripts/ifup:137
+msgid "ERROR: could not add vlan ${VID} as ${DEVICE} on dev ${PHYSDEV}"
+msgstr "പിഴവ്: dev ${PHYSDEV}-ല്‍ vlan ${VID} ${DEVICE} ആയി ചേറ്‍ക്കുവാന്‍ സാധ്യമായില്ല"
+
+#: ../network-scripts/ifup-aliases:67
+msgid "usage: ifup-aliases <net-device> [<parent-config>]\n"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: ifup-aliases <net-device> [<parent-config>]\n"
+
+#: ../network-scripts/ifup-aliases:119
+msgid "Missing config file $PARENTCONFIG."
+msgstr "കോണ്‍ഫിഗ് ഫയല്‍ $PARENTCONFIG ലഭ്യമല്ല."
+
+#: ../network-scripts/ifup-aliases:169
+msgid "error in $FILE: invalid alias number"
+msgstr "$FILE-ല്‍ പിഴവ്: നല്‍കിയിരിക്കുന്ന പകരമുളള നന്പര്‍ തെറ്റാണ്"
+
+#: ../network-scripts/ifup-aliases:179
+msgid "error in $FILE: already seen ipaddr $IPADDR in $ipseen"
+msgstr "$FILE-ല്‍ പിശക്: $ipseen-ല്‍ നിലവില്‍ ipaddr $IPADDR ലഭ്യമാണ്"
+
+#: ../network-scripts/ifup-aliases:184
+msgid "error in $FILE: already seen device $parent_device:$DEVNUM in $devseen"
+msgstr "$FILE-ല്‍ പിഴവ്: ഡിവൈസ് $parent_device ലഭിച്ചിരിക്കുന്നു: $devseen-ല്‍ $DEVNUM"
+
+#: ../network-scripts/ifup-aliases:193
+msgid "error in $FILE: didn't specify device or ipaddr"
+msgstr "$FILE-ല്‍ പിശക്: device അല്ലെങ്കില്‍ ipaddr വ്യക്തമാക്കിയിട്ടില്ല"
+
+#: ../network-scripts/ifup-aliases:198
+msgid "error iN $FILE: didn't specify netmask or prefix"
+msgstr "$FILE-ല്‍ പിശക്: നെറ്റ്മാസ്ക് അല്ലെങ്കില്‍ പ്രെഫിക്സ് വ്യക്തമാക്കിയിട്ടില്ല"
+
+#: ../network-scripts/ifup-aliases:238 ../network-scripts/ifup-aliases:249
+msgid "error in ifcfg-${parent_device}: files"
+msgstr "ifcfg-${parent_device}: ഫയലുകളില്‍ പിഴവ്"
+
+#: ../network-scripts/ifup-aliases:269
+msgid ""
+"Determining if IP address ${IPADDR} is already in use for device "
+"${parent_device}…"
+msgstr ""
+
+#: ../network-scripts/ifup-aliases:273
+msgid "Error, some other host ($ARPINGMAC) already uses address ${IPADDR}."
+msgstr ""
+
+#: ../network-scripts/ifup-aliases:335
+msgid "error in $FILE: IPADDR_START and IPADDR_END don't agree"
+msgstr "$FILE-ല്‍ പിഴവ്: IPADDR_START, IPADDR_END എന്നിവ തെറ്റാണ്"
+
+#: ../network-scripts/ifup-aliases:340
+msgid "error in $FILE: IPADDR_START greater than IPADDR_END"
+msgstr "$FILE-ല്‍ പിഴവ്: IPADDR_END-നെ ക്കാള്‍ IPADDR_START വലുതാണ്"
+
+#: ../network-scripts/ifup-ctc:36
+msgid "ERROR: ${DEVICE} did not come up!"
+msgstr "പിശക്: ${DEVICE} പ്രവർത്തനത്തിൽ വന്നില്ല!"
+
+#: ../network-scripts/ifup-eth:43
+msgid "Device ${DEVICE} has different MAC address than expected, ignoring."
+msgstr ""
+"ഡിവൈസ് ${DEVICE}-ന് പ്രതീക്ഷിച്ചതിനേക്കാള്‍ മറ്റൊരു MAC വിലാസം ഉണ്ട്, അതിനാല്‍ അവഗണിക്കുന്നു."
+
+#: ../network-scripts/ifup-eth:51
+msgid "cannot create veth without peer"
+msgstr ""
+
+#: ../network-scripts/ifup-eth:127
+#, fuzzy
+#| msgid ""
+#| "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgid "Device name does not seem to be present."
+msgstr "Device ${DEVICE} ലഭ്യമല്ല,അതിനാല്‍ ഇനിഷ്യലൈസേഷന്‍ താമസിക്കുന്നു."
+
+#: ../network-scripts/ifup-eth:136
+msgid "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr "Device ${DEVICE} ലഭ്യമല്ല,അതിനാല്‍ ഇനിഷ്യലൈസേഷന്‍ താമസിക്കുന്നു."
+
+#: ../network-scripts/ifup-eth:232
+msgid "Determining IP information for ${DEVICE}..."
+msgstr "${DEVICE}-നുളള IP വിവരം കണ്ടുപിടിക്കുന്നു..."
+
+#: ../network-scripts/ifup-eth:234
+msgid " failed; no link present.  Check cable?"
+msgstr "ഒരു ലിങ്കും ലഭ്യമല്ല .  കേബിള്‍ പരിശോധിക്കുക?"
+
+#: ../network-scripts/ifup-eth:241 ../network-scripts/ifup-eth:389
+msgid " done."
+msgstr " പൂര്‍ത്തിയാക്കി."
+
+#: ../network-scripts/ifup-eth:244 ../network-scripts/ifup-eth:391
+msgid " failed."
+msgstr "പരാജയപ്പെട്ടു."
+
+#: ../network-scripts/ifup-eth:268
+msgid "Failed to bring up ${DEVICE}."
+msgstr "${DEVICE} ലഭ്യമാക്കുന്നതില്‍ പരാജയപ്പെട്ടു."
+
+#: ../network-scripts/ifup-eth:299
+msgid ""
+"Error, some other host ($ARPINGMAC) already uses address ${ipaddr[$idx]}."
+msgstr ""
+
+#: ../network-scripts/ifup-eth:306
+msgid "Error adding address ${ipaddr[$idx]} for ${DEVICE}."
+msgstr "${DEVICE}-നുളള ${ipaddr[$idx]} വിലാസം ചേര്‍ക്കുന്നതില്‍ പിഴവ്."
+
+#: ../network-scripts/ifup-eth:333
+msgid "Error adding default gateway ${GATEWAY} for ${DEVICE}."
+msgstr "${DEVICE}-നുളള സുസ്ഥിരമായ ${GATEWAY} വിലാസം ചേർക്കുവാൻ സാധികുന്നില്ല ."
+
+#: ../network-scripts/ifup-eth:338
+msgid "Error adding default gateway for ${REALDEVICE}."
+msgstr "${REALDEVICE}-നുളള സുസ്ഥിരമായ ഗേറ്റ്‌വേ വിലാസം ചേർക്കുവാൻ സാധികുന്നില്ല."
+
+#: ../network-scripts/ifup-eth:376
+msgid "Determining IPv6 information for ${DEVICE}..."
+msgstr "${DEVICE}-ന്റെ  IPv6 വിവരം കണ്ടുപിടിക്കുന്നു..."
+
+#: ../network-scripts/ifup-ippp:33
+msgid "ipppd does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:40
+msgid "isdnctrl does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:46
+msgid "cannot list ISDN devices"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:55 ../network-scripts/ifup-ippp:60
+msgid "$*"
+msgstr "$*"
+
+#: ../network-scripts/ifup-ippp:343
+msgid "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:349
+msgid "ipppd $options $netmask"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:374
+msgid ""
+"Warning: ipppd (kernel 2.4.x and below) doesn't support IPv6 using "
+"encapsulation 'syncppp'"
+msgstr ""
+"മുന്നറിയിപ്പ്: എന്‍കാപ്സുലേഷന്‍ 'syncppp' ഉപയോഗിക്കുന്ന IPv6-നെ  ipppd (കേര്‍ണല്‍ 2.4.x-ഉം "
+"താഴെയുളളവയും)പിന്തുണയ്ക്കുന്നില്ല i"
+
+#: ../network-scripts/ifup-ippp:376
+msgid "Warning: link doesn't support IPv6 using encapsulation 'rawip'"
+msgstr "മുന്നറിയിപ്പ്: എന്‍കാപ്സുലേഷന്‍ 'rawip' ഉപയോഗിക്കുന്ന IPv6-ന് ലിങ്ക് പിന്തുണ നല്‍കുന്നില്ല"
+
+#: ../network-scripts/ifup-ipv6:99
+msgid ""
+"Global IPv6 forwarding is enabled in configuration, but not currently "
+"enabled in kernel"
+msgstr ""
+"ഗ്ളോബല്‍ IPv6 ഫോര്‍‍വേര്‍ഡിങ് കോണ്‍ഫിഗറേഷനില്‍ പ്രാപ്യമാണ്, പക്ഷേ നിലവില്‍ കേര്‍ണലില്‍ സജീവമല്ല "
+
+#: ../network-scripts/ifup-ipv6:100 ../network-scripts/ifup-ipv6:119
+msgid "Please restart network with '/sbin/service network restart'"
+msgstr ""
+"ദയവായി '/sbin/service network restart' ഉപയോഗിച്ച് നെറ്റ് വര്‍ക്ക് വീണ്ടും ആരംഭിക്കുക"
+
+#: ../network-scripts/ifup-ipv6:118
+msgid ""
+"Global IPv6 forwarding is disabled in configuration, but not currently "
+"disabled in kernel"
+msgstr "കോണ്‍ഫിഗറേഷനില്‍ ഗ്ളോബല്‍ IPv6 ഫോര്‍വേര്‍ഡിങ് ലഭ്യമല്ല, പക്ഷെ കേര്‍ണലില്‍ ഇപ്പോഴും ലഭ്യമാണ് "
+
+#: ../network-scripts/ifup-ipv6:157
+msgid ""
+"Cannot enable IPv6 privacy method '$IPV6_PRIVACY', not supported by kernel"
+msgstr ""
+"IPv6 പ്രൈവസി രീതി '$IPV6_PRIVACY' സജ്ജമാക്കുവാന്‍ സാധ്യമല്ല, kernel-ന്‍റെ പിന്തുണ ലഭ്യമല്ല"
+
+#: ../network-scripts/ifup-ipv6:182
+msgid "Device 'tun6to4' (from '$DEVICE') is already up, shutdown first"
+msgstr "ഡിവൈസ് 'tun6to4' ('$DEVICE'-ല്‍ നിന്നും) ലഭ്യമാണ്, അത് ആദ്യം തന്നെ നിര്‍ത്തുക"
+
+#: ../network-scripts/ifup-ipv6:209
+msgid "Given IPv4 address '$ipv4addr' is not globally usable"
+msgstr "നല്‍കിയിരിക്കുന്ന IPv4 വിലാസം '$ipv4addr' ഗ്ളോബലായി ഉപയോഗിക്കുവാന്‍ സാധ്യമല്ല"
+
+#: ../network-scripts/ifup-ipv6:222
+msgid ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+msgstr "അനുയോജ്യമായ ഇന്‍റര്‍ഫെയിസില്‍ IPv6to4 ക്രമികരണത്തിന് ഒരു IPv4 വിലാസം ആവശ്യുണ്ട്"
+
+#: ../network-scripts/ifup-ipv6:237
+msgid ""
+"Warning: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+msgstr ""
+"മുന്നറിയിപ്പ്: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+
+#: ../network-scripts/ifup-ipv6:251
+msgid "Warning: interface 'tun6to4' does not support 'IPV6_DEFAULTGW', ignored"
+msgstr ""
+"മുന്നറിയിപ്പ്: ഇന്‍റര്‍ഫെയിസ് 'tun6to4' 'IPV6_DEFAULTGW' പിന്തുണയ്ക്കുന്നില്ല, അതിനാല്‍ "
+"ഉപേക്ഷിക്കുന്നു"
+
+#: ../network-scripts/ifup-ipv6:287
+msgid ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+msgstr ""
+"സാധാരണയായി 6to4, RADVD IPv6 ഫോര്‍‍വേര്‍ഡിങ് സജ്ജമാക്കേണ്ടതാണ്, പക്ഷേ നിലവില്‍ ലഭ്യമല്ല"
+
+#: ../network-scripts/ifup-ipv6:300
+msgid "Error occurred while calculating the IPv6to4 prefix"
+msgstr "IPv6to4 പ്രിഫിക്സ് കണക്കു കൂട്ടുന്നതില്‍ പിഴവ്"
+
+#: ../network-scripts/ifup-ipv6:303
+msgid "radvd control enabled, but config is not complete"
+msgstr "radvd control സജ്ജമാണ്, പക്ഷേ config അപൂര്‍ണ്ണമാണ്"
+
+#: ../network-scripts/ifup-ipv6:310
+msgid "6to4 configuration is not valid"
+msgstr "6to4 കോണ്‍ഫിഗറേഷന്‍ അസാധുമവാണ്"
+
+#: ../network-scripts/ifup-post:114
+msgid "/etc/resolv.conf was not updated: failed to create temporary file"
+msgstr ""
+
+#: ../network-scripts/ifup-routes:8
+msgid "usage: ifup-routes <net-device> [<nickname>]"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: ifup-routes <net-device> [<nickname>]"
+
+#: ../network-scripts/ifup-routes:26 ../network-scripts/ifup-routes:47
+msgid "Failed to add route ${line}, using ip route replace instead."
+msgstr ""
+
+#: ../network-scripts/ifup-sit:63
+msgid "Missing remote IPv4 address of tunnel, configuration is not valid"
+msgstr "ടണലിന്‍റെ വിദൂരത്തുളള IPv4 വിലാസം ലഭ്യമല്ല, കോണ്‍ഫിഗറേഷന്‍ അസാധുവാണ്"
+
+#: ../network-scripts/ifup-sit:71
+msgid "Device '$DEVICE' is already up, please shutdown first"
+msgstr "ഡിവൈസ് '$DEVICE' പ്രവര്‍ത്തനത്തിലുണ്ട്, ദയവായി ആദ്യം ഷട്ട് ഡൌണ്‍ ചെയ്യുക"
+
+#: ../network-scripts/ifup-tunnel:61
+msgid "Invalid tunnel type $TYPE"
+msgstr "തെറ്റായ $TYPE ടണല്‍ രീതി"
+
+#: ../network-scripts/init.ipv6-global:161
+msgid "Usage: $0 {start|stop|reload|restart|showsysctl}"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: $0 {start|stop|reload|restart|showsysctl}"
+
+#: ../network-scripts/network-functions:405
+msgid ""
+"Both 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' and 'DHCP_FQDN=${DHCP_FQDN}' are "
+"configured... Using DHCP_FQDN."
+msgstr ""
+
+#: ../network-scripts/network-functions:581
+msgid "Failed to set value '$value' [mode] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:587
+msgid "Failed to set value '$value' [miimon] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:607
+msgid ""
+"Failed to set '$arp_ip' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:615
+msgid ""
+"Failed to set '$value' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:620
+msgid "Failed to set '$value' value [$key] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:696
+msgid "DEBUG     "
+msgstr ""
+
+#: ../network-scripts/network-functions:699
+msgid "ERROR     "
+msgstr ""
+
+#: ../network-scripts/network-functions:702
+msgid "WARN      "
+msgstr ""
+
+#: ../network-scripts/network-functions:705
+msgid "INFO      "
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:58
+msgid "Missing parameter 'IPv6-network' (arg 1)"
+msgstr "'IPv6-network' (arg 1) പരാമീറ്റര്‍ ലഭ്യമല്ല"
+
+#: ../network-scripts/network-functions-ipv6:63
+msgid "Missing parameter 'IPv6-gateway' (arg 2)"
+msgstr "'IPv6-gateway' പരാമീറ്റര്‍ ലഭ്യമല്ല (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:88
+msgid ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+msgstr ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+
+#: ../network-scripts/network-functions-ipv6:91
+msgid "Unknown error"
+msgstr "അപരിചിതമായ പിഴവ്"
+
+#: ../network-scripts/network-functions-ipv6:116
+msgid "Tunnel device 'sit0' enabling didn't work"
+msgstr "ടണല്‍ ഡിവൈസ് 'sit0' സജ്ജമാക്കുന്ന സംവിധാനം പ്രവര്‍ത്തിക്കുന്നില്ല"
+
+#: ../network-scripts/network-functions-ipv6:142
+#: ../network-scripts/network-functions-ipv6:205
+#: ../network-scripts/network-functions-ipv6:234
+#: ../network-scripts/network-functions-ipv6:314
+#: ../network-scripts/network-functions-ipv6:429
+#: ../network-scripts/network-functions-ipv6:491
+#: ../network-scripts/network-functions-ipv6:525
+#: ../network-scripts/network-functions-ipv6:567
+#: ../network-scripts/network-functions-ipv6:645
+#: ../network-scripts/network-functions-ipv6:703
+#: ../network-scripts/network-functions-ipv6:756
+#: ../network-scripts/network-functions-ipv6:795
+#: ../network-scripts/network-functions-ipv6:923
+#: ../network-scripts/network-functions-ipv6:1056
+msgid "Missing parameter 'device' (arg 1)"
+msgstr "പരാമീറ്ററ്‍ 'device' ലഭ്യമല്ല (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:147
+msgid "Missing parameter 'IPv6-address' (arg 2)"
+msgstr "പരാമീറ്റര്‍ 'IPv6-address' ലഭ്യമല്ല (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:161
+msgid "Device '$device' doesn't exist"
+msgstr "ഡിവൈസ് '$device' നിലവിലില്ല"
+
+#: ../network-scripts/network-functions-ipv6:167
+msgid "Device '$device' enabling didn't work"
+msgstr "ഡിവൈസ് '$device' സജ്ജമാക്കിയത് ലഭ്യമായില്ല"
+
+#: ../network-scripts/network-functions-ipv6:188
+msgid "Cannot add IPv6 address '$address' on dev '$device'"
+msgstr "'$device' എന്ന ഡിവൈസില്‍ '$address' എന്ന IPv6 വിലാസം ചേര്‍ക്കുവാന്‍ സാധ്യമല്ല"
+
+#: ../network-scripts/network-functions-ipv6:345
+msgid "Missing parameter 'IPv4 address' (arg 1)"
+msgstr "പരാമീറ്റര്‍ 'IPv4 address' ലഭ്യമല്ല (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:385
+msgid "Missing parameter 'address' (arg 1)"
+msgstr "പരാമീറ്റര്‍ 'address' ലഭ്യമല്ല (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:396
+msgid "Given address '$addr' is not a global IPv4 one (arg 1)"
+msgstr "നല്‍കിയിരിക്കുന്ന വിലാസമായ '$addr' ഒരു ഗ്ളോബല്‍ IPv4 അല്ല (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:400
+msgid "Given address '$addr' is not a valid IPv4 one (arg 1)"
+msgstr "നല്‍കിയിരിക്കുന്ന '$addr' വിലാസം സാധുതയുളള ഒരു IPv4 (arg 1) അല്ല"
+
+#: ../network-scripts/network-functions-ipv6:434
+msgid "Missing parameter 'global IPv4 address' (arg 2)"
+msgstr "'global IPv4 address' (arg 2) എന്ന പരാമീറ്റര്‍ ലഭ്യമല്ല"
+
+#: ../network-scripts/network-functions-ipv6:440
+#: ../network-scripts/network-functions-ipv6:497
+#: ../network-scripts/network-functions-ipv6:536
+msgid "Given device '$device' is not supported (arg 1)"
+msgstr "നല്‍കിയിരിക്കുന്ന ഡിവൈസ് '$device'-ന് പിന്തുണ ലഭ്യമല്ല (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:530
+msgid "Missing parameter 'local IPv4 address' (arg 2)"
+msgstr "പരാമീറ്റര്‍ 'local IPv4 address' ലഭ്യമല്ല (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:572
+msgid "Missing parameter 'IPv4-tunnel address' (arg 2)"
+msgstr "പരാമീറ്റര്‍ 'local IPv4 address' ലഭ്യമല്ല (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:592
+msgid ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+msgstr ""
+"??????? ?????? '$device'??? ????????????????? ???????? ???????? "
+"'$addressipv4tunnel' ???????? "
+"'$devnew' ???? ????????? ??????????? ????????????????"
+
+#: ../network-scripts/network-functions-ipv6:605
+msgid "Tunnel device '$device' creation didn't work"
+msgstr "ടണല്‍ ഡിവൈസ് '$device' നിറ്‍മ്മാണം സാധ്യമായില്ല"
+
+#: ../network-scripts/network-functions-ipv6:612
+msgid "Tunnel device '$device' bringing up didn't work"
+msgstr "ടണല്‍ ഡിവൈസ് '$device' ലഭ്യമാക്കുവാന്‍ സാധ്യമായില്ല"
+
+#: ../network-scripts/network-functions-ipv6:708
+msgid "Missing parameter 'selection' (arg 2)"
+msgstr "പരാമീറ്ററ്‍ 'selection' ലഭ്യമല്ല (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:712
+msgid "Unsupported selection '$selection' specified (arg 2)"
+msgstr "'$selection' എന്ന തിരഞ്ഞെടുക്കല്‍ പിന്തുണ ലഭ്യമല്ലാത്തതാണ് (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:800
+msgid "Missing parameter 'IPv6 MTU' (arg 2)"
+msgstr "'IPv6 MTU' പരാമീറ്റര്‍ ലഭ്യമല്ല (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:806
+msgid "Given IPv6 MTU '$ipv6_mtu' is out of range"
+msgstr "നല്‍കിയിരിക്കുന്ന IPv6 MTU '$ipv6_mtu' പരിധിയ്ക്ക് പുറത്ത്"
+
+#: ../network-scripts/network-functions-ipv6:843
+msgid "Given IPv6 default gateway '$address' is not in proper format"
+msgstr "നല്‍കിയിരിക്കുന്ന IPv6 ഡീഫോള്‍ട്ട് ഗേറ്റ് വേ '$address' ശരിയായ രീതിലിലല്ല"
+
+#: ../network-scripts/network-functions-ipv6:849
+msgid ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+msgstr ""
+"നല്‍കിയിരിക്കുന്ന IPv6 ഡീഫോള്‍ട്ട് ഗേറ്റ് വേ '$address' -ന്‍റെ സ്കോപ്പ് '$device_scope' "
+"വ്യക്തമാണ്, നല്‍കിയിരിക്കുന്ന ഡീഫോള്‍ട്ട് ഗേറ്റ് വേ ഡിവൈസ് '$device' ഉപയോഗിക്കില്ല"
+
+#: ../network-scripts/network-functions-ipv6:857
+msgid ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+msgstr ""
+"നല്‍കിയിരിക്കുന്ന IPv6 ഡീഫോള്‍ട്ട് ഗേറ്റ് വേ '$address' link-local ആണ്, സ്കോപ്പ് അല്ലെങ്കില്‍ "
+"ഗേറ്റ് വേ ഡിവൈസ് നല്‍കിയിട്ടില്ല. "
+
+#: ../network-scripts/network-functions-ipv6:897
+msgid "Given IPv6 default device '$device' requires an explicit nexthop"
+msgstr "നല്‍കിയിരിക്കുന്ന IPv6 ഡീഫോള്‍ട്ട് ഡിവൈസ് '$device'-ന് ഒരു പ്രത്യേക nexthop ആവശ്യമുണ്ട്"
+
+#: ../network-scripts/network-functions-ipv6:900
+msgid "Given IPv6 default device '$device' doesn't exist or isn't up"
+msgstr "നല്‍കിയിരിക്കുന്ന IPv6 ഡീഫോള്‍ട്ട് ഡിവൈസ് '$device' നിലവിലില്ല അല്ലെങ്കില്‍ സജീവമല്ല"
+
+#: ../network-scripts/network-functions-ipv6:906
+msgid "No parameters given to setup a default route"
+msgstr "ഒരു ഡീഫോള്‍ട്ട് റൂട്ട് ക്രമീകരിക്കുന്നതിനായി പരാമീറ്ററുകള്‍ ഒന്നും നല്‍കിയിട്ടില്ല"
+
+#: ../network-scripts/network-functions-ipv6:961
+msgid "No reason given for sending trigger to radvd"
+msgstr "radvd-ലേക്ക് trigger അയയ്ക്കുന്നതിന് കാരണം നല്‍കിയിട്ടില്ല."
+
+#: ../network-scripts/network-functions-ipv6:966
+msgid "Unsupported reason '$reason' for sending trigger to radvd"
+msgstr "radvd-ലേക്ക് ട്റിഗ്ഗറ്‍ അയയ്ക്കുന്നതിന് പിന്തുണയില്ലാത്ത കാരണം '$reason'"
+
+#: ../network-scripts/network-functions-ipv6:995
+msgid "Unsupported mechanism '$mechanism' for sending trigger to radvd"
+msgstr "radvd-ലേക്ക് ട്റിഗ്ഗറ്‍ അയയ്ക്കുന്നതിന് പിന്തുണയില്ലാത്ത സംവിധാനം '$mechanism'"
+
+#: ../network-scripts/network-functions-ipv6:1007
+msgid "Given pidfile '$pidfile' doesn't exist, cannot send trigger to radvd"
+msgstr ""
+"നല്‍കിയിരിക്കുന്ന pidfile '$pidfile' നിലവിലില്ല, radvd-ലേക്ക് ട്റിഗ്ഗറ്‍ അയയ്ക്കുവാന്‍ "
+"സാധ്യമായില്ല"
+
+#: ../network-scripts/network-functions-ipv6:1016
+msgid "Pidfile '$pidfile' is empty, cannot send trigger to radvd"
+msgstr "Pidfile '$pidfile' ശൂന്യമാണ്, radvd-ലേക്ക് trigger അയയ്ക്കുവാന്‍ സാധ്യമല്ല"
+
+#: ../network-scripts/network-functions-ipv6:1033
+msgid "radvd not (properly) installed, triggering failed"
+msgstr "radvd ശരിയായി ഇന്‍സ്റ്റോള്‍ ചെയ്തിട്ടില്ല, ട്രിഗ്ഗറിങ് പരാജയപ്പെട്ടു"
+
+#: ../network-scripts/network-functions-ipv6:1068
+msgid "Duplicate Address Detection: Duplicate addresses detected"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1069
+msgid "Duplicate Address Detection: Please, fix your network configuration"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1073
+msgid ""
+"Waiting for interface ${device} IPv6 address(es) to leave the 'tentative' "
+"state"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1081
+msgid "Some IPv6 address(es) of ${device} remain still in 'tentative' state"
+msgstr ""
+
+#: ../network-scripts/network-functions-ipv6:1082
+msgid "Run 'ip -6 addr show dev ${device} tentative' for more info"
+msgstr ""
+
+#: ../usr/sbin/service:50 ../usr/sbin/service:66
+msgid "Support for initscripts isn't installed"
+msgstr ""
+
+#: ../usr/sbin/service:108
+msgid ""
+"Redirecting to /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:"
+"+ }${OPTIONS}"
+msgstr ""
+
+#: ../usr/sbin/service:111
+#, fuzzy
+#| msgid ""
+#| "The service command supports only basic LSB actions (start, stop, "
+#| "restart, try-restart, reload, force-reload, status). For other actions, "
+#| "please try to use systemctl."
+msgid ""
+"The service command supports only basic LSB actions (start, stop, restart, "
+"try-restart, reload, reload-or-restart, try-reload-or-restart, force-reload, "
+"status, condrestart). For other actions, please try to use systemctl."
+msgstr ""
+"സർവീസ് കമാൻഡ് അടിസ്ഥാന എൽഎസ്ബി പ്രവർത്തനങ്ങളെ മാത്രം പിന്തുണയ്ക്കുന്നു (start, stop, "
+"restart, try-restart, reload, force-reload, status). മറ്റു പ്രവര്തനങ്ങല്കായി "
+"സിസ്റ്റംസീടിഎല് ഉപയോഗിക്കുക."
+
+#: ../etc/rc.d/init.d/functions:33
+msgid "Starting $prog (via systemctl): "
+msgstr "$prog (സിസ്റ്റംസീടിഎല് വഴി) ആരംഭിക്കുന്നു: "
+
+#: ../etc/rc.d/init.d/functions:36
+msgid "Stopping $prog (via systemctl): "
+msgstr "$prog (സിസ്റ്റംസീടിഎല് വഴി) നിര്‍ത്തുന്നു: "
+
+#: ../etc/rc.d/init.d/functions:39
+msgid "Reloading $prog configuration (via systemctl): "
+msgstr "$prog (സിസ്റ്റംസീടിഎല് വഴി വീണ്ടും ലഭ്യമാക്കുന്നു: "
+
+#: ../etc/rc.d/init.d/functions:42
+msgid "Restarting $prog (via systemctl): "
+msgstr "$prog (സിസ്റ്റംസീടിഎല് വഴി) പുനരാരംഭിക്കുന്നു:"
+
+#: ../etc/rc.d/init.d/functions:52
+msgid "Reloading systemd: "
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:236 ../etc/rc.d/init.d/functions:274
+msgid "$0: Usage: daemon [+/-nicelevel] {program}"
+msgstr "$0: ഉപയോഗിക്കേണ്ട വിധം: daemon [+/-nicelevel] {program}"
+
+#: ../etc/rc.d/init.d/functions:304
+msgid "$base startup"
+msgstr "$base തുടക്കം"
+
+#: ../etc/rc.d/init.d/functions:314 ../etc/rc.d/init.d/functions:324
+#: ../etc/rc.d/init.d/functions:333
+#, fuzzy
+#| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+msgid ""
+"Usage: killproc [-p {pidfile} [-b {binary}]] [-d {delay}] {program} [-signal]"
+msgstr ""
+"ഉപയോഗിക്കേണ്ട വിധം: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#: ../etc/rc.d/init.d/functions:323 ../etc/rc.d/init.d/functions:450
+msgid "-b option can be used only with -p"
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:353 ../etc/rc.d/init.d/functions:363
+#: ../etc/rc.d/init.d/functions:378
+msgid "$base shutdown"
+msgstr "$base അടച്ചു പൂട്ടുന്നു"
+
+#: ../etc/rc.d/init.d/functions:369
+msgid "$base $killlevel"
+msgstr "$base $killlevel"
+
+#: ../etc/rc.d/init.d/functions:396
+msgid "Usage: pidfileofproc {program}"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: pidfileofproc {program}"
+
+#: ../etc/rc.d/init.d/functions:411
+#, fuzzy
+#| msgid "Usage: pidofproc [-p pidfile] {program}"
+msgid "Usage: pidofproc [-p {pidfile}] {program}"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: pidofproc [-p pidfile] {program}"
+
+#: ../etc/rc.d/init.d/functions:437 ../etc/rc.d/init.d/functions:451
+#, fuzzy
+#| msgid "Usage: status [-p pidfile] {program}"
+msgid "Usage: status [-p {pidfile}] [-l {lockfile}] [-b {binary}] {program}"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: status [-p pidfile] {program}"
+
+#: ../etc/rc.d/init.d/functions:478 ../etc/rc.d/init.d/functions:484
+msgid "${base} (pid $pid) is running..."
+msgstr "${base} (pid $pid) പ്രവര്‍ത്തിക്കുന്നു..."
+
+#: ../etc/rc.d/init.d/functions:488
+msgid "${base} dead but pid file exists"
+msgstr "${base} നിലവിലില്ല പക്ഷേ pid ഫയല്‍ ലഭ്യമാണ്"
+
+#: ../etc/rc.d/init.d/functions:492
+msgid "${base} status unknown due to insufficient privileges."
+msgstr "അപര്യാപ്തമായ അധികാരങ്ങൾ കാരണം ${base} സ്റ്റാറ്റസ് അജ്ഞാതമാണ്."
+
+#: ../etc/rc.d/init.d/functions:501
+msgid "${base} dead but subsys locked"
+msgstr "${base} അവസാനിച്ചു പക്ഷേ subsys പൂട്ടിയിരിക്കുന്നു"
+
+#: ../etc/rc.d/init.d/functions:504
+msgid "${base} is stopped"
+msgstr "${base} നിര്‍ത്തിയിരിക്കുന്നു"
+
+#: ../etc/rc.d/init.d/functions:512
+msgid "  OK  "
+msgstr "  ശരി  "
+
+#: ../etc/rc.d/init.d/functions:523
+msgid "FAILED"
+msgstr "പരാജയപ്പെട്ടു"
+
+#: ../etc/rc.d/init.d/functions:534
+msgid "PASSED"
+msgstr "PASSED"
+
+#: ../etc/rc.d/init.d/functions:545
+msgid "WARNING"
+msgstr "മുന്നറിയിപ്പ്"
+
+#: ../etc/rc.d/init.d/functions:595
+msgid "$STRING"
+msgstr "$STRING"
+
+#: ../etc/rc.d/init.d/network:52
+msgid ""
+"You are using 'network' service provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:54
+msgid ""
+"It is advised to switch to 'NetworkManager' instead for network management."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:77
+msgid "Bringing up loopback interface: "
+msgstr "loopback ഇന്‍റര്‍ഫെയിസ് തുടങ്ങുന്നു: "
+
+#: ../etc/rc.d/init.d/network:81
+msgid "No 802.1Q VLAN support available in kernel."
+msgstr "കേര്‍ണലില്‍ 802.1Q VLAN പിന്തുണ ലഭ്യമല്ല."
+
+#: ../etc/rc.d/init.d/network:132 ../etc/rc.d/init.d/network:139
+msgid "Bringing up interface $i: "
+msgstr "ഇന്‍റര്‍ഫെയിസ് $i ലഭ്യമാക്കുന്നു: "
+
+#: ../etc/rc.d/init.d/network:151
+msgid "Legacy static-route support not available: /sbin/route not found"
+msgstr "ലെഗസി സ്റ്റാറ്റിക്-റൂട്ടിൽ പിന്തുണ ലഭ്യമല്ല: /sbin/route കണ്ടെത്തിയില്ല"
+
+#: ../etc/rc.d/init.d/network:178
+msgid ""
+"Target is not reachable, but timeout was already reached. Continuing anyway."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:189
+msgid "rootfs or /usr is on network filesystem, leaving network up"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:199
+msgid "system is shutting down, leaving interfaces up as requested"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:249
+msgid "Shutting down interface $i: "
+msgstr "ഇന്‍റര്‍ഫെയിസ് $i അടച്ചു പൂട്ടുന്നു: "
+
+#: ../etc/rc.d/init.d/network:255
+msgid "Shutting down loopback interface: "
+msgstr "ലൂപ് ബാക്ക് ഇന്‍റര്‍ഫെയിസ് അടച്ചു പൂട്ടുന്നു: "
+
+#: ../etc/rc.d/init.d/network:267
+msgid "Configured devices:"
+msgstr "ക്രമീകരിച്ചിരിക്കുന്ന ഡിവൈസുകള്‍:"
+
+#: ../etc/rc.d/init.d/network:270
+msgid "Currently active devices:"
+msgstr "നിലവിലുളള സജീവമായ ഡിവൈസുകള്‍:"
+
+#: ../etc/rc.d/init.d/network:280
+#, fuzzy
+#| msgid "Usage: $0 {start|stop|status|restart|reload|force-reload}"
+msgid "Usage: $0 {start|stop|status|restart|force-reload}"
+msgstr "ഉപയോഗിക്കേണ്ട വിധം: $0 {start|stop|status|restart|reload|force-reload}"
+
+#, fuzzy
+#~| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+#~ msgid "Usage: killproc -p pidfile -b binary program"
+#~ msgstr ""
+#~ "ഉപയോഗിക്കേണ്ട വിധം: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#~ msgid "Usage: status [-p pidfile] {program}"
+#~ msgstr "ഉപയോഗിക്കേണ്ട വിധം: status [-p pidfile] {program}"
+
+#~ msgid "Server address not specified in /etc/sysconfig/netconsole"
+#~ msgstr "/etc/sysconfig/netconsole-ല്‍ സറ്‍വറിന്റെ വിലാസം ലഭ്യമല്ല"
+
+#~ msgid "Usage: $0 {start|stop|status|restart|condrestart}"
+#~ msgstr "ഉപയോഗിക്കേണ്ട വിധം: $0 {start|stop|status|restart|condrestart}"
+
+#~ msgid "netconsole module loaded"
+#~ msgstr "netconsole ഘടകം ലഭ്യമാക്കിയിരിക്കുന്നു"
+
+#~ msgid "Bridge support not available: brctl not found"
+#~ msgstr "ബ്രിട്ജ് സപ്പോര്‍ട്ട് ലഭ്യമല്ല: brctl ലഭ്യമല്ല"
+
+#~ msgid "Initializing netconsole"
+#~ msgstr "netconsole തുടങ്ങുന്നു"
+
+#~ msgid "netconsole module not loaded"
+#~ msgstr "netconsole ഘടകം ലഭ്യമാക്കിയിട്ടില്ല"
+
+#~ msgid "Usage: sys-unconfig"
+#~ msgstr "ഉപയോഗിക്കേണ്ട വിധം: sys-unconfig"
+
+#~ msgid "Disabling netconsole"
+#~ msgstr "netconsole പ്രവര്‍ത്തന രഹിതമാക്കുന്നു:"
+
+#~ msgid "netconsole: can't resolve MAC address of $SYSLOGADDR"
+#~ msgstr "netconsole: $SYSLOGADDR-ന്റെ MAC വിലാസം പരിഹരിക്കുവാന്‍ സാധ്യമല്ല"

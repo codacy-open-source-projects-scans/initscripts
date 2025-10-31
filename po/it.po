@@ -1,0 +1,881 @@
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Francesco Tombolini <tombo@adamantio.net>, 2006, 2007, 2008
+# fvalen <fvalen@redhat.com>, 2003, 2004, 2008
+# Lorenzo Stobbione <lorenzo.stobbione@clsengineering.it>, 2004, 2005, 2006
+# Luca Manlio De Lisi <lukefiltroman@gmail.com>, 2011
+# Mario Santagiuliana <fedora at marionline.it>, 2012
+# Silvio Pierro <perplesso82 gmail.com>, 2009
+# Silvio Pierro <perplesso82@gmail.com>, 2012
+# Enrico Bella <enric@e.email>, 2020.
+# Fabio Tomat <f.t.public@gmail.com>, 2020.
+# Salvatore Cocuzza <info@salvatorecocuzza.it>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-06-01 11:29+0000\n"
+"Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/"
+"fedora-sysv/initscripts/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
+
+#: ../network-scripts/ifdown:15 ../network-scripts/ifdown:22
+msgid "usage: ifdown <configuration>"
+msgstr "utilizzo: ifdown <nome dispositivo>"
+
+#: ../network-scripts/ifdown:33 ../network-scripts/ifup:49
+msgid "Users cannot control this device."
+msgstr "Gli utenti non possono controllare questo dispositivo."
+
+#: ../network-scripts/ifdown:40
+msgid ""
+"You are using 'ifdown' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+"Stai utilizzando lo script 'ifdown' fornito da 'network-scripts', che ora è "
+"obsoleto."
+
+#: ../network-scripts/ifdown:41 ../network-scripts/ifup:57
+#: ../etc/rc.d/init.d/network:53
+msgid "'network-scripts' will be removed from distribution in near future."
+msgstr ""
+"'network-scripts' verrà rimosso dalla distribuzione nel prossimo futuro."
+
+#: ../network-scripts/ifdown:42 ../network-scripts/ifup:58
+msgid ""
+"It is advised to switch to 'NetworkManager' instead - it provides 'ifup/"
+"ifdown' scripts as well."
+msgstr ""
+"Si consiglia di passare a 'NetworkManager', che fornisce anche gli script '"
+"ifup/ifdown'."
+
+#: ../network-scripts/ifdown-eth:46 ../network-scripts/ifdown-eth:52
+msgid ""
+"Device ${DEVICE} has MAC address ${FOUNDMACADDR}, instead of configured "
+"address ${HWADDR}. Ignoring."
+msgstr ""
+"Il dispositivo ${DEVICE} presenta l'indirizzo MAC ${FOUNDMACADDR}, al posto "
+"dell'indirizzo configurato ${HWADDR}. Ignora."
+
+#: ../network-scripts/ifdown-routes:6
+msgid "usage: ifdown-routes <net-device> [<nickname>]"
+msgstr "utilizzo: ifdown-routes <net-device> [<nickname>]"
+
+#: ../network-scripts/ifdown-sit:40 ../network-scripts/ifup-sit:58
+msgid ""
+"Device '$DEVICE' isn't supported here, use IPV6_AUTOTUNNEL setting and "
+"restart (IPv6) networking"
+msgstr ""
+"Il dispositivo '$DEVICE' non è supportato, usare l'impostazione "
+"IPV6_AUTOTUNNEL e riavviare il networking (IPv6)"
+
+#: ../network-scripts/ifdown-tunnel:36 ../network-scripts/ifup-tunnel:68
+msgid "Device '$DEVICE' isn't supported as a valid GRE device name."
+msgstr ""
+"Il dispositivo '$DEVICE' non è supportato come valido nome di dispositivo "
+"GRE."
+
+#: ../network-scripts/ifup:30 ../network-scripts/ifup:38
+msgid "Usage: ifup <configuration>"
+msgstr "Utilizzo: ifup <nome dispositivo>"
+
+#: ../network-scripts/ifup:37
+msgid "$0: configuration for ${1} not found."
+msgstr "$0: configurazione per ${1} not trovata."
+
+#: ../network-scripts/ifup:56
+msgid ""
+"You are using 'ifup' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+"Stai utilizzando lo script 'ifup' fornito da 'network-scripts', che ora è "
+"obsoleto."
+
+#: ../network-scripts/ifup:87 ../network-scripts/ifup:102
+msgid "PHYSDEV should be set for device ${DEVICE}"
+msgstr "PHYSDEV dovrebbe essere impostato per il dispositivo ${DEVICE}"
+
+#: ../network-scripts/ifup:110
+msgid "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+msgstr ""
+"Nessun supporto VLAN 802.1Q é disponibile nel kernel per il dispositivo "
+"${DEVICE}"
+
+#: ../network-scripts/ifup:117 ../network-scripts/ifup-eth:134
+msgid ""
+"$alias device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr ""
+"Il dispositivo $alias ${DEVICE} non sembrerebbe essere presente, ritardo "
+"l'inizializzazione."
+
+#: ../network-scripts/ifup:137
+msgid "ERROR: could not add vlan ${VID} as ${DEVICE} on dev ${PHYSDEV}"
+msgstr ""
+"ERRORE: non é stato possibile aggiungere vlan ${VID} come ${DEVICE} su dev "
+"${PHYSDEV}"
+
+#: ../network-scripts/ifup-aliases:67
+msgid "usage: ifup-aliases <net-device> [<parent-config>]\n"
+msgstr "utilizzo: ifup-aliases <net-device> [<parent-config>]\n"
+
+#: ../network-scripts/ifup-aliases:119
+msgid "Missing config file $PARENTCONFIG."
+msgstr "File di configurazione $PARENTCONFIG mancante."
+
+#: ../network-scripts/ifup-aliases:169
+msgid "error in $FILE: invalid alias number"
+msgstr "errore in $FILE: numero di alias non valido"
+
+#: ../network-scripts/ifup-aliases:179
+msgid "error in $FILE: already seen ipaddr $IPADDR in $ipseen"
+msgstr "errore in $FILE: già visto ipaddr $IPADDR in $ipseen"
+
+#: ../network-scripts/ifup-aliases:184
+msgid "error in $FILE: already seen device $parent_device:$DEVNUM in $devseen"
+msgstr ""
+"errore in $FILE: già visto dispositivo $parent_device:$DEVNUM in $devseen"
+
+#: ../network-scripts/ifup-aliases:193
+msgid "error in $FILE: didn't specify device or ipaddr"
+msgstr "errore in $FILE: dispositivo o ipaddr non specificati"
+
+#: ../network-scripts/ifup-aliases:198
+msgid "error iN $FILE: didn't specify netmask or prefix"
+msgstr "errore in $FILE: non è stata specificata la netmask o il prefisso"
+
+#: ../network-scripts/ifup-aliases:238 ../network-scripts/ifup-aliases:249
+msgid "error in ifcfg-${parent_device}: files"
+msgstr "errore in ifcfg-${parent_device}: file"
+
+#: ../network-scripts/ifup-aliases:269
+msgid ""
+"Determining if IP address ${IPADDR} is already in use for device "
+"${parent_device}…"
+msgstr ""
+"Determinazione se l'indirizzo IP ${IPADDR} è già in uso per il dispositivo "
+"${parent_device}…"
+
+#: ../network-scripts/ifup-aliases:273
+msgid "Error, some other host ($ARPINGMAC) already uses address ${IPADDR}."
+msgstr "Errore, un altro host ($ARPINGMAC) utilizza già l'indirizzo ${IPADDR}."
+
+#: ../network-scripts/ifup-aliases:335
+msgid "error in $FILE: IPADDR_START and IPADDR_END don't agree"
+msgstr "errore in $FILE: IPADDR_START e IPADDR_END non comunicano"
+
+#: ../network-scripts/ifup-aliases:340
+msgid "error in $FILE: IPADDR_START greater than IPADDR_END"
+msgstr "errore in $FILE: IPADDR_START è più grande di IPADDR_END"
+
+#: ../network-scripts/ifup-ctc:36
+msgid "ERROR: ${DEVICE} did not come up!"
+msgstr "ERRORE: ${DEVICE} non è stato rilevato!"
+
+#: ../network-scripts/ifup-eth:43
+msgid "Device ${DEVICE} has different MAC address than expected, ignoring."
+msgstr ""
+"Il dispositivo ${DEVICE} ha un indirizzo MAC diverso da quello previsto, "
+"operazione ignorata."
+
+#: ../network-scripts/ifup-eth:51
+msgid "cannot create veth without peer"
+msgstr "non è possibile creare veth senza pari"
+
+#: ../network-scripts/ifup-eth:127
+msgid "Device name does not seem to be present."
+msgstr "Il nome del dispositivo non sembra essere presente."
+
+#: ../network-scripts/ifup-eth:136
+msgid "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr ""
+"Il dispositivo ${DEVICE} non è presente. Sto ritardando l'inizializzazione."
+
+#: ../network-scripts/ifup-eth:232
+msgid "Determining IP information for ${DEVICE}..."
+msgstr "Determinazione informazioni IP per ${DEVICE}..."
+
+#: ../network-scripts/ifup-eth:234
+msgid " failed; no link present.  Check cable?"
+msgstr " fallito; link non presente.  Verificare il cavo?"
+
+#: ../network-scripts/ifup-eth:241 ../network-scripts/ifup-eth:389
+msgid " done."
+msgstr " eseguito."
+
+#: ../network-scripts/ifup-eth:244 ../network-scripts/ifup-eth:391
+msgid " failed."
+msgstr " fallito."
+
+#: ../network-scripts/ifup-eth:268
+msgid "Failed to bring up ${DEVICE}."
+msgstr "Impossibile attivare ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:299
+msgid ""
+"Error, some other host ($ARPINGMAC) already uses address ${ipaddr[$idx]}."
+msgstr ""
+"Errore, un altro host ($ARPINGMAC) utilizza già l'indirizzo ${ipaddr[$idx]}."
+
+#: ../network-scripts/ifup-eth:306
+msgid "Error adding address ${ipaddr[$idx]} for ${DEVICE}."
+msgstr "Errore durante l'aggiunta dell'indirizzo ${ipaddr[$idx]} per ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:333
+msgid "Error adding default gateway ${GATEWAY} for ${DEVICE}."
+msgstr ""
+"Errore durante l'aggiunta del gateway predefinito ${GATEWAY} per ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:338
+msgid "Error adding default gateway for ${REALDEVICE}."
+msgstr "Errore durante l'aggiunta del gateway predefinito per ${REALDEVICE}."
+
+#: ../network-scripts/ifup-eth:376
+msgid "Determining IPv6 information for ${DEVICE}..."
+msgstr "Determinazione delle informazioni IPv6 per ${DEVICE}..."
+
+#: ../network-scripts/ifup-ippp:33
+msgid "ipppd does not exist or is not executable"
+msgstr "ipppd non esiste o non è eseguibile"
+
+#: ../network-scripts/ifup-ippp:40
+msgid "isdnctrl does not exist or is not executable"
+msgstr "isdnctrl non esiste o non è eseguibile"
+
+#: ../network-scripts/ifup-ippp:46
+msgid "cannot list ISDN devices"
+msgstr "non è possibile elencare i dispositivi ISDN"
+
+#: ../network-scripts/ifup-ippp:55 ../network-scripts/ifup-ippp:60
+msgid "$*"
+msgstr "$*"
+
+#: ../network-scripts/ifup-ippp:343
+msgid "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+msgstr "indirizzo ip aggiungi $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+
+#: ../network-scripts/ifup-ippp:349
+msgid "ipppd $options $netmask"
+msgstr "ipppd $options $netmask"
+
+#: ../network-scripts/ifup-ippp:374
+msgid ""
+"Warning: ipppd (kernel 2.4.x and below) doesn't support IPv6 using "
+"encapsulation 'syncppp'"
+msgstr ""
+"Attenzione: ipppd (kernel 2.4.x ed inferiori) non supporta IPv6 con "
+"l'incapsulamento 'syncppp'"
+
+#: ../network-scripts/ifup-ippp:376
+msgid "Warning: link doesn't support IPv6 using encapsulation 'rawip'"
+msgstr "Attenzione: il link non supporta IPv6 con l'incapsulamento 'rawip'"
+
+#: ../network-scripts/ifup-ipv6:99
+msgid ""
+"Global IPv6 forwarding is enabled in configuration, but not currently "
+"enabled in kernel"
+msgstr ""
+"Il forwarding IPv6 globale è attivato nella configurazione, ma non "
+"attualmente abilitato nel kernel."
+
+#: ../network-scripts/ifup-ipv6:100 ../network-scripts/ifup-ipv6:119
+msgid "Please restart network with '/sbin/service network restart'"
+msgstr "Riavviare la rete con '/sbin/service network restart'"
+
+#: ../network-scripts/ifup-ipv6:118
+msgid ""
+"Global IPv6 forwarding is disabled in configuration, but not currently "
+"disabled in kernel"
+msgstr ""
+"Il forwarding IPv6 globale è disattivato nella configurazione, ma non è "
+"correntemente disattivato nel kernel."
+
+#: ../network-scripts/ifup-ipv6:157
+msgid ""
+"Cannot enable IPv6 privacy method '$IPV6_PRIVACY', not supported by kernel"
+msgstr ""
+"Impossibile abilitare metodo privacy IPv6 '$IPV6_PRIVACY', non è supportato "
+"dal kernel"
+
+#: ../network-scripts/ifup-ipv6:182
+msgid "Device 'tun6to4' (from '$DEVICE') is already up, shutdown first"
+msgstr ""
+"Il dispositivo 'tun6to4' (da '$DEVICE') è già attivo, chiuderlo innanzitutto"
+
+#: ../network-scripts/ifup-ipv6:209
+msgid "Given IPv4 address '$ipv4addr' is not globally usable"
+msgstr "l'indirizzo IPv4 '$ipv4addr' fornito non è utilizzabile globalmente"
+
+#: ../network-scripts/ifup-ipv6:222
+msgid ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+msgstr ""
+"La configurazione IPv6to4 richiede un indirizzo IPv4 sulla relativa "
+"interfaccia o diversamente specificato"
+
+#: ../network-scripts/ifup-ipv6:237
+msgid ""
+"Warning: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+msgstr ""
+"Attenzione: l'MTU configurato '$IPV6TO4_MTU' per 6to4 eccede il limite "
+"massimo di '$tunnelmtu', ignorato"
+
+#: ../network-scripts/ifup-ipv6:251
+msgid "Warning: interface 'tun6to4' does not support 'IPV6_DEFAULTGW', ignored"
+msgstr ""
+"Attenzione: l'interfaccia 'tun6to4' non supporta 'IPV6_DEFAULTGW', ignorato"
+
+#: ../network-scripts/ifup-ipv6:287
+msgid ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+msgstr ""
+"L'utilizzo del forwarding di 6to4 e RADVD IPv6 dovrebbe essere attivato, ma "
+"non lo è."
+
+#: ../network-scripts/ifup-ipv6:300
+msgid "Error occurred while calculating the IPv6to4 prefix"
+msgstr "Si è verificato un errore durante il calcolo del prefisso IPv6to4"
+
+#: ../network-scripts/ifup-ipv6:303
+msgid "radvd control enabled, but config is not complete"
+msgstr "Controllo radvd attivato, ma la configurazione non è completa!"
+
+#: ../network-scripts/ifup-ipv6:310
+msgid "6to4 configuration is not valid"
+msgstr "La configurazione di 6to4 non è valida"
+
+#: ../network-scripts/ifup-post:114
+msgid "/etc/resolv.conf was not updated: failed to create temporary file"
+msgstr ""
+"/etc/resolv.conf non è stato aggiornato: impossibile creare il file "
+"temporaneo"
+
+#: ../network-scripts/ifup-routes:8
+msgid "usage: ifup-routes <net-device> [<nickname>]"
+msgstr "utilizzo: ifup-routes <net-device> [<nickname>]"
+
+#: ../network-scripts/ifup-routes:26 ../network-scripts/ifup-routes:47
+msgid "Failed to add route ${line}, using ip route replace instead."
+msgstr ""
+"Impossibile aggiungere la rotta ${line}, al suo posto viene utilizzata la "
+"sostituzione della rotta IP."
+
+#: ../network-scripts/ifup-sit:63
+msgid "Missing remote IPv4 address of tunnel, configuration is not valid"
+msgstr ""
+"L'indirizzo IPv4 remoto del  tunnel è mancante, la configurazione non è "
+"valida"
+
+#: ../network-scripts/ifup-sit:71
+msgid "Device '$DEVICE' is already up, please shutdown first"
+msgstr "Il dispositivo '$DEVICE' è già attivo, chiuderlo innanzitutto"
+
+#: ../network-scripts/ifup-tunnel:61
+msgid "Invalid tunnel type $TYPE"
+msgstr "Tunnel tipo $TYPE non valido"
+
+#: ../network-scripts/init.ipv6-global:161
+msgid "Usage: $0 {start|stop|reload|restart|showsysctl}"
+msgstr "Utilizzo: $0 {start|stop|reload|restart|showsysctl}"
+
+#: ../network-scripts/network-functions:405
+msgid ""
+"Both 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' and 'DHCP_FQDN=${DHCP_FQDN}' are "
+"configured... Using DHCP_FQDN."
+msgstr ""
+"Sia 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' che 'DHCP_FQDN=${DHCP_FQDN}' sono "
+"configurati... Utilizzando DHCP_FQDN."
+
+#: ../network-scripts/network-functions:581
+msgid "Failed to set value '$value' [mode] to ${DEVICE} bonding device"
+msgstr ""
+"Impossibile impostare il valore '$value' [mode] sul dispositivo di "
+"collegamento ${DEVICE}"
+
+#: ../network-scripts/network-functions:587
+msgid "Failed to set value '$value' [miimon] to ${DEVICE} bonding device"
+msgstr ""
+"Impossibile impostare il valore '$value' [miimon] sul dispositivo di "
+"collegamento ${DEVICE}"
+
+#: ../network-scripts/network-functions:607
+msgid ""
+"Failed to set '$arp_ip' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+"Impossibile impostare il valore '$arp_ip' [arp_ip_target] sul dispositivo di "
+"bonding ${DEVICE}"
+
+#: ../network-scripts/network-functions:615
+msgid ""
+"Failed to set '$value' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+"Impossibile impostare il valore '$value' [arp_ip_target] sul dispositivo di "
+"bonding ${DEVICE}"
+
+#: ../network-scripts/network-functions:620
+msgid "Failed to set '$value' value [$key] to ${DEVICE} bonding device"
+msgstr ""
+"Impossibile impostare il valore '$value' [$key] sul dispositivo di bonding "
+"${DEVICE}"
+
+#: ../network-scripts/network-functions:696
+msgid "DEBUG     "
+msgstr "DEBUG     "
+
+#: ../network-scripts/network-functions:699
+msgid "ERROR     "
+msgstr "ERRORE     "
+
+#: ../network-scripts/network-functions:702
+msgid "WARN      "
+msgstr "AVVISO      "
+
+#: ../network-scripts/network-functions:705
+msgid "INFO      "
+msgstr "INFO      "
+
+#: ../network-scripts/network-functions-ipv6:58
+msgid "Missing parameter 'IPv6-network' (arg 1)"
+msgstr "Parametro 'IPv6-network' (arg 1) mancante"
+
+#: ../network-scripts/network-functions-ipv6:63
+msgid "Missing parameter 'IPv6-gateway' (arg 2)"
+msgstr "Parametro mancante 'IPv6-gateway' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:88
+msgid ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+msgstr ""
+"'No route to host' aggiunta route '$networkipv6' verso il gateway "
+"'$gatewayipv6' attraverso il dispositivo '$device'"
+
+#: ../network-scripts/network-functions-ipv6:91
+msgid "Unknown error"
+msgstr "Errore sconosciuto"
+
+#: ../network-scripts/network-functions-ipv6:116
+msgid "Tunnel device 'sit0' enabling didn't work"
+msgstr "Non è stato possibile abilitare il dispositivo di tunnel 'sit0'"
+
+#: ../network-scripts/network-functions-ipv6:142
+#: ../network-scripts/network-functions-ipv6:205
+#: ../network-scripts/network-functions-ipv6:234
+#: ../network-scripts/network-functions-ipv6:314
+#: ../network-scripts/network-functions-ipv6:429
+#: ../network-scripts/network-functions-ipv6:491
+#: ../network-scripts/network-functions-ipv6:525
+#: ../network-scripts/network-functions-ipv6:567
+#: ../network-scripts/network-functions-ipv6:645
+#: ../network-scripts/network-functions-ipv6:703
+#: ../network-scripts/network-functions-ipv6:756
+#: ../network-scripts/network-functions-ipv6:795
+#: ../network-scripts/network-functions-ipv6:923
+#: ../network-scripts/network-functions-ipv6:1056
+msgid "Missing parameter 'device' (arg 1)"
+msgstr "Parametro 'device' (arg 1) mancante"
+
+#: ../network-scripts/network-functions-ipv6:147
+msgid "Missing parameter 'IPv6-address' (arg 2)"
+msgstr "Parametro 'IPv6-address' (arg 2) mancante"
+
+#: ../network-scripts/network-functions-ipv6:161
+msgid "Device '$device' doesn't exist"
+msgstr "Il dispositivo '$device' non esiste"
+
+#: ../network-scripts/network-functions-ipv6:167
+msgid "Device '$device' enabling didn't work"
+msgstr "Non è stato possibile abilitare il dispositivo '$device'"
+
+#: ../network-scripts/network-functions-ipv6:188
+msgid "Cannot add IPv6 address '$address' on dev '$device'"
+msgstr ""
+"Impossibile aggiungere l'indirizzo IPv6 '$address' al dispositivo '$device'"
+
+#: ../network-scripts/network-functions-ipv6:345
+msgid "Missing parameter 'IPv4 address' (arg 1)"
+msgstr "Parametro 'IPv4 address' (arg 1) mancante"
+
+#: ../network-scripts/network-functions-ipv6:385
+msgid "Missing parameter 'address' (arg 1)"
+msgstr "Parametro 'address' mancante (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:396
+msgid "Given address '$addr' is not a global IPv4 one (arg 1)"
+msgstr "L'indirizzo '$addr' fornito non è un indirizzo IPv4 globale (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:400
+msgid "Given address '$addr' is not a valid IPv4 one (arg 1)"
+msgstr "L'indirizzo '$addr' fornito non è un indirizzo IPv4 valido (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:434
+msgid "Missing parameter 'global IPv4 address' (arg 2)"
+msgstr "Parametro 'global IPv4 address' mancante (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:440
+#: ../network-scripts/network-functions-ipv6:497
+#: ../network-scripts/network-functions-ipv6:536
+msgid "Given device '$device' is not supported (arg 1)"
+msgstr "Il dispositivo '$device' fornito non è supportato (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:530
+msgid "Missing parameter 'local IPv4 address' (arg 2)"
+msgstr "Parametro 'local IPv4 address' mancante (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:572
+msgid "Missing parameter 'IPv4-tunnel address' (arg 2)"
+msgstr "Parametro 'IPv4-tunnel address' (arg 2) mancante"
+
+#: ../network-scripts/network-functions-ipv6:592
+msgid ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+msgstr ""
+"L'indirizzo remoto '$addressipv4tunnel' fornito nel dispositivo di tunnel "
+"'$device' è già  configurato nel dispositivo '$devnew'"
+
+#: ../network-scripts/network-functions-ipv6:605
+msgid "Tunnel device '$device' creation didn't work"
+msgstr "Non è stato possibile creare il dispositivo di Tunnel '$device'"
+
+#: ../network-scripts/network-functions-ipv6:612
+msgid "Tunnel device '$device' bringing up didn't work"
+msgstr "Non è stato possibile attivare il dispositivo di tunnel '$device'"
+
+#: ../network-scripts/network-functions-ipv6:708
+msgid "Missing parameter 'selection' (arg 2)"
+msgstr "Parametro 'selection' (arg 2) mancante"
+
+#: ../network-scripts/network-functions-ipv6:712
+msgid "Unsupported selection '$selection' specified (arg 2)"
+msgstr "Selezione '$selection' non supportata (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:800
+msgid "Missing parameter 'IPv6 MTU' (arg 2)"
+msgstr "Parametro 'IPv6 MTU' (arg 2) mancante"
+
+#: ../network-scripts/network-functions-ipv6:806
+msgid "Given IPv6 MTU '$ipv6_mtu' is out of range"
+msgstr "L'IPv6 MTU '$ipv6_mtu' fornito è fuori range"
+
+#: ../network-scripts/network-functions-ipv6:843
+msgid "Given IPv6 default gateway '$address' is not in proper format"
+msgstr "Il default gateway IPv6 '$address' fornito non è nel formato corretto"
+
+#: ../network-scripts/network-functions-ipv6:849
+msgid ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+msgstr ""
+"L'IPv6 default gateway '$address' fornito ha scope '$device_scope' definito, "
+"il dispositivo di default gateway '$device' non verrà utilizzato"
+
+#: ../network-scripts/network-functions-ipv6:857
+msgid ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+msgstr ""
+"Il default gateway IPv6 '$address' fornito è link-local, ma non è stato "
+"specificato uno scope o un dispositivo di gateway"
+
+#: ../network-scripts/network-functions-ipv6:897
+msgid "Given IPv6 default device '$device' requires an explicit nexthop"
+msgstr ""
+"Il dispositivo predefinito IPv6 '$device' fornito necessita di un nexthop "
+"esplicito"
+
+#: ../network-scripts/network-functions-ipv6:900
+msgid "Given IPv6 default device '$device' doesn't exist or isn't up"
+msgstr ""
+"Il dispositivo predefinito IPv6 '$device' fornito non esiste o non è attivo"
+
+#: ../network-scripts/network-functions-ipv6:906
+msgid "No parameters given to setup a default route"
+msgstr "Non ci sono parametri per impostare una default route"
+
+#: ../network-scripts/network-functions-ipv6:961
+msgid "No reason given for sending trigger to radvd"
+msgstr "Non è stata fornita una ragione per inviare un trigger a radvd"
+
+#: ../network-scripts/network-functions-ipv6:966
+msgid "Unsupported reason '$reason' for sending trigger to radvd"
+msgstr "Ragione '$reason' non supportata per spedire trigger a radvd"
+
+#: ../network-scripts/network-functions-ipv6:995
+msgid "Unsupported mechanism '$mechanism' for sending trigger to radvd"
+msgstr ""
+"Il meccanismo '$mechanism' non è supportato per inviare trigger a radvd"
+
+#: ../network-scripts/network-functions-ipv6:1007
+msgid "Given pidfile '$pidfile' doesn't exist, cannot send trigger to radvd"
+msgstr ""
+"Il pidfile '$pidfile' fornito non esiste, non è possibile spedire un trigger "
+"a radvd"
+
+#: ../network-scripts/network-functions-ipv6:1016
+msgid "Pidfile '$pidfile' is empty, cannot send trigger to radvd"
+msgstr "Pidfile '$pidfile' è vuoto, non è possibile inviare trigger a radvd"
+
+#: ../network-scripts/network-functions-ipv6:1033
+msgid "radvd not (properly) installed, triggering failed"
+msgstr "radvd non installato  correttamente, fallito triggering"
+
+#: ../network-scripts/network-functions-ipv6:1068
+msgid "Duplicate Address Detection: Duplicate addresses detected"
+msgstr "Rilevamento indirizzi duplicati: indirizzi duplicati rilevati"
+
+#: ../network-scripts/network-functions-ipv6:1069
+msgid "Duplicate Address Detection: Please, fix your network configuration"
+msgstr "Rilevamento di indirizzi duplicati: correggi la configurazione di rete"
+
+#: ../network-scripts/network-functions-ipv6:1073
+msgid ""
+"Waiting for interface ${device} IPv6 address(es) to leave the 'tentative' "
+"state"
+msgstr ""
+"In attesa che l'indirizzo/gli indirizzi IPv6 dell'interfaccia ${device} esca/"
+"abbandonino lo stato \"provvisorio\""
+
+#: ../network-scripts/network-functions-ipv6:1081
+msgid "Some IPv6 address(es) of ${device} remain still in 'tentative' state"
+msgstr ""
+"Alcuni indirizzi IPv6 di ${device} rimangono ancora nello stato 'provvisorio'"
+
+#: ../network-scripts/network-functions-ipv6:1082
+msgid "Run 'ip -6 addr show dev ${device} tentative' for more info"
+msgstr ""
+"Esegui 'ip -6 addr show dev ${device} provvisorio' per maggiori informazioni"
+
+#: ../usr/sbin/service:50 ../usr/sbin/service:66
+msgid "Support for initscripts isn't installed"
+msgstr "Il supporto per gli initscript non è installato"
+
+#: ../usr/sbin/service:108
+msgid ""
+"Redirecting to /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:"
+"+ }${OPTIONS}"
+msgstr ""
+"Reindirizzamento a /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:+ "
+"}${OPTIONS}"
+
+#: ../usr/sbin/service:111
+msgid ""
+"The service command supports only basic LSB actions (start, stop, restart, "
+"try-restart, reload, reload-or-restart, try-reload-or-restart, force-reload, "
+"status, condrestart). For other actions, please try to use systemctl."
+msgstr ""
+"Il comando service supporta solo le azioni LSB di base (avvio, arresto, "
+"riavvio, prova a riavviare, ricarica, ricarica o riavvia, prova a ricaricare "
+"o riavviare, forza ricarica, stato, condrestart). Per altre azioni, provare "
+"a utilizzare systemctl."
+
+#: ../etc/rc.d/init.d/functions:33
+msgid "Starting $prog (via systemctl): "
+msgstr "Avvio di $prog (tramite systemctl): "
+
+#: ../etc/rc.d/init.d/functions:36
+msgid "Stopping $prog (via systemctl): "
+msgstr "Arresto di $prog (tramite systemctl): "
+
+#: ../etc/rc.d/init.d/functions:39
+msgid "Reloading $prog configuration (via systemctl): "
+msgstr "Ricaricamento della configurazione di $prog (tramite systemctl): "
+
+#: ../etc/rc.d/init.d/functions:42
+msgid "Restarting $prog (via systemctl): "
+msgstr "Riavvio di $prog (tramite systemctl): "
+
+#: ../etc/rc.d/init.d/functions:52
+msgid "Reloading systemd: "
+msgstr "Ricaricamento di systemd: "
+
+#: ../etc/rc.d/init.d/functions:236 ../etc/rc.d/init.d/functions:274
+msgid "$0: Usage: daemon [+/-nicelevel] {program}"
+msgstr "$0: Utilizzo: demone [+/-nicelevel]{program}"
+
+#: ../etc/rc.d/init.d/functions:304
+msgid "$base startup"
+msgstr "Avvio di $base"
+
+#: ../etc/rc.d/init.d/functions:314 ../etc/rc.d/init.d/functions:324
+#: ../etc/rc.d/init.d/functions:333
+msgid ""
+"Usage: killproc [-p {pidfile} [-b {binary}]] [-d {delay}] {program} [-signal]"
+msgstr ""
+"Utilizzo: killproc [-p {pidfile} [-b {binario}]] [-d {ritardo}] {programma} "
+"[-segnale]"
+
+#: ../etc/rc.d/init.d/functions:323 ../etc/rc.d/init.d/functions:450
+msgid "-b option can be used only with -p"
+msgstr "L'opzione -b può essere utilizzata solo con -p"
+
+#: ../etc/rc.d/init.d/functions:353 ../etc/rc.d/init.d/functions:363
+#: ../etc/rc.d/init.d/functions:378
+msgid "$base shutdown"
+msgstr "Arresto di $base"
+
+#: ../etc/rc.d/init.d/functions:369
+msgid "$base $killlevel"
+msgstr "$base $killlevel"
+
+#: ../etc/rc.d/init.d/functions:396
+msgid "Usage: pidfileofproc {program}"
+msgstr "Utilizzo: pidfileofproc {program}"
+
+#: ../etc/rc.d/init.d/functions:411
+msgid "Usage: pidofproc [-p {pidfile}] {program}"
+msgstr "Utilizzo: pidofproc [-p {pidfile}] {programma}"
+
+#: ../etc/rc.d/init.d/functions:437 ../etc/rc.d/init.d/functions:451
+msgid "Usage: status [-p {pidfile}] [-l {lockfile}] [-b {binary}] {program}"
+msgstr ""
+"Utilizzo: stato [-p {pidfile}] [-l {lockfile}] [-b {binario}] {programma}"
+
+#: ../etc/rc.d/init.d/functions:478 ../etc/rc.d/init.d/functions:484
+msgid "${base} (pid $pid) is running..."
+msgstr "${base} (pid $pid) in esecuzione..."
+
+#: ../etc/rc.d/init.d/functions:488
+msgid "${base} dead but pid file exists"
+msgstr "${base} è inattivo ma il file pid esiste"
+
+#: ../etc/rc.d/init.d/functions:492
+msgid "${base} status unknown due to insufficient privileges."
+msgstr "${base} stato sconosciuto a causa di privilegi non sufficienti."
+
+#: ../etc/rc.d/init.d/functions:501
+msgid "${base} dead but subsys locked"
+msgstr "${base} inattivo ma subsys bloccato"
+
+#: ../etc/rc.d/init.d/functions:504
+msgid "${base} is stopped"
+msgstr "${base} è interrotto"
+
+#: ../etc/rc.d/init.d/functions:512
+msgid "  OK  "
+msgstr "  OK  "
+
+#: ../etc/rc.d/init.d/functions:523
+msgid "FAILED"
+msgstr "FALLITO"
+
+#: ../etc/rc.d/init.d/functions:534
+msgid "PASSED"
+msgstr "PASSATO"
+
+#: ../etc/rc.d/init.d/functions:545
+msgid "WARNING"
+msgstr "ATTENZIONE"
+
+#: ../etc/rc.d/init.d/functions:595
+msgid "$STRING"
+msgstr "$STRING"
+
+#: ../etc/rc.d/init.d/network:52
+msgid ""
+"You are using 'network' service provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+"Stai utilizzando il servizio 'network' fornito da 'network-scripts', che ora "
+"è obsoleto."
+
+#: ../etc/rc.d/init.d/network:54
+msgid ""
+"It is advised to switch to 'NetworkManager' instead for network management."
+msgstr "Per la gestione della rete si consiglia di passare a 'NetworkManager'."
+
+#: ../etc/rc.d/init.d/network:77
+msgid "Bringing up loopback interface: "
+msgstr "Attivazione dell'interfaccia di loopback:"
+
+#: ../etc/rc.d/init.d/network:81
+msgid "No 802.1Q VLAN support available in kernel."
+msgstr "Il supporto No 802.1Q VLAN è disponibile nel kernel."
+
+#: ../etc/rc.d/init.d/network:132 ../etc/rc.d/init.d/network:139
+msgid "Bringing up interface $i: "
+msgstr "Attivazione dell'interfaccia $i: "
+
+#: ../etc/rc.d/init.d/network:151
+msgid "Legacy static-route support not available: /sbin/route not found"
+msgstr "Supporto legacy static-route non disponibile: /sbin/route non trovato"
+
+#: ../etc/rc.d/init.d/network:178
+msgid ""
+"Target is not reachable, but timeout was already reached. Continuing anyway."
+msgstr ""
+"L'obiettivo non è raggiungibile, ma il timeout è già stato raggiunto. "
+"Proseguo comunque."
+
+#: ../etc/rc.d/init.d/network:189
+msgid "rootfs or /usr is on network filesystem, leaving network up"
+msgstr ""
+"rootfs o /usr si trova sul file system di rete, lasciando la rete attiva"
+
+#: ../etc/rc.d/init.d/network:199
+msgid "system is shutting down, leaving interfaces up as requested"
+msgstr ""
+"il sistema si sta spegnendo, lasciando le interfacce attive come richiesto"
+
+#: ../etc/rc.d/init.d/network:249
+msgid "Shutting down interface $i: "
+msgstr "Arresto dell'interfaccia $i: "
+
+#: ../etc/rc.d/init.d/network:255
+msgid "Shutting down loopback interface: "
+msgstr "Arresto dell'interfaccia di loopback: "
+
+#: ../etc/rc.d/init.d/network:267
+msgid "Configured devices:"
+msgstr "Dispositivi configurati:"
+
+#: ../etc/rc.d/init.d/network:270
+msgid "Currently active devices:"
+msgstr "Dispositivi attualmente attivi:"
+
+#: ../etc/rc.d/init.d/network:280
+msgid "Usage: $0 {start|stop|status|restart|force-reload}"
+msgstr "Utilizzo: $0 {start|stop|status|restart|force-reload}"
+
+#, fuzzy
+#~| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+#~ msgid "Usage: killproc -p pidfile -b binary program"
+#~ msgstr "Utilizzo: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+
+#~ msgid "Usage: status [-p pidfile] {program}"
+#~ msgstr "Utilizzo: status [-p pidfile] {programma}"
+
+#~ msgid "Server address not specified in /etc/sysconfig/netconsole"
+#~ msgstr "Indirizzo del server non specificato in /etc/sysconfig/netconsole"
+
+#~ msgid "Usage: $0 {start|stop|status|restart|condrestart}"
+#~ msgstr "Utilizzo: $0 {start|stop|status|restart|condrestart}"
+
+#~ msgid "netconsole module loaded"
+#~ msgstr "modulo netconsole caricato"
+
+#~ msgid "Bridge support not available: brctl not found"
+#~ msgstr "Supporto bridge non disponibile: brctl non trovato"
+
+#~ msgid "Initializing netconsole"
+#~ msgstr "Inizializzazione di netconsole"
+
+#~ msgid "netconsole module not loaded"
+#~ msgstr "modulo netconsole non caricato"
+
+#~ msgid "Usage: sys-unconfig"
+#~ msgstr "Utilizzo: sys-unconfig"
+
+#~ msgid "Disabling netconsole"
+#~ msgstr "Disabilitazione di netconsole"
+
+#~ msgid "netconsole: can't resolve MAC address of $SYSLOGADDR"
+#~ msgstr "netconsole: impossibile risolvere l'indirizzo MAC di $SYSLOGADDR"

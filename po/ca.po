@@ -1,0 +1,900 @@
+# Translators:
+# Dimitris Glezos <glezos@indifex.com>, 2011
+# Xavier Conde Rueda <xavi.conde@gmail.com>, 2006
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-02-23 05:33+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
+"Language-Team: Catalan <fedora@llistes.softcatala.org>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.6.2\n"
+
+#: ../network-scripts/ifdown:15 ../network-scripts/ifdown:22
+msgid "usage: ifdown <configuration>"
+msgstr "ús: ifdown <configuració>"
+
+#: ../network-scripts/ifdown:33 ../network-scripts/ifup:49
+msgid "Users cannot control this device."
+msgstr "Els usuaris no poden controlar aquest dispositiu."
+
+#: ../network-scripts/ifdown:40
+msgid ""
+"You are using 'ifdown' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifdown:41 ../network-scripts/ifup:57
+#: ../etc/rc.d/init.d/network:53
+msgid "'network-scripts' will be removed from distribution in near future."
+msgstr ""
+
+#: ../network-scripts/ifdown:42 ../network-scripts/ifup:58
+msgid ""
+"It is advised to switch to 'NetworkManager' instead - it provides 'ifup/"
+"ifdown' scripts as well."
+msgstr ""
+
+#: ../network-scripts/ifdown-eth:46 ../network-scripts/ifdown-eth:52
+msgid ""
+"Device ${DEVICE} has MAC address ${FOUNDMACADDR}, instead of configured "
+"address ${HWADDR}. Ignoring."
+msgstr ""
+"El dispositiu ${DEVICE} té l'adreça MAC ${FOUNDMACADDR} en lloc de l'adreça "
+"configurada ${HWADDR}. S'està ignorant."
+
+#: ../network-scripts/ifdown-routes:6
+msgid "usage: ifdown-routes <net-device> [<nickname>]"
+msgstr "ús: ifup-routes <dispositiu-xarxa> [<sobrenom>]"
+
+#: ../network-scripts/ifdown-sit:40 ../network-scripts/ifup-sit:58
+msgid ""
+"Device '$DEVICE' isn't supported here, use IPV6_AUTOTUNNEL setting and "
+"restart (IPv6) networking"
+msgstr ""
+"El dispositiu '$DEVICE' no està suportat aquí, utilitzeu l'ajust "
+"IPV6_AUTOTUNNEL i reinicieu la xarxa (IPv6)"
+
+#: ../network-scripts/ifdown-tunnel:36 ../network-scripts/ifup-tunnel:68
+msgid "Device '$DEVICE' isn't supported as a valid GRE device name."
+msgstr ""
+"El dispositiu '$DEVICE' no està suportat com a un nom vàlid de dispositiu "
+"GRE."
+
+#: ../network-scripts/ifup:30 ../network-scripts/ifup:38
+msgid "Usage: ifup <configuration>"
+msgstr "Ús: ifup <configuració>"
+
+#: ../network-scripts/ifup:37
+msgid "$0: configuration for ${1} not found."
+msgstr "$0: no s'ha trobat la configuració per a ${1}."
+
+#: ../network-scripts/ifup:56
+msgid ""
+"You are using 'ifup' script provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../network-scripts/ifup:87 ../network-scripts/ifup:102
+msgid "PHYSDEV should be set for device ${DEVICE}"
+msgstr "S'hauria d'establir PHYSDEV per al dispositiu ${DEVICE}"
+
+#: ../network-scripts/ifup:110
+msgid "No 802.1Q VLAN support available in kernel for device ${DEVICE}"
+msgstr ""
+"El kernel no incorpora cap compatibilitat per a VLAN 802.1Q per al "
+"dispositiu ${DEVICE}"
+
+#: ../network-scripts/ifup:117 ../network-scripts/ifup-eth:134
+msgid ""
+"$alias device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr ""
+"El dispositiu $alias ${DEVICE} no està connectat i s'endarrerirà la "
+"inicialització."
+
+#: ../network-scripts/ifup:137
+msgid "ERROR: could not add vlan ${VID} as ${DEVICE} on dev ${PHYSDEV}"
+msgstr ""
+"ERROR: no s'ha pogut afegir la vlan ${VID} com a ${DEVICE} al dev ${PHYSDEV}"
+
+#: ../network-scripts/ifup-aliases:67
+msgid "usage: ifup-aliases <net-device> [<parent-config>]\n"
+msgstr "Ús: ifup-aliases <dispositiu-xarxa> [<configuració-pare>]\n"
+
+#: ../network-scripts/ifup-aliases:119
+msgid "Missing config file $PARENTCONFIG."
+msgstr "No es troba el fitxer de configuració $PARENTCONFIG."
+
+#: ../network-scripts/ifup-aliases:169
+msgid "error in $FILE: invalid alias number"
+msgstr "error a $FILE: el nombre de l'àlies no és vàlid"
+
+#: ../network-scripts/ifup-aliases:179
+msgid "error in $FILE: already seen ipaddr $IPADDR in $ipseen"
+msgstr ""
+"S'ha produït un error a $FILE: ja s'ha trobat l'adreça IP $IPADDR a $ipseen"
+
+#: ../network-scripts/ifup-aliases:184
+msgid "error in $FILE: already seen device $parent_device:$DEVNUM in $devseen"
+msgstr ""
+"s'ha produït un error a $FILE: ja s'ha trobat el dispositiu $parent_device:"
+"$DEVNUM a $devseen"
+
+#: ../network-scripts/ifup-aliases:193
+msgid "error in $FILE: didn't specify device or ipaddr"
+msgstr ""
+"S'ha produït un error a $FILE: no es va especificar el dispositiu o l'adreça "
+"IP"
+
+#: ../network-scripts/ifup-aliases:198
+msgid "error iN $FILE: didn't specify netmask or prefix"
+msgstr "error a $FILE: no es va especificar la màscara de xarxa o el prefix"
+
+#: ../network-scripts/ifup-aliases:238 ../network-scripts/ifup-aliases:249
+msgid "error in ifcfg-${parent_device}: files"
+msgstr "S'ha produït un error a ifcfg-${parent_device}: fitxers"
+
+#: ../network-scripts/ifup-aliases:269
+#, fuzzy
+#| msgid ""
+#| "Determining if ip address ${IPADDR} is already in use for device "
+#| "${parent_device}..."
+msgid ""
+"Determining if IP address ${IPADDR} is already in use for device "
+"${parent_device}…"
+msgstr ""
+"S'està  determinant si l'adreça IP ${IPADDR} ja està en ús per al dispositiu "
+"${parent_device}..."
+
+#: ../network-scripts/ifup-aliases:273
+msgid "Error, some other host ($ARPINGMAC) already uses address ${IPADDR}."
+msgstr ""
+"S'ha produït un error, un altre amfitrió ($ARPINGMAC) ja utilitza l'adreça "
+"${IPADDR}."
+
+#: ../network-scripts/ifup-aliases:335
+msgid "error in $FILE: IPADDR_START and IPADDR_END don't agree"
+msgstr "S'ha produït un error a $FILE: IPADDR_START i IPADDR_END no concorden"
+
+#: ../network-scripts/ifup-aliases:340
+msgid "error in $FILE: IPADDR_START greater than IPADDR_END"
+msgstr "S'ha produït un error a $FILE: IPADDR_START és més gran que IPADDR_END"
+
+#: ../network-scripts/ifup-ctc:36
+msgid "ERROR: ${DEVICE} did not come up!"
+msgstr "ERROR: ${DEVICE} no va aixecar-se!"
+
+#: ../network-scripts/ifup-eth:43
+msgid "Device ${DEVICE} has different MAC address than expected, ignoring."
+msgstr ""
+"El dispositiu ${DEVICE} té una adreça MAC diferent de l'esperada i "
+"s'ignorarà."
+
+#: ../network-scripts/ifup-eth:51
+msgid "cannot create veth without peer"
+msgstr ""
+
+#: ../network-scripts/ifup-eth:127
+#, fuzzy
+#| msgid ""
+#| "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgid "Device name does not seem to be present."
+msgstr ""
+"El dispositiu ${DEVICE} sembla que no estigui present i s'endarrerirà la "
+"inicialització."
+
+#: ../network-scripts/ifup-eth:136
+msgid "Device ${DEVICE} does not seem to be present, delaying initialization."
+msgstr ""
+"El dispositiu ${DEVICE} sembla que no estigui present i s'endarrerirà la "
+"inicialització."
+
+#: ../network-scripts/ifup-eth:232
+msgid "Determining IP information for ${DEVICE}..."
+msgstr "S'està determinant la informació de la IP per a ${DEVICE}..."
+
+#: ../network-scripts/ifup-eth:234
+msgid " failed; no link present.  Check cable?"
+msgstr " ha fallat; no hi ha senyal. Comproveu el cable?"
+
+#: ../network-scripts/ifup-eth:241 ../network-scripts/ifup-eth:389
+msgid " done."
+msgstr " fet."
+
+#: ../network-scripts/ifup-eth:244 ../network-scripts/ifup-eth:391
+msgid " failed."
+msgstr " ha fallat."
+
+#: ../network-scripts/ifup-eth:268
+msgid "Failed to bring up ${DEVICE}."
+msgstr "Ha fallat l'aixecament de ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:299
+msgid ""
+"Error, some other host ($ARPINGMAC) already uses address ${ipaddr[$idx]}."
+msgstr ""
+"Error, algun altre amfitrió ($ARPINGMAC) ja utilitza l'adreça "
+"${ipaddr[$idx]}."
+
+#: ../network-scripts/ifup-eth:306
+msgid "Error adding address ${ipaddr[$idx]} for ${DEVICE}."
+msgstr ""
+"S'ha produït un error en afegir l'adreça ${ipaddr[$idx]} per a ${DEVICE}."
+
+#: ../network-scripts/ifup-eth:333
+msgid "Error adding default gateway ${GATEWAY} for ${DEVICE}."
+msgstr ""
+"S'ha produït un error en la passarel·la per defecte ${GATEWAY} per a "
+"${DEVICE}."
+
+#: ../network-scripts/ifup-eth:338
+msgid "Error adding default gateway for ${REALDEVICE}."
+msgstr ""
+"S'ha produït un error en afegir la passarel·la per defecte per a "
+"${REALDEVICE}."
+
+#: ../network-scripts/ifup-eth:376
+msgid "Determining IPv6 information for ${DEVICE}..."
+msgstr "S'està determinant la informació IPv6 per a ${DEVICE}..."
+
+#: ../network-scripts/ifup-ippp:33
+msgid "ipppd does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:40
+msgid "isdnctrl does not exist or is not executable"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:46
+msgid "cannot list ISDN devices"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:55 ../network-scripts/ifup-ippp:60
+msgid "$*"
+msgstr "$*"
+
+#: ../network-scripts/ifup-ippp:343
+msgid "ip addr add $IPADDR peer $GATEWAY${pfx:/$pfx} dev $DEVICE"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:349
+msgid "ipppd $options $netmask"
+msgstr ""
+
+#: ../network-scripts/ifup-ippp:374
+msgid ""
+"Warning: ipppd (kernel 2.4.x and below) doesn't support IPv6 using "
+"encapsulation 'syncppp'"
+msgstr ""
+"Advertència: ipppd (kernel 2.4.x i inferiors) no suporta IPv6 amb "
+"encapsulació 'syncppp'"
+
+#: ../network-scripts/ifup-ippp:376
+msgid "Warning: link doesn't support IPv6 using encapsulation 'rawip'"
+msgstr "Advertència: l'enllaç no suporta IPv6 amb encapsulació 'rawip'"
+
+#: ../network-scripts/ifup-ipv6:99
+msgid ""
+"Global IPv6 forwarding is enabled in configuration, but not currently "
+"enabled in kernel"
+msgstr ""
+"El reenviament global IPv6 està habilitat a la configuració, però actualment "
+"no està habilitat al kernel"
+
+#: ../network-scripts/ifup-ipv6:100 ../network-scripts/ifup-ipv6:119
+msgid "Please restart network with '/sbin/service network restart'"
+msgstr "Reinicieu la xarxa amb '/sbin/service network restart'"
+
+#: ../network-scripts/ifup-ipv6:118
+msgid ""
+"Global IPv6 forwarding is disabled in configuration, but not currently "
+"disabled in kernel"
+msgstr ""
+"El reenviament global d'IPv6 està inhabilitat a la configuració, però "
+"actualment no està inhabilitat al kernel"
+
+#: ../network-scripts/ifup-ipv6:157
+msgid ""
+"Cannot enable IPv6 privacy method '$IPV6_PRIVACY', not supported by kernel"
+msgstr ""
+"No es pot habilitar el mètode de privadesa d'IPv6 '$IPV6_PRIVACY', no està "
+"suportat pel kernel"
+
+#: ../network-scripts/ifup-ipv6:182
+msgid "Device 'tun6to4' (from '$DEVICE') is already up, shutdown first"
+msgstr ""
+"El dispositiu 'tun6to4' (des de '$DEVICE') ja està aixecat, atureu-ho abans"
+
+#: ../network-scripts/ifup-ipv6:209
+msgid "Given IPv4 address '$ipv4addr' is not globally usable"
+msgstr "L'adreça IPv4 '$ipv4addr' indicada no pot utilitzar-se globalment"
+
+#: ../network-scripts/ifup-ipv6:222
+msgid ""
+"IPv6to4 configuration needs an IPv4 address on related interface or "
+"otherwise specified"
+msgstr ""
+"La configuració d'IPv6to4 necessita una adreça IPv4 a la interfície "
+"relacionada o a una altra especificada"
+
+#: ../network-scripts/ifup-ipv6:237
+msgid ""
+"Warning: configured MTU '$IPV6TO4_MTU' for 6to4 exceeds maximum limit of "
+"'$tunnelmtu', ignored"
+msgstr ""
+"Advertència: la configuració de la MTU '$IPV6TO4_MTU' per a 6to4 excedeix "
+"del límit màxim de '$tunnelmtu' i s'ha ignorat"
+
+#: ../network-scripts/ifup-ipv6:251
+msgid "Warning: interface 'tun6to4' does not support 'IPV6_DEFAULTGW', ignored"
+msgstr ""
+"Advertència: la interfície 'tun6to4' no dóna suport 'IPV6_DEFAULTGW' i s'ha "
+"ignorat"
+
+#: ../network-scripts/ifup-ipv6:287
+msgid ""
+"Using 6to4 and RADVD IPv6 forwarding usually should be enabled, but it isn't"
+msgstr ""
+"Normalment s'hauria d'habilitar el reenviament d'IPv6 6to4 i RADVD, però no "
+"ho estan"
+
+#: ../network-scripts/ifup-ipv6:300
+msgid "Error occurred while calculating the IPv6to4 prefix"
+msgstr "S'ha produït un error mentre s'estava calculant el prefix d'IPv6to4"
+
+#: ../network-scripts/ifup-ipv6:303
+msgid "radvd control enabled, but config is not complete"
+msgstr ""
+"El control radvd està habilitat però la configuració no està completada"
+
+#: ../network-scripts/ifup-ipv6:310
+msgid "6to4 configuration is not valid"
+msgstr "La configuració de 6to4 no és vàlida"
+
+#: ../network-scripts/ifup-post:114
+msgid "/etc/resolv.conf was not updated: failed to create temporary file"
+msgstr ""
+
+#: ../network-scripts/ifup-routes:8
+msgid "usage: ifup-routes <net-device> [<nickname>]"
+msgstr "ús: ifup-routes <dispositiu-xarxa> [<sobrenom>]"
+
+#: ../network-scripts/ifup-routes:26 ../network-scripts/ifup-routes:47
+msgid "Failed to add route ${line}, using ip route replace instead."
+msgstr ""
+
+#: ../network-scripts/ifup-sit:63
+msgid "Missing remote IPv4 address of tunnel, configuration is not valid"
+msgstr "La configuració no és vàlida, falta l'adreça remota IPv4 del túnel"
+
+#: ../network-scripts/ifup-sit:71
+msgid "Device '$DEVICE' is already up, please shutdown first"
+msgstr "El dispositiu '$DEVICE' encara està aixecat, atureu-ho primer"
+
+#: ../network-scripts/ifup-tunnel:61
+msgid "Invalid tunnel type $TYPE"
+msgstr "El tipus de túnel $TYPE no és vàlid"
+
+#: ../network-scripts/init.ipv6-global:161
+msgid "Usage: $0 {start|stop|reload|restart|showsysctl}"
+msgstr "Ús: $0 {start|stop|reload|restart|showsysctl}"
+
+#: ../network-scripts/network-functions:405
+msgid ""
+"Both 'DHCP_HOSTNAME=${DHCP_HOSTNAME}' and 'DHCP_FQDN=${DHCP_FQDN}' are "
+"configured... Using DHCP_FQDN."
+msgstr ""
+
+#: ../network-scripts/network-functions:581
+msgid "Failed to set value '$value' [mode] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:587
+msgid "Failed to set value '$value' [miimon] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:607
+msgid ""
+"Failed to set '$arp_ip' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:615
+msgid ""
+"Failed to set '$value' value [arp_ip_target] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:620
+msgid "Failed to set '$value' value [$key] to ${DEVICE} bonding device"
+msgstr ""
+
+#: ../network-scripts/network-functions:696
+msgid "DEBUG     "
+msgstr "DEPURACIÓ     "
+
+#: ../network-scripts/network-functions:699
+msgid "ERROR     "
+msgstr "ERROR     "
+
+#: ../network-scripts/network-functions:702
+msgid "WARN      "
+msgstr "AVÍS      "
+
+#: ../network-scripts/network-functions:705
+msgid "INFO      "
+msgstr "INFO      "
+
+#: ../network-scripts/network-functions-ipv6:58
+msgid "Missing parameter 'IPv6-network' (arg 1)"
+msgstr "Falta el paràmetre 'IPv6-network' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:63
+msgid "Missing parameter 'IPv6-gateway' (arg 2)"
+msgstr "Falta el paràmetre 'IPv6-gateway' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:88
+msgid ""
+"'No route to host' adding route '$networkipv6' via gateway '$gatewayipv6' "
+"through device '$device'"
+msgstr ""
+"'No hi ha cap ruta a l'amfitrió' en afegir la ruta '$networkipv6' a través "
+"de la passarel·la '$gatewayipv6' a través del dispositiu '$device'"
+
+#: ../network-scripts/network-functions-ipv6:91
+msgid "Unknown error"
+msgstr "Error desconegut"
+
+#: ../network-scripts/network-functions-ipv6:116
+msgid "Tunnel device 'sit0' enabling didn't work"
+msgstr "No va funcionar l'habilitació del dispositiu túnel 'sit0'"
+
+#: ../network-scripts/network-functions-ipv6:142
+#: ../network-scripts/network-functions-ipv6:205
+#: ../network-scripts/network-functions-ipv6:234
+#: ../network-scripts/network-functions-ipv6:314
+#: ../network-scripts/network-functions-ipv6:429
+#: ../network-scripts/network-functions-ipv6:491
+#: ../network-scripts/network-functions-ipv6:525
+#: ../network-scripts/network-functions-ipv6:567
+#: ../network-scripts/network-functions-ipv6:645
+#: ../network-scripts/network-functions-ipv6:703
+#: ../network-scripts/network-functions-ipv6:756
+#: ../network-scripts/network-functions-ipv6:795
+#: ../network-scripts/network-functions-ipv6:923
+#: ../network-scripts/network-functions-ipv6:1056
+msgid "Missing parameter 'device' (arg 1)"
+msgstr "Falta el paràmetre 'device' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:147
+msgid "Missing parameter 'IPv6-address' (arg 2)"
+msgstr "Falta el paràmetre 'IPv6-address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:161
+msgid "Device '$device' doesn't exist"
+msgstr "El dispositiu '$device' no existeix"
+
+#: ../network-scripts/network-functions-ipv6:167
+msgid "Device '$device' enabling didn't work"
+msgstr "No ha funcionat l'activació del dispositiu '$device'"
+
+#: ../network-scripts/network-functions-ipv6:188
+msgid "Cannot add IPv6 address '$address' on dev '$device'"
+msgstr "No es pot afegir l'adreça IPv6 '$address' al dispositiu '$device'"
+
+#: ../network-scripts/network-functions-ipv6:345
+msgid "Missing parameter 'IPv4 address' (arg 1)"
+msgstr "Falta el paràmetre 'IPv4 address' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:385
+msgid "Missing parameter 'address' (arg 1)"
+msgstr "Falta el paràmetre 'address' (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:396
+msgid "Given address '$addr' is not a global IPv4 one (arg 1)"
+msgstr "L'adreça '$addr' indicada no és una adreça global IPv4 (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:400
+msgid "Given address '$addr' is not a valid IPv4 one (arg 1)"
+msgstr "L'adreça '$addr' indicada no és una adreça IPv4 vàlida (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:434
+msgid "Missing parameter 'global IPv4 address' (arg 2)"
+msgstr "Falta el paràmetre 'global IPv4 address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:440
+#: ../network-scripts/network-functions-ipv6:497
+#: ../network-scripts/network-functions-ipv6:536
+msgid "Given device '$device' is not supported (arg 1)"
+msgstr "El dispositiu '$device' indicat no està suportat (arg 1)"
+
+#: ../network-scripts/network-functions-ipv6:530
+msgid "Missing parameter 'local IPv4 address' (arg 2)"
+msgstr "Falta el paràmetre 'local IPv4 address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:572
+msgid "Missing parameter 'IPv4-tunnel address' (arg 2)"
+msgstr "Falta el paràmetre 'IPv4-tunnel address' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:592
+msgid ""
+"Given remote address '$addressipv4tunnel' on tunnel device '$device' is "
+"already configured on device '$devnew'"
+msgstr ""
+"L'adreça remota '$addressipv4tunnel' indicada al dispositiu de túnel "
+"'$device' ja està configurada al dispositiu '$devnew'"
+
+#: ../network-scripts/network-functions-ipv6:605
+msgid "Tunnel device '$device' creation didn't work"
+msgstr "La creació del dispositiu túnel '$device' no ha funcionat"
+
+#: ../network-scripts/network-functions-ipv6:612
+msgid "Tunnel device '$device' bringing up didn't work"
+msgstr "L'aixecament del dispositiu túnel '$device' no va funcionar"
+
+#: ../network-scripts/network-functions-ipv6:708
+msgid "Missing parameter 'selection' (arg 2)"
+msgstr "Falta el paràmetre 'selection' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:712
+msgid "Unsupported selection '$selection' specified (arg 2)"
+msgstr "La selecció '$selection' especificada no està suportada (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:800
+msgid "Missing parameter 'IPv6 MTU' (arg 2)"
+msgstr "Falta el paràmetre 'IPv6 MTU' (arg 2)"
+
+#: ../network-scripts/network-functions-ipv6:806
+msgid "Given IPv6 MTU '$ipv6_mtu' is out of range"
+msgstr "La MTU d'IPv6 '$ipv6_mtu' indicada està fora del rang"
+
+#: ../network-scripts/network-functions-ipv6:843
+msgid "Given IPv6 default gateway '$address' is not in proper format"
+msgstr ""
+"La passarel·la per defecte IPv6 '$address' indicada no té el format adequat"
+
+#: ../network-scripts/network-functions-ipv6:849
+msgid ""
+"Given IPv6 default gateway '$address' has scope '$device_scope' defined, "
+"given default gateway device '$device' will be not used"
+msgstr ""
+"A causa que la passarel·la per defecte d'IPv6 '$address' que s'ha indicat té "
+"definit l'àmbit '$device_scope', no s'utilitzarà el dispositiu de "
+"passarel·la per defecte '$device' que s'ha indicat"
+
+#: ../network-scripts/network-functions-ipv6:857
+msgid ""
+"Given IPv6 default gateway '$address' is link-local, but no scope or gateway "
+"device is specified"
+msgstr ""
+"La passarel·la per defecte d'IPv6 '$address' que s'ha indicat és d'enllaç "
+"local, però no s'ha especificat cap àmbit o dispositiu de passarel·la"
+
+#: ../network-scripts/network-functions-ipv6:897
+msgid "Given IPv6 default device '$device' requires an explicit nexthop"
+msgstr ""
+"El dispositiu per defecte d'IPv6 '$device' indicat requereix un següent salt "
+"explícit"
+
+#: ../network-scripts/network-functions-ipv6:900
+msgid "Given IPv6 default device '$device' doesn't exist or isn't up"
+msgstr ""
+"El dispositiu per defecte d'IPv6 '$device' indicat no existeix o bé no està "
+"aixecat"
+
+#: ../network-scripts/network-functions-ipv6:906
+msgid "No parameters given to setup a default route"
+msgstr "No s'ha indicat cap paràmetre per configurar una ruta per defecte"
+
+#: ../network-scripts/network-functions-ipv6:961
+msgid "No reason given for sending trigger to radvd"
+msgstr "No s'ha indicat cap raó per enviar un activador a radvd"
+
+#: ../network-scripts/network-functions-ipv6:966
+msgid "Unsupported reason '$reason' for sending trigger to radvd"
+msgstr "La raó '$reason' no està suportada per enviar un activador a radvd"
+
+#: ../network-scripts/network-functions-ipv6:995
+msgid "Unsupported mechanism '$mechanism' for sending trigger to radvd"
+msgstr ""
+"No s'ha implementat cap mecanisme '$mechanism' per enviar un activador a "
+"radvd"
+
+#: ../network-scripts/network-functions-ipv6:1007
+msgid "Given pidfile '$pidfile' doesn't exist, cannot send trigger to radvd"
+msgstr ""
+"El fitxer pid '$pidfile' indicat no existeix, no es pot enviar un activador "
+"a radvd"
+
+#: ../network-scripts/network-functions-ipv6:1016
+msgid "Pidfile '$pidfile' is empty, cannot send trigger to radvd"
+msgstr ""
+"El fitxer pid '$pidfile' està buit, no es pot enviar l'activador a radvd"
+
+#: ../network-scripts/network-functions-ipv6:1033
+msgid "radvd not (properly) installed, triggering failed"
+msgstr "radvd no està instal·lat correctament i l'activador ha fallat"
+
+#: ../network-scripts/network-functions-ipv6:1068
+msgid "Duplicate Address Detection: Duplicate addresses detected"
+msgstr "Detecció d'adreça duplicada: S'ha detectat una adreça duplicada"
+
+#: ../network-scripts/network-functions-ipv6:1069
+msgid "Duplicate Address Detection: Please, fix your network configuration"
+msgstr ""
+"Detecció d'adreça duplicada: Si us plau, corregiu la configuració de la "
+"xarxa."
+
+#: ../network-scripts/network-functions-ipv6:1073
+msgid ""
+"Waiting for interface ${device} IPv6 address(es) to leave the 'tentative' "
+"state"
+msgstr ""
+"A l'espera que l'adreça o adreces IPv6 de la interfície ${device} deixi o "
+"deixin l'estat «tentative»"
+
+#: ../network-scripts/network-functions-ipv6:1081
+msgid "Some IPv6 address(es) of ${device} remain still in 'tentative' state"
+msgstr ""
+"Algunes adreces IPv6 de ${device} encara continuen amb l'estat «tentative»"
+
+#: ../network-scripts/network-functions-ipv6:1082
+#, fuzzy
+#| msgid ""
+#| "Run 'ip -6 addr show dev ${device} scope global tentative' to see more"
+msgid "Run 'ip -6 addr show dev ${device} tentative' for more info"
+msgstr ""
+"Executeu 'ip -6 addr show dev ${device} scope global tentative' per veure'n "
+"més"
+
+#: ../usr/sbin/service:50 ../usr/sbin/service:66
+msgid "Support for initscripts isn't installed"
+msgstr ""
+
+#: ../usr/sbin/service:108
+#, fuzzy
+#| msgid ""
+#| "Redirecting to /bin/systemctl ${ACTION}${OPTIONS:+ }${OPTIONS} "
+#| "${SERVICE_MANGLED}"
+msgid ""
+"Redirecting to /bin/systemctl ${ACTION} ${SERVICE_MANGLED}${OPTIONS:"
+"+ }${OPTIONS}"
+msgstr ""
+"S'està redirigint a /bin/systemctl ${ACTION}${OPTIONS:+ }${OPTIONS} "
+"${SERVICE_MANGLED}"
+
+#: ../usr/sbin/service:111
+#, fuzzy
+#| msgid ""
+#| "The service command supports only basic LSB actions (start, stop, "
+#| "restart, try-restart, reload, force-reload, status). For other actions, "
+#| "please try to use systemctl."
+msgid ""
+"The service command supports only basic LSB actions (start, stop, restart, "
+"try-restart, reload, reload-or-restart, try-reload-or-restart, force-reload, "
+"status, condrestart). For other actions, please try to use systemctl."
+msgstr ""
+"L'ordre service tan sols dóna suport a les accions bàsiques LSB (start, "
+"stop, restart, try-restart, reload, force-reload i status). Per altres "
+"accions, si us plau, proveu d'utilitzar systemctl."
+
+#: ../etc/rc.d/init.d/functions:33
+msgid "Starting $prog (via systemctl): "
+msgstr "S'està iniciant $prog (a través de systemctl): "
+
+#: ../etc/rc.d/init.d/functions:36
+msgid "Stopping $prog (via systemctl): "
+msgstr "S'està aturant $prog (a través de systemctl): "
+
+#: ../etc/rc.d/init.d/functions:39
+msgid "Reloading $prog configuration (via systemctl): "
+msgstr ""
+"S'està tornant a carregar la configuració de $prog (a través de systemctl): "
+
+#: ../etc/rc.d/init.d/functions:42
+msgid "Restarting $prog (via systemctl): "
+msgstr "S'està reiniciant $prog (a través de systemctl): "
+
+#: ../etc/rc.d/init.d/functions:52
+msgid "Reloading systemd: "
+msgstr "Recàrrega de systemd: "
+
+#: ../etc/rc.d/init.d/functions:236 ../etc/rc.d/init.d/functions:274
+msgid "$0: Usage: daemon [+/-nicelevel] {program}"
+msgstr "$0: Ús: daemon [+/-nivell de prioritat] {programa}"
+
+#: ../etc/rc.d/init.d/functions:304
+msgid "$base startup"
+msgstr "inicialització de $base"
+
+#: ../etc/rc.d/init.d/functions:314 ../etc/rc.d/init.d/functions:324
+#: ../etc/rc.d/init.d/functions:333
+#, fuzzy
+#| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+msgid ""
+"Usage: killproc [-p {pidfile} [-b {binary}]] [-d {delay}] {program} [-signal]"
+msgstr "Ús: killproc [-p fitxerPID] [-d retard] {programa} [-signal]"
+
+#: ../etc/rc.d/init.d/functions:323 ../etc/rc.d/init.d/functions:450
+msgid "-b option can be used only with -p"
+msgstr ""
+
+#: ../etc/rc.d/init.d/functions:353 ../etc/rc.d/init.d/functions:363
+#: ../etc/rc.d/init.d/functions:378
+msgid "$base shutdown"
+msgstr "Aturada de $base"
+
+#: ../etc/rc.d/init.d/functions:369
+msgid "$base $killlevel"
+msgstr "$base $killlevel"
+
+#: ../etc/rc.d/init.d/functions:396
+msgid "Usage: pidfileofproc {program}"
+msgstr "Ús: pidfileofproc {programa}"
+
+#: ../etc/rc.d/init.d/functions:411
+#, fuzzy
+#| msgid "Usage: pidofproc [-p pidfile] {program}"
+msgid "Usage: pidofproc [-p {pidfile}] {program}"
+msgstr "Ús: pidofproc [-p fitxer-PID] {programa}"
+
+#: ../etc/rc.d/init.d/functions:437 ../etc/rc.d/init.d/functions:451
+#, fuzzy
+#| msgid "Usage: status [-p pidfile] {program}"
+msgid "Usage: status [-p {pidfile}] [-l {lockfile}] [-b {binary}] {program}"
+msgstr "Ús: status [-p fitxer-PID] {programa}"
+
+#: ../etc/rc.d/init.d/functions:478 ../etc/rc.d/init.d/functions:484
+msgid "${base} (pid $pid) is running..."
+msgstr "${base} (pid $pid) s'està executant..."
+
+#: ../etc/rc.d/init.d/functions:488
+msgid "${base} dead but pid file exists"
+msgstr "${base} està mort però el fitxer del pid encara existeix"
+
+#: ../etc/rc.d/init.d/functions:492
+msgid "${base} status unknown due to insufficient privileges."
+msgstr "${base} estat desconegut a causa de la manca de privilegis."
+
+#: ../etc/rc.d/init.d/functions:501
+msgid "${base} dead but subsys locked"
+msgstr "${base} ha mort però subsys estava bloquejat"
+
+#: ../etc/rc.d/init.d/functions:504
+msgid "${base} is stopped"
+msgstr "${base} està aturat"
+
+#: ../etc/rc.d/init.d/functions:512
+msgid "  OK  "
+msgstr " FET  "
+
+#: ../etc/rc.d/init.d/functions:523
+msgid "FAILED"
+msgstr "FALLAT"
+
+#: ../etc/rc.d/init.d/functions:534
+msgid "PASSED"
+msgstr "PASSAT"
+
+#: ../etc/rc.d/init.d/functions:545
+msgid "WARNING"
+msgstr "ADVERTÈNCIA"
+
+#: ../etc/rc.d/init.d/functions:595
+msgid "$STRING"
+msgstr "$STRING"
+
+#: ../etc/rc.d/init.d/network:52
+msgid ""
+"You are using 'network' service provided by 'network-scripts', which are now "
+"deprecated."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:54
+msgid ""
+"It is advised to switch to 'NetworkManager' instead for network management."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:77
+msgid "Bringing up loopback interface: "
+msgstr "S'està aixecant la interfície loopback: "
+
+#: ../etc/rc.d/init.d/network:81
+msgid "No 802.1Q VLAN support available in kernel."
+msgstr "El kernel no incorpora cap compatibilitat per a VLAN 802.1Q."
+
+#: ../etc/rc.d/init.d/network:132 ../etc/rc.d/init.d/network:139
+msgid "Bringing up interface $i: "
+msgstr "S'està aixecant la interfície $i: "
+
+#: ../etc/rc.d/init.d/network:151
+msgid "Legacy static-route support not available: /sbin/route not found"
+msgstr ""
+"El suport per a l'antic static-route no està disponible: no es va trobar /"
+"sbin/route"
+
+#: ../etc/rc.d/init.d/network:178
+msgid ""
+"Target is not reachable, but timeout was already reached. Continuing anyway."
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:189
+msgid "rootfs or /usr is on network filesystem, leaving network up"
+msgstr ""
+"rootfs o /usr està en un sistema de fitxers en xarxa, es deixa aixecada la "
+"xarxa"
+
+#: ../etc/rc.d/init.d/network:199
+msgid "system is shutting down, leaving interfaces up as requested"
+msgstr ""
+
+#: ../etc/rc.d/init.d/network:249
+msgid "Shutting down interface $i: "
+msgstr "S'està aturant la interfície $i: "
+
+#: ../etc/rc.d/init.d/network:255
+msgid "Shutting down loopback interface: "
+msgstr "S'està aturant la interfície loopback: "
+
+#: ../etc/rc.d/init.d/network:267
+msgid "Configured devices:"
+msgstr "Els dispositius configurats:"
+
+#: ../etc/rc.d/init.d/network:270
+msgid "Currently active devices:"
+msgstr "Els dispositius actius actualment:"
+
+#: ../etc/rc.d/init.d/network:280
+#, fuzzy
+#| msgid "Usage: $0 {start|stop|status|restart|reload|force-reload}"
+msgid "Usage: $0 {start|stop|status|restart|force-reload}"
+msgstr "Ús: $0 {start|stop|status|restart|reload|force-reload}"
+
+#, fuzzy
+#~| msgid "Usage: killproc [-p pidfile] [ -d delay] {program} [-signal]"
+#~ msgid "Usage: killproc -p pidfile -b binary program"
+#~ msgstr "Ús: killproc [-p fitxerPID] [-d retard] {programa} [-signal]"
+
+#~ msgid "Usage: status [-p pidfile] {program}"
+#~ msgstr "Ús: status [-p fitxer-PID] {programa}"
+
+#~ msgid "Server address not specified in /etc/sysconfig/netconsole"
+#~ msgstr ""
+#~ "No s'ha especificat l'adreça del servidor a /etc/sysconfig/netconsole"
+
+#~ msgid "Usage: $0 {start|stop|status|restart|condrestart}"
+#~ msgstr "Ús: $0 {start|stop|status|restart|condrestart}"
+
+#~ msgid "netconsole module loaded"
+#~ msgstr "s'ha carregat el mòdul netconsole"
+
+#~ msgid "Bridge support not available: brctl not found"
+#~ msgstr "El suport per a ponts no està disponible: no s'ha trobat brctl"
+
+#~ msgid "Initializing netconsole"
+#~ msgstr "S'està inicialitzant netconsole"
+
+#~ msgid "netconsole module not loaded"
+#~ msgstr "no s'ha carregat el mòdul netconsole"
+
+#~ msgid "Usage: sys-unconfig"
+#~ msgstr "Ús: sys-unconfig"
+
+#~ msgid "Disabling netconsole"
+#~ msgstr "S'està inhabilitant netconsole"
+
+#~ msgid "netconsole: can't resolve MAC address of $SYSLOGADDR"
+#~ msgstr "netconsole: no es pot resoldre l'adreça MAC de $SYSLOGADDR"
+
+#~ msgid "Unable to resolve IP address specified in /etc/sysconfig/netconsole"
+#~ msgstr ""
+#~ "No s'ha pogut resoldre l'adreça IP especificada a /etc/sysconfig/"
+#~ "netconsole"

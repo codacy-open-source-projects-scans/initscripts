@@ -1,0 +1,21 @@
+name: Integration test
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main, rhel*-branch ]
+  release:
+    types: [ published, created ]
+
+jobs:
+  buildCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repository checkout
+        uses: actions/checkout@v5
+
+      - name: Install dependencies
+        run: sudo apt update && sudo apt install -y libpopt-dev gettext libglib2.0-dev
+
+      - name: Build & install
+        run: make all && make install DESTDIR=/tmp/initscripts
