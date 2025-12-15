@@ -18,7 +18,7 @@ Requires:         gawk                       \
 
 Name:             initscripts
 Summary:          Basic support for legacy System V init scripts
-Version:          10.26
+Version:          10.27
 Release:          1%{?dist}
 
 License:          GPL-2.0-only
@@ -260,6 +260,7 @@ mv -v %{buildroot}/usr/sbin/* %{buildroot}%{_bindir}/
 # =============================================================================
 
 %files -n initscripts-rename-device
+%license COPYING
 
 %{_prefix}/lib/udev/rename_device
 
@@ -268,6 +269,7 @@ mv -v %{buildroot}/usr/sbin/* %{buildroot}%{_bindir}/
 # ---------------
 
 %files -n initscripts-service
+%license COPYING
 
 %dir %{_libexecdir}/%{name}
 %dir %{_libexecdir}/%{name}/legacy-actions
@@ -279,6 +281,7 @@ mv -v %{buildroot}/usr/sbin/* %{buildroot}%{_bindir}/
 # ---------------
 
 %files -n netconsole-service
+%license COPYING
 %config(noreplace) %{_sysconfdir}/sysconfig/netconsole
 
 %{_libexecdir}/netconsole
@@ -287,6 +290,8 @@ mv -v %{buildroot}/usr/sbin/* %{buildroot}%{_bindir}/
 # ---------------
 
 %files -n readonly-root
+%license COPYING
+
 %dir %{_sharedstatedir}/stateless
 %dir %{_sharedstatedir}/stateless/state
 %dir %{_sharedstatedir}/stateless/writable
@@ -301,6 +306,38 @@ mv -v %{buildroot}/usr/sbin/* %{buildroot}%{_bindir}/
 # =============================================================================
 
 %changelog
+* Thu Dec 11 2025 Jan Macku <jamacku@redhat.com> - 10.27-1
+- spec: add missing license files
+- build(deps): bump actions/checkout from 5 to 6
+- build(deps): bump actions/upload-artifact from 4 to 5
+- build(deps): bump github/codeql-action from 3 to 4
+- ci: fix issues with missing base commit
+- Translated using Weblate (Georgian)
+- Translated using Weblate (Indonesian)
+- Translated using Weblate (English (United Kingdom))
+- Translated using Weblate (Korean)
+- Translated using Weblate (Turkish)
+- man: add ifdown.8
+- build(deps): bump actions/checkout from 4 to 5
+- Translated using Weblate (Spanish)
+- Translated using Weblate (Georgian)
+- Translated using Weblate (Korean)
+- Translated using Weblate (Portuguese (Brazil))
+- Translated using Weblate (Polish)
+- Translated using Weblate (Greek)
+- Translated using Weblate (Greek)
+- Translated using Weblate (Spanish)
+- Translated using Weblate (Georgian)
+- Translated using Weblate (Greek)
+- Translated using Weblate (Italian)
+- Translated using Weblate (Chinese (Traditional) (zh_TW))
+- Translated using Weblate (Spanish)
+- Translated using Weblate (Finnish)
+- retry arping one more time in ifup-eth when sendto failed
+- Translated using Weblate (French)
+- ci: add dependency glib-2.0
+- network-functions: Fix a bug in is_nm_handling()
+
 * Tue Aug 27 2024 Jan Macku <jamacku@redhat.com> - 10.26-1
 - Translated using Weblate (Turkish)
 - netconsole: var/lock -> run/lock
