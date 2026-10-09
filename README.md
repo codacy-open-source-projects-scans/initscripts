@@ -1,9 +1,6 @@
 # initscripts
 
-[![Build Status](https://github.com/fedora-sysv/initscripts/workflows/Integration%20test/badge.svg)](https://github.com/fedora-sysv/initscripts/actions?query=workflow%3AIntegration+test) [![Differential ShellCheck](https://github.com/fedora-sysv/initscripts/actions/workflows/differential-shellcheck.yml/badge.svg)](https://github.com/fedora-sysv/initscripts/actions/workflows/differential-shellcheck.yml) [![Differential ShellCheck](https://github.com/fedora-sysv/initscripts/actions/workflows/differential-shellcheck.yml/badge.svg)](https://github.com/fedora-sysv/initscripts/actions/workflows/differential-shellcheck.yml) [![CodeQL](https://github.com/fedora-sysv/initscripts/actions/workflows/codeql.yml/badge.svg)](https://github.com/fedora-sysv/initscripts/actions/workflows/codeql.yml) [![Mergify Status][mergify-status]][mergify]
-
-[mergify]: https://mergify.com
-[mergify-status]: https://img.shields.io/endpoint.svg?url=https://api.mergify.com/v1/badges/fedora-sysv/initscripts&style=flat
+[![Build Status](https://github.com/fedora-sysv/initscripts/workflows/Integration%20test/badge.svg)](https://github.com/fedora-sysv/initscripts/actions?query=workflow%3AIntegration+test) [![Differential ShellCheck](https://github.com/fedora-sysv/initscripts/actions/workflows/differential-shellcheck.yml/badge.svg)](https://github.com/fedora-sysv/initscripts/actions/workflows/differential-shellcheck.yml) [![CodeQL](https://github.com/fedora-sysv/initscripts/actions/workflows/codeql.yml/badge.svg)](https://github.com/fedora-sysv/initscripts/actions/workflows/codeql.yml)
 
 This repository contains source code for **legacy** *System V [initscripts](https://en.wikipedia.org/wiki/Init)*,
 which are primarily used in *[Linux](https://en.wikipedia.org/wiki/Linux) distributions like e.g.*:
@@ -33,6 +30,12 @@ Another functionality this source code provides includes:
 For the *[RPM](https://en.wikipedia.org/wiki/Rpm_(software))* based distributions
 we also provide a [`specfile`](https://github.com/fedora-sysv/initscripts/blob/main/initscripts.spec)
 for easier packaging.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes. It covers
+compatibility, validation, and contributor responsibility, including AI-assisted
+contributions.
 
 ## Future of initscripts
 
